@@ -1,0 +1,29 @@
+:root {
+    /* fonts */
+    --primary-font: 'PT Sans Caption';
+    --primary-font-size: 15px;
+    --secondary-font-size: 22px;
+    --primary-line-height: 1.5;
+    --secondary-line-height: 1.33;
+
+    /* colors */
+    --primary-color: #222222;
+    --secondary-color: #383838;
+
+    --accent-color: #48a216;
+    --smooth-color: #b6c1dd;
+    --white-color: #ffffff;
+    --lignt-color: #383838;
+    --primary-bg-color: #f6f6f7;
+
+    --primary-border-color: #f0f0f0;
+    --secondary-border-color: #eeeeee;
+
+    /* borders */
+    --primary-border: 1px solid var(--primary-border-color);
+    --secondary-border: 1px solid var(--secondary-border-color);
+
+    /* ui */
+    --primary-border-radius: 2px;
+    --primary-box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
