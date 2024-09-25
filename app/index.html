@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TireShop</title>
+  <link rel="stylesheet" href="./../libs/priority-nav/priority-nav-core.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -39,8 +40,8 @@
           </a>
         </div>
         <nav class="header__nav">
-          <div class="header__nav-items">
-            <div class="header__nav-item">
+          <ul class="header__nav-items">
+            <li class="header__nav-item">
               <a class="header__nav-link" href="/">Шины</a>
               <div class="dropdown__menu double__menu">
                 <div class="double__menu-left">
@@ -212,8 +213,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="header__nav-item">
+            </li>
+            <li class="header__nav-item">
               <a class="header__nav-link" href="/">Диски</a>
               <div class="dropdown__menu double__menu">
                 <div class="double__menu-left">
@@ -374,8 +375,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="header__nav-item">
+            </li>
+            <li class="header__nav-item">
               <a class="header__nav-link" href="/">АКБ</a>
               <div class="dropdown__menu single__menu">
                 <div class="wrap__list">
@@ -411,8 +412,8 @@
                   </a>
                 </div>
               </div>
-            </div>
-            <div class="header__nav-item">
+            </li>
+            <li class="header__nav-item">
               <a class="header__nav-link" href="/">Мотошины</a>
               <div class="dropdown__menu double__menu">
                 <div class="double__menu-left">
@@ -592,8 +593,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="header__nav-item">
+            </li>
+            <li class="header__nav-item">
               <a class="header__nav-link" href="/">Грузовые шины</a>
               <div class="dropdown__menu double__menu one-left-item">
                 <div class="double__menu-left">
@@ -738,8 +739,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="header__nav-item">
+            </li>
+            <li class="header__nav-item">
               <a class="header__nav-link" href="/">Расходные материалы</a>
               <div class="dropdown__menu">
                 <div class="dropdown__menu-list">
@@ -763,12 +764,15 @@
                   </a>
                 </div>
               </div>
-            </div>
-            <div class="header__nav-item">
+            </li>
+            <li class="header__nav-item">
               <a class="header__nav-link" href="/">Акции</a>
-            </div>
-            <div class="header__nav-item">
-              <a class="header__nav-link" href="/">Услуги</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="/">
+                Услуги
+                <span></span>
+              </a>
               <div class="dropdown__menu dropdown__list">
                 <a class="dropdown__list-link" href="/">
                   Шиномонтаж
@@ -786,15 +790,30 @@
                   Сезонное хранение
                 </a>
               </div>
-            </div>
-            <div class="header__nav-item">
+            </li>
+            <li class="header__nav-item">
               <a class="header__nav-link" href="/">Магазины</a>
-            </div>
-            <div class="header__nav-item">
+            </li>
+            <li class="header__nav-item">
               <a class="header__nav-link" href="/">Контакты</a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </nav>
+      </div>
+      <div class="header-mob__container container">
+        <button class="burger">
+          <svg>
+            <use href="./../images/sprite.svg?v0#burger" />
+          </svg>
+        </button>
+        <div class="header-mob__title">
+          Демоверсия Аспро: Шины и диски 2.0 — готовый сайт на 1С-Битрикс
+        </div>
+        <a class="header__phone" href="tel:+70000000000">
+          <svg>
+            <use href="./../images/sprite.svg?v0#phone" />
+          </svg>
+        </a>
       </div>
     </header>
 <main class="main">
@@ -810,6 +829,7 @@
   </div>
 </footer>
 </div>
+<script src="./../libs/priority-nav/priority-nav.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 

@@ -1,6 +1,27 @@
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+  .wrap__list-link {
+    width: 33.3333%;
+  }
 
-@media (max-width: 991px) {}
+  .header__nav-item {
+    padding: 20px;
+  }
+
+  .nav__dropdown .header__nav-item {
+    padding: 14px 20px;
+  }
+
+  .nav__dropdown .header__nav-item::after {
+    content: "";
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .header__container {
+    display: none;
+  }
+}
 
 @media (max-width: 768px) {}
 
