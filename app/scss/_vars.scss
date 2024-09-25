@@ -1,40 +1,62 @@
 :root {
-    /* fonts */
-    --primary-font: 'PT Sans Caption';
+  /* fonts */
+  --primary-font: 'PT Sans Caption';
 
-    --primary-line-height: 1.5;
-    --secondary-line-height: 1.33;
+  --primary-line-height: 1.5;
+  --secondary-line-height: 1.33;
 
-    /* colors */ 
-    --primary-color: #48a216;
-    --secondary-color: #383838;
+  /* colors */
+  --primary-color: #48a216;
+  --secondary-color: #383838;
 
-    --primary-black-color: #222222;
-    --secondary-black-color: #333333;
-    --tertiary-black-color: #555555;
+  --primary-black-color: #222222;
+  --secondary-black-color: #333333;
+  --tertiary-black-color: #555555;
 
-    --primary-grey-color: #666666;
-    --secondary-grey-color: #777777;
-    --tertiary-grey-color: #888888;
+  --primary-grey-color: #666666;
+  --secondary-grey-color: #777777;
+  --tertiary-grey-color: #888888;
 
-    --primary-smooth-color: #b6c1dd;
-    --secondary-smooth-color: #999999;
+  --primary-smooth-color: #b6c1dd;
+  --secondary-smooth-color: #999999;
 
-    --primary-white-color: #ffffff;
-    
-    --primary-bg-color: #f6f6f7;
+  --primary-white-color: #ffffff;
 
-    --primary-border-color: #f0f0f0;
-    --secondary-border-color: #eeeeee;
+  --primary-bg-color: #f6f6f7;
+  --secondary-bg-color: #f0f0f0;
 
-    /* borders */
-    --primary-border: 1px solid var(--primary-border-color);
-    --secondary-border: 1px solid var(--secondary-border-color);
+  --primary-border-color: #f0f0f0;
+  --secondary-border-color: #eeeeee;
 
-    /* ui */
-    --primary-border-radius: 2px;
-    --primary-box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  /* borders */
+  --primary-border: 1px solid var(--primary-border-color);
+  --secondary-border: 1px solid var(--secondary-border-color);
 
-    /* transition */
-    --transition-color: color ease-out 70ms;
+  /* ui */
+  --primary-border-radius: 2px;
+  --primary-box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+
+  /* transition */
+  --primary-transition-color: color ease-out 70ms;
+  --secondary-transition-color: all ease .3s;
+
+  /* box-shadow */
+  --primary-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  66% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
 }
