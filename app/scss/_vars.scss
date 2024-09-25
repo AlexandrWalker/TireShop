@@ -1,19 +1,27 @@
 :root {
     /* fonts */
     --primary-font: 'PT Sans Caption';
-    --primary-font-size: 15px;
-    --secondary-font-size: 22px;
+
     --primary-line-height: 1.5;
     --secondary-line-height: 1.33;
 
-    /* colors */
-    --primary-color: #222222;
+    /* colors */ 
+    --primary-color: #48a216;
     --secondary-color: #383838;
 
-    --accent-color: #48a216;
-    --smooth-color: #b6c1dd;
-    --white-color: #ffffff;
-    --lignt-color: #383838;
+    --primary-black-color: #222222;
+    --secondary-black-color: #333333;
+    --tertiary-black-color: #555555;
+
+    --primary-grey-color: #666666;
+    --secondary-grey-color: #777777;
+    --tertiary-grey-color: #888888;
+
+    --primary-smooth-color: #b6c1dd;
+    --secondary-smooth-color: #999999;
+
+    --primary-white-color: #ffffff;
+    
     --primary-bg-color: #f6f6f7;
 
     --primary-border-color: #f0f0f0;
@@ -26,4 +34,7 @@
     /* ui */
     --primary-border-radius: 2px;
     --primary-box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+
+    /* transition */
+    --transition-color: color ease-out 70ms;
 }

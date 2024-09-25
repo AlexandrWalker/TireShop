@@ -6,10 +6,10 @@ html {
 }
 
 body {
-  background: var(--white, #fff);
-  color: var(--primary-color);
+  background: var(--primary-white-color);
+  color: var(--primary-black-color);
   font-family: var(--primary-font), Arial, sans-serif;
-  font-size: var(--primary-font-size);
+  font-size: 15px;
   line-height: var(--primary-line-height);
 }
 
@@ -38,6 +38,12 @@ body {
   margin: 0 auto;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-color);
+}
+
 h1,
 h2,
 h3,
@@ -45,8 +51,8 @@ h4,
 h5,
 h6 {
   margin: 0;
-  line-height: var(--secondary-line-height);
   font-weight: normal;
+  line-height: var(--secondary-line-height);
   color: var(--secondary-color);
 }
 
@@ -75,9 +81,23 @@ h6 {
 }
 
 p {
+  margin: 0;
+  font-weight: normal;
   font-size: 15px;
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px 20px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: var(--primary-white-color);
 }
