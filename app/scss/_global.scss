@@ -6,7 +6,8 @@ html {
 }
 
 body {
-  background: var(--primary-white-color);
+  min-width: 320px;
+  background-color: var(--primary-white-color);
   color: var(--primary-black-color);
   font-family: var(--primary-font), Arial, sans-serif;
   font-size: 15px;

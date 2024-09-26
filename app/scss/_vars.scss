@@ -19,6 +19,7 @@
 
   --primary-smooth-color: #b6c1dd;
   --secondary-smooth-color: #999999;
+  --tertiary-smooth-color: #1d2029;
 
   --primary-white-color: #ffffff;
 
@@ -39,6 +40,7 @@
   /* transition */
   --primary-transition-color: color ease-out 70ms;
   --secondary-transition-color: all ease .3s;
+  --tertiary-transition-color: all .3s ease;
 
   /* box-shadow */
   --primary-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);

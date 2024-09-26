@@ -23,6 +23,7 @@
 
 .priority-nav-has-dropdown .priority-nav__dropdown-toggle {
   position: relative;
+  top: 5px;
 }
 
 .priority-nav__wrapper {
