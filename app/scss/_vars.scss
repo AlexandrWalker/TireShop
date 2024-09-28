@@ -6,11 +6,13 @@
   --secondary-line-height: 1.33;
 
   /* colors */
-  --primary-color: #48a216;
+  --primary-color: #1d2029;
   --secondary-color: #383838;
   --tertiary-color: #202020;
 
-  --primary-hover-color: #54bd1a;
+  --primary-green-color: #48a216;
+  --secondary-green-color: #54bd1a;
+  --tertiary-green-color: #3e8c12;
 
   --primary-black-color: #222222;
   --secondary-black-color: #333333;
@@ -22,12 +24,13 @@
 
   --primary-smooth-color: #b6c1dd;
   --secondary-smooth-color: #999999;
-  --tertiary-smooth-color: #1d2029;
+  --tertiary-smooth-color: #cad2d6;
 
   --primary-white-color: #ffffff;
 
   --primary-bg-color: #f6f6f7;
   --secondary-bg-color: #f0f0f0;
+  --tertiary-bg-color: #f9f9fa;
 
   --primary-border-color: #f0f0f0;
   --secondary-border-color: #eeeeee;
@@ -39,6 +42,7 @@
   /* ui */
   --primary-border-radius: 2px;
   --primary-box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  --secondary-box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
 
   /* transition */
   --primary-transition-color: color ease-out 70ms;
@@ -63,5 +67,11 @@
   100% {
     opacity: 1;
     visibility: visible;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
   }
 }

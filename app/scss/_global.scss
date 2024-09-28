@@ -18,6 +18,30 @@ body {
   overflow: hidden;
 }
 
+.scroll-top {
+  display: block;
+  background-image: url(./../images/scroll.svg);
+  background-repeat: no-repeat;
+  background-position: center 14px;
+  background-color: var(--primary-green-color);
+  width: 44px;
+  height: 44px;
+  margin: 0 0 0 auto;
+  border-radius: 50%;
+  position: sticky;
+  right: 75px;
+  bottom: 55px;
+  z-index: 999;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+
+  &:hover {
+    background-color: #5e9a42;
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -28,6 +52,7 @@ body {
 
 .main {
   flex: 1 0 auto;
+  position: relative;
 }
 
 .footer {
@@ -38,6 +63,10 @@ body {
   max-width: 1350px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+section {
+  margin: 0 0 30px;
 }
 
 a {
@@ -94,11 +123,11 @@ p {
   align-items: center;
   padding: 12px 20px;
   width: fit-content;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-green-color);
   border-radius: var(--primary-border-radius);
   font-size: 14px;
   font-weight: 400;
-  color: var(--primary-color);
+  color: var(--primary-green-color);
   text-decoration: none;
   transition: var(--secondary-transition-color);
   overflow: hidden;
@@ -108,12 +137,12 @@ p {
   }
 
   &:hover {
-    background-color: var(--primary-color);
+    background-color: var(--primary-green-color);
     color: var(--primary-white-color);
   }
 
   &-green {
-    background-color: var(--primary-color);
+    background-color: var(--primary-green-color);
     color: var(--primary-white-color);
 
 
@@ -121,5 +150,32 @@ p {
       background-color: var(--primary-hover-color);
       border-color: var(--primary-hover-color);
     }
+  }
+}
+
+.shine {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -55%;
+    z-index: 2;
+    display: block;
+    content: "";
+    width: 25%;
+    height: 100%;
+    opacity: 0;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+  }
+
+  &:hover::before {
+    -webkit-animation: shine .5s;
+    animation: shine .5s;
+    opacity: 1;
   }
 }

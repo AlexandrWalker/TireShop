@@ -6,9 +6,10 @@
   transition: transform 0.2s ease;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:hover,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:hover {
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover {
   transform: scale(1.2);
+  background: var(--primary-green-color);
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active,
@@ -23,7 +24,7 @@
 }
 
 .swiper-pagination-bullet-active {
-  background: var(--primary-color);
+  background: var(--primary-green-color);
   position: relative;
   top: 1px;
 }
@@ -44,7 +45,7 @@
   }
 
   &:hover {
-    background-color: var(--primary-color);
+    background-color: var(--primary-green-color);
   }
 
   &:hover::after {
@@ -75,5 +76,70 @@
 
   .swiper-button-prev {
     left: 20px;
+  }
+}
+
+.reviews {
+  .swiper-button-next {
+    position: relative;
+    top: unset;
+    bottom: unset;
+    right: unset;
+    left: unset;
+    width: 33px;
+    height: 33px;
+    margin: 0;
+    border: var(--primary-border);
+    border-radius: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    &::after {
+      font-size: 12px;
+      margin: 1px -3px 0 0;
+    }
+  }
+
+  .swiper-button-prev {
+    position: relative;
+    top: unset;
+    bottom: unset;
+    right: unset;
+    left: unset;
+    width: 33px;
+    height: 33px;
+    margin: 0;
+    border: var(--primary-border);
+    border-radius: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+    &::after {
+      font-size: 12px;
+      margin: 1px 0 0 -1px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background: var(--tertiary-smooth-color);
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--primary-green-color);
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: relative;
+    bottom: -11px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
   }
 }

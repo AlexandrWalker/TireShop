@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #333;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #333;
+      }
+    </style>
+  </defs>
+  <path id="Shield" class="cls-1" d="M38.99,19.233c0,9.96-7.448,19.685-16.992,22.757-9.544-3.072-16.992-12.8-16.992-22.757V5.68c9.608-6.268,24.375-6.268,33.983,0V19.233h0Z"/>
+  <path id="check" class="cls-2" d="M30.9,14.574L21.851,25.612l-0.006.005a0.95,0.95,0,0,1-.107.161,1,1,0,0,1-1.414,0L13.285,18.6A1,1,0,0,1,14.7,17.185l6.249,6.375,8.376-10.219A1,1,0,0,1,30.9,14.574Z"/>
+</svg>
