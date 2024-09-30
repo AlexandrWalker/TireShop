@@ -21,19 +21,19 @@
     .swiper-slide {
       &:nth-child(1) {
         .banner__slider-item {
-          background-image: url(./../../images/banner/banner_1_bg.webp);
+          background-image: url(./../images/banner/banner_1_bg.webp);
         }
       }
 
       &:nth-child(2) {
         .banner__slider-item {
-          background-image: url(./../../images/banner/banner_2_bg.webp);
+          background-image: url(./../images/banner/banner_2_bg.webp);
         }
       }
 
       &:nth-child(3) {
         .banner__slider-item {
-          background-image: url(./../../images/banner/banner_3_bg.webp);
+          background-image: url(./../images/banner/banner_3_bg.webp);
         }
 
         .banner__slider-title {
@@ -49,7 +49,7 @@
 
       &:nth-child(4) {
         .banner__slider-item {
-          background-image: url(./../../images/banner/banner_4_bg.webp);
+          background-image: url(./../images/banner/banner_4_bg.webp);
         }
       }
     }
