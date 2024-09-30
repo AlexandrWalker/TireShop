@@ -23,6 +23,7 @@
   --primary-bg-color: #f6f6f7;
   --secondary-bg-color: #f0f0f0;
   --tertiary-bg-color: #f9f9fa;
+  --primary-overlay-color: #3a3f44;
   --primary-border-color: #f0f0f0;
   --secondary-border-color: #eeeeee;
   /* borders */
@@ -400,6 +401,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -412,6 +414,7 @@ body {
 }
 
 .no-scroll {
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -433,9 +436,15 @@ body {
   text-align: center;
   text-decoration: none;
   transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
 }
 .scroll-top:hover {
   background-color: #5e9a42;
+}
+.scroll-top.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .wrapper {
@@ -990,6 +999,202 @@ p {
   flex-shrink: 0;
 }
 
+.mob__body {
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  position: absolute;
+  top: 0;
+  z-index: 1002;
+  left: -600px;
+  height: 100vh;
+  transition: all 0.4s ease 0s;
+}
+.mob__body.show {
+  left: 0;
+}
+.mob__body.show::before {
+  opacity: 0.7;
+  visibility: visible;
+}
+.mob__body::before {
+  content: "";
+  display: block;
+  width: 200vw;
+  height: 100vh;
+  background: var(--primary-overlay-color);
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -150vw;
+  z-index: 1003;
+  transition: all 0.4s ease 0.1s;
+}
+.mob__container {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 3px 0 10px 0 rgba(0, 0, 0, 0.45);
+  position: relative;
+  z-index: 1004;
+}
+.mob__inner {
+  width: 300px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: var(--primary-white-color);
+}
+.mob__nav {
+  display: flex;
+  flex-direction: column;
+}
+.mob__nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border: 0;
+  border-bottom: var(--primary-border);
+  background: transparent;
+  padding: 20px 28px 20px 20px;
+  font-weight: 700;
+  color: var(--secondary-black-color);
+}
+.mob__nav-link:hover {
+  color: var(--primary-green-color);
+}
+.mob__nav-link svg {
+  width: 3px;
+  height: 5px;
+  flex-shrink: 0;
+  transform: rotate(45deg) scale(2);
+}
+.mob__nav-tabs {
+  display: none;
+  width: 300px;
+  height: 100%;
+  overflow-y: auto;
+  background: var(--primary-white-color);
+}
+.mob__nav-tabs.active {
+  display: block;
+}
+.mob__nav-tab {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+.mob__nav-tab.tabs__panel--active {
+  display: flex;
+}
+.mob__nav-back {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 17px 20px 16px 17px;
+  border: 0;
+  background: transparent;
+  border-bottom: var(--primary-border);
+  cursor: pointer;
+}
+.mob__nav-back span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(./../images/scroll.svg);
+  background-repeat: no-repeat;
+  background-position: center -75px;
+  transform: rotate(-90deg);
+}
+.mob__nav-title {
+  color: var(--primary-green-color);
+  font-weight: 700;
+  padding: 22px 23px 23px 19px;
+  border-bottom: var(--primary-border);
+  background-color: var(--tertiary-bg-color);
+}
+.mob__phone {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 20px 28px 20px 20px;
+  color: var(--primary-black-color);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.mob__phone:hover {
+  color: var(--primary-green-color);
+}
+.mob__phone svg {
+  width: 9px;
+  height: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.mob__contacts-title {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 19px 20px 6px 19px;
+}
+.mob__contacts-address {
+  display: flex;
+  gap: 17px;
+  padding: 12px 20px 0 20px;
+  font-size: 13px;
+}
+.mob__contacts-address svg {
+  width: 13px;
+  height: 16px;
+  margin-top: 5px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.mob__contacts-email {
+  display: flex;
+  gap: 17px;
+  padding: 12px 20px 0 20px;
+  font-size: 13px;
+}
+.mob__contacts-email:hover {
+  color: var(--primary-green-color);
+}
+.mob__contacts-email svg {
+  width: 16px;
+  height: 13px;
+  margin-top: 5px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.mob__social {
+  padding: 16px 0 30px 0;
+}
+.mob__social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 27px 5px 20px;
+  font-size: 13px;
+  line-height: var(--primary-line-height);
+}
+.mob__social-link:hover {
+  color: var(--primary-green-color);
+}
+.mob__social-link svg {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.tabs--active {
+  transform: translateX(-300px);
+}
+
 .footer {
   padding: 30px 0 40px;
   margin: 30px 0 0;
@@ -1087,7 +1292,7 @@ p {
   height: 20px;
   margin: 0 16px 9px 0;
   padding: 0;
-  background: url(./../../images/pay_icons.png) no-repeat;
+  background: url(./../images/pay_icons.png) no-repeat;
 }
 .pay__icon.cash {
   background-position: 0 -1px;
@@ -1147,7 +1352,7 @@ p {
   border-radius: 50%;
   overflow: hidden;
   transition: var(--tertiary-transition-color);
-  background: url(./../../images/social_icons.png) -4px -4px no-repeat;
+  background: url(./../images/social_icons.png) -4px -4px no-repeat;
   font-size: 0;
 }
 .social__icon:hover {
@@ -1185,13 +1390,13 @@ p {
   background-position: center center;
 }
 .banner__slider .swiper-slide:nth-child(1) .banner__slider-item {
-  background-image: url(./../../images/banner/banner_1_bg.webp);
+  background-image: url(./../images/banner/banner_1_bg.webp);
 }
 .banner__slider .swiper-slide:nth-child(2) .banner__slider-item {
-  background-image: url(./../../images/banner/banner_2_bg.webp);
+  background-image: url(./../images/banner/banner_2_bg.webp);
 }
 .banner__slider .swiper-slide:nth-child(3) .banner__slider-item {
-  background-image: url(./../../images/banner/banner_3_bg.webp);
+  background-image: url(./../images/banner/banner_3_bg.webp);
 }
 .banner__slider .swiper-slide:nth-child(3) .banner__slider-title {
   color: var(--primary-white-color);
@@ -1202,7 +1407,7 @@ p {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
 .banner__slider .swiper-slide:nth-child(4) .banner__slider-item {
-  background-image: url(./../../images/banner/banner_4_bg.webp);
+  background-image: url(./../images/banner/banner_4_bg.webp);
 }
 .banner__slider-content {
   display: flex;
