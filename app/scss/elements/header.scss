@@ -1,6 +1,23 @@
 .header {
   border-bottom: var(--primary-border);
 
+  &.fixed {
+
+    .header__right,
+    .header__text {
+      display: none;
+    }
+
+    .header__left {
+      width: fit-content;
+    }
+
+    .header__nav {
+      border-top: 0;
+      width: calc(100% - 190px - 40px);
+    }
+  }
+
   &__container {
     display: flex;
     flex-wrap: wrap;

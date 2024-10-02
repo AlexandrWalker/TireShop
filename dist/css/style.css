@@ -581,6 +581,17 @@ p {
 .header {
   border-bottom: var(--primary-border);
 }
+.header.fixed .header__right,
+.header.fixed .header__text {
+  display: none;
+}
+.header.fixed .header__left {
+  width: fit-content;
+}
+.header.fixed .header__nav {
+  border-top: 0;
+  width: calc(100% - 190px - 40px);
+}
 .header__container {
   display: flex;
   flex-wrap: wrap;
