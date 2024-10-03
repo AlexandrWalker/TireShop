@@ -177,11 +177,66 @@
       function checkScroll(scrollPos, headerH) {
         if (scrollPos > headerH) {
           scrollTop.addClass("show");
+          header.addClass("fixed");
         } else {
           scrollTop.removeClass("show");
+          header.removeClass("fixed");
         }
       }
     });
+
+    // inputmask
+    let inputs = document.querySelectorAll('input[type="tel"]');
+    let im = new Inputmask('+7 (999) 999-99-99');
+    im.mask(inputs);
+
+    // validate
+    const callback = document.querySelector('.callback');
+    if (callback) {
+      var button = document.querySelector('.callback__btn');
+      var required = document.querySelectorAll('.required');
+      button.addEventListener('click', function () {
+        for (var i = 0; i < required.length; i++) {
+          if (required[i].value !== '') {
+            required[i].parentNode.classList.remove('error');
+          } else {
+            required[i].parentNode.classList.add('error');
+          }
+        }
+      })
+    }
+
+    /**
+     * Инициализирует аккордеоны на странице.
+     * Обрабатывает переключение видимости элементов и кнопки закрытия.
+     */
+    (function () {
+      var accBtn = document.querySelectorAll('.accardion__btn');
+      // opened = document.getElementsByClassName('opened');
+
+      Array.from(accBtn).forEach(function (accItem, i, accBtn) {
+        accItem.addEventListener('click', function (e) {
+          // if (opened.length > 0 && opened[0] !== this)
+          //   opened[0].classList.remove('opened');
+          this.parentNode.classList.toggle('opened');
+        });
+      });
+    })();
+
+    // filter dropdown
+    let catalogCounter = document.querySelector('.catalog__counter');
+    if (!catalogCounter) {
+      return;
+    } else {
+      (function () {
+        document.querySelectorAll('.catalog__counter-item').forEach((el) => {
+          el.addEventListener('click', () => {
+            el.classList.toggle('catalog__counter-item--active');
+            el.parentNode.classList.toggle('catalog__counter--active');
+          });
+        });
+      })();
+    }
 
   });
 })();

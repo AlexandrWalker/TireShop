@@ -22,6 +22,11 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    height: 64px;
+  }
+
+  .header.fixed~.main {
+    padding-top: 64px;
   }
 
   .header__container {
@@ -112,6 +117,28 @@
 
   .footer__contacts {
     align-items: center;
+  }
+
+  .contacts__body {
+    flex-direction: column;
+  }
+
+  .contacts__content {
+    width: 100%;
+  }
+
+  .contacts iframe {
+    width: 100%;
+  }
+
+  .callback__textareas,
+  .callback__inputs,
+  .callback__btns {
+    width: 100%;
+  }
+
+  .callback__form {
+    gap: 20px;
   }
 }
 
@@ -232,6 +259,10 @@
 
   .reviews__slider-text {
     text-align: center;
+  }
+
+  .contacts__content {
+    padding: 30px 20px 30px;
   }
 }
 

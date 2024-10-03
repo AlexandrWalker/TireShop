@@ -1,0 +1,166 @@
+<!--=include header.html-->
+<main class="main">
+  <section class="page">
+    <div class="page__container container">
+      <h1 class="page__title">
+        Контакты
+      </h1>
+      <div class="breadcrumb">
+        <a class="breadcrumb__link" href="/">
+          Главная
+        </a>
+        <span>-</span>
+        <p>
+          Контакты
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="contacts__container container">
+      <div class="contacts__body">
+        <div class="contacts__content">
+          <p class="contacts__text">
+            Основной офис компании находится в г. Москва. Обязательно приходите к нам на чашку ароматного кофе.
+            Совместно обсудим ваши проекты и предложим рекомендации!
+          </p>
+          <div class="contacts__items">
+            <div class="contacts__item">
+              <div class="contacts__item-icon">
+                <svg>
+                  <use href="./images/sprite.svg?v7#address" />
+                </svg>
+              </div>
+              <div class="contacts__item-column">
+                <p class="contacts__item-title">
+                  Адрес
+                </p>
+                <p class="contacts__item-text">
+                  Москва, ул. Лермонтова 21, 3 этаж, офис 4
+                </p>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__item-icon">
+                <svg>
+                  <use href="./images/sprite.svg?v7#phone" />
+                </svg>
+              </div>
+              <div class="contacts__item-column">
+                <p class="contacts__item-title">
+                  Телефон
+                </p>
+                <a class="contacts__item-text" href="tel:+70000000010">
+                  +7 (000) 000-00-10
+                </a>
+                <a class="contacts__item-text" href="tel:+70000000011">
+                  +7 (000) 000-00-11
+                </a>
+                <a class="contacts__item-text" href="tel:+70000000012">
+                  +7 (000) 000-00-12
+                </a>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__item-icon">
+                <svg>
+                  <use href="./images/sprite.svg?v7#email" />
+                </svg>
+              </div>
+              <div class="contacts__item-column">
+                <p class="contacts__item-title">
+                  E-mail
+                </p>
+                <a class="contacts__item-link" href="mailto:asd@asd.ru">
+                  asd@asd.ru
+                </a>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__item-icon">
+                <svg>
+                  <use href="./images/sprite.svg?v7#history" />
+                </svg>
+              </div>
+              <div class="contacts__item-column">
+                <p class="contacts__item-title">
+                  Режим работы
+                </p>
+                <p class="contacts__item-text">
+                  Пн. – Пт.: с 9:00 до 18:00
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adfeae639306d2b55c60a9ef3e64e2d43b772f656c61bfab2b52493a9e9eb69bf&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+      </div>
+    </div>
+  </section>
+  <section class="callback">
+    <div class="callback__container container">
+
+      <h2 class="callback__title">Обратная связь</h2>
+
+      <form class="callback__form" action="#" method="get">
+
+        <div class="callback__textareas">
+          <div class="callback__textareas-head">
+            <p class="callback__label-title">Сообщение <span>*</span></p>
+            <p class="callback__label-error">Обязательное поле</p>
+          </div>
+          <textarea class="callback__textarea required" data-sid="POST" required="" name="form_textarea" cols="40"
+            rows="5" aria-required="true"></textarea>
+        </div>
+
+        <div class="callback__inputs">
+          <label class="callback__label" for="name">
+            <div class="callback__label-head">
+              <p class="callback__label-title">Ваше имя <span>*</span></p>
+              <p class="callback__label-error">Обязательное поле</p>
+            </div>
+            <input class="callback__input required" id="name" type="text" data-sid="CLIENT_NAME" required=""
+              name="form_name" value="" aria-required="true" aria-invalid="true">
+          </label>
+
+          <label class="callback__label" for="tel">
+            <div class="callback__label-head">
+              <p class="callback__label-title">Телефон <span>*</span></p>
+              <p class="callback__label-error">Обязательное поле</p>
+            </div>
+            <input class="callback__input required" id="tel" type="tel" data-sid="PHONE" required="" name="form_tel"
+              value="" aria-required="true" aria-invalid="true">
+          </label>
+
+          <label class="callback__label" for="email">
+            <div class="callback__label-head">
+              <p class="callback__label-title">E-mail</p>
+            </div>
+            <input class="callback__input" id="email" type="email" placeholder="mail@domen.com" data-sid="EMAIL"
+              name="form_email" value="">
+          </label>
+        </div>
+
+        <div class="callback__btns">
+          <p class="callback__text">
+            Подтвердите, что вы не робот <span>*</span>
+          </p>
+          <input class="callback__btns-checkbox" id="checkbox" type="checkbox">
+          <label class="callback__btns-label" for="checkbox">
+            Я согласен на <a href="/" target="_blank">обработку персональных данных</a>
+          </label>
+          <p class="callback__text">
+            <span>*</span> — Обязательные поля
+          </p>
+          <button class="callback__btn btn btn-green">
+            Отправить
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </section>
+</main>
+<!--=include footer.html-->

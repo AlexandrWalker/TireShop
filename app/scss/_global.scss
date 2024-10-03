@@ -21,7 +21,7 @@ body {
 
 .scroll-top {
   display: block;
-  background-image: url(./../images/scroll.svg);
+  background-image: url(./../images/icons/scroll_icons.svg);
   background-repeat: no-repeat;
   background-position: center 14px;
   background-color: var(--primary-green-color);
@@ -125,6 +125,12 @@ p {
   font-size: 15px;
 }
 
+svg {
+  fill: var(--primary-black-color);
+  color: var(--primary-black-color);
+  flex-shrink: 0;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -133,12 +139,14 @@ p {
   width: fit-content;
   border: 1px solid var(--primary-green-color);
   border-radius: var(--primary-border-radius);
+  background: transparent;
   font-size: 14px;
   font-weight: 400;
   color: var(--primary-green-color);
   text-decoration: none;
   transition: var(--secondary-transition-color);
   overflow: hidden;
+  cursor: pointer;
 
   &:active {
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
@@ -155,8 +163,8 @@ p {
 
 
     &:hover {
-      background-color: var(--primary-hover-color);
-      border-color: var(--primary-hover-color);
+      background-color: var(--secondary-green-color);
+      border-color: var(--secondary-green-color);
     }
   }
 }
@@ -186,4 +194,92 @@ p {
     animation: shine .5s;
     opacity: 1;
   }
+}
+
+.page {
+  padding: 26px 0 15px;
+  background-color: var(--tertiary-bg-color);
+
+  &__title {
+    line-height: 1;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  color: var(--primary-smooth-color);
+  font-size: 12px;
+
+  &__link {
+    color: var(--primary-smooth-color);
+
+    &:hover {
+      color: var(--primary-green-color);
+    }
+  }
+
+  span {
+    margin: 0 5px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+input[type=checkbox] {
+  display: none;
+
+  &:checked+label::before {
+    font-size: 0;
+    content: ".";
+    display: block;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    z-index: 1;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    border-color: var(--primary-green-color);
+    background: url(./../images/icons/input_icons.svg) -1px 0 no-repeat var(--primary-green-color);
+  }
+
+  &:checked+label::after {
+    z-index: -1;
+  }
+
+  &+label {
+    display: block;
+    position: relative;
+    padding-left: 23px;
+    cursor: pointer;
+
+    &:hover::after {
+      background-color: var(--primary-green-color);
+      border-color: var(--primary-green-color);
+    }
+
+    &::after {
+      font-size: 0;
+      content: ".";
+      display: block;
+      height: 16px;
+      width: 16px;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      z-index: 1;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+  }
+}
+
+input[type=hidden] {
+  display: none;
 }

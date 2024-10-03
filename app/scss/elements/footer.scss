@@ -116,7 +116,7 @@
     height: 20px;
     margin: 0 16px 9px 0;
     padding: 0;
-    background: url(./../images/pay_icons.png) no-repeat;
+    background: url(./../images/icons/pay_icons.png) no-repeat;
 
     &.cash {
       background-position: 0 -1px;
@@ -191,7 +191,7 @@
     border-radius: 50%;
     overflow: hidden;
     transition: var(--tertiary-transition-color);
-    background: url(./../images/social_icons.png) -4px -4px no-repeat;
+    background: url(./../images/icons/social_icons.png) -4px -4px no-repeat;
     font-size: 0;
 
     &:hover {

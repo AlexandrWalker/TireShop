@@ -14,6 +14,8 @@
   --secondary-green-color: #54bd1a;
   --tertiary-green-color: #3e8c12;
 
+  --primary-red-color: #e62222;
+
   --primary-black-color: #222222;
   --secondary-black-color: #333333;
   --tertiary-black-color: #555555;
@@ -26,6 +28,8 @@
   --secondary-smooth-color: #999999;
   --tertiary-smooth-color: #cad2d6;
 
+  --primary-disabled-color: #a5a3a3;
+
   --primary-white-color: #ffffff;
 
   --primary-bg-color: #f6f6f7;
@@ -36,10 +40,12 @@
 
   --primary-border-color: #f0f0f0;
   --secondary-border-color: #eeeeee;
+  --tertiary-border-color: #f3f3f5;
 
   /* borders */
   --primary-border: 1px solid var(--primary-border-color);
   --secondary-border: 1px solid var(--secondary-border-color);
+  --tertiary-border: 1px solid var(--tertiary-border-color);
 
   /* ui */
   --primary-border-radius: 2px;
@@ -75,5 +81,24 @@
 @keyframes shine {
   100% {
     left: 125%;
+  }
+}
+
+@keyframes headerFixed {
+  0% {
+    transform: translateY(-64px);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  66% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 }
