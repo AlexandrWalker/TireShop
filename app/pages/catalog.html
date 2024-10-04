@@ -412,19 +412,19 @@
       <div class="catalog__content">
         <div class="catalog__head">
           <div class="sort__filter">
-            <a class="sort__filter-btn active" href="/" rel="nofollow">
+            <a class="sort__filter-btn sort__filter-btn--active" href="#!" rel="nofollow">
               По популярности
               <svg>
                 <use href="./images/sprite.svg?v7#arrow-down" />
               </svg>
             </a>
-            <a class="sort__filter-btn" href="/" rel="nofollow">
+            <a class="sort__filter-btn" href="#!" rel="nofollow">
               По алфавиту
               <svg>
                 <use href="./images/sprite.svg?v7#arrow-down" />
               </svg>
             </a>
-            <a class="sort__filter-btn" href="/" rel="nofollow">
+            <a class="sort__filter-btn" href="#!" rel="nofollow">
               По цене
               <svg>
                 <use href="./images/sprite.svg?v7#arrow-down" />
@@ -432,20 +432,36 @@
             </a>
           </div>
           <div class="sort__display">
-            <a class="sort__display-btn block active" href="/" rel="nofollow">
+            <a class="sort__display-btn block active" href="#!" rel="nofollow">
               <i class="sort__display-icon" title="плиткой"></i>
             </a>
-            <a class="sort__display-btn list" href="/" rel="nofollow">
+            <a class="sort__display-btn list" href="#!" rel="nofollow">
               <i class="sort__display-icon" title="списком"></i>
             </a>
-            <a class="sort__display-btn table" href="/" rel="nofollow">
+            <a class="sort__display-btn table" href="#!" rel="nofollow">
               <i class="sort__display-icon" title="таблицей"></i>
             </a>
           </div>
         </div>
         <div class="catalog__body">
-          <div class="catalog__items">
+          <div class="catalog__items block">
             <div class="catalog__item">
+              <div class="catalog__stickers">
+                <div class="catalog__stickers-item aktsiya">Акция</div>
+                <div class="catalog__stickers-item novinka">Новинка</div>
+                <div class="catalog__stickers-item sovetuem">Советуем</div>
+                <div class="catalog__stickers-item khit">Хит</div>
+              </div>
+              <div class="catalog__icons">
+                <span class="catalog__icons-item wish">
+                  <i></i>
+                  Отложить
+                </span>
+                <span class="catalog__icons-item compare">
+                  <i></i>
+                  Сравнить
+                </span>
+              </div>
               <a class="catalog__item-img shine" href="/">
                 <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
               </a>
@@ -474,15 +490,59 @@
               <div class="catalog__btns">
                 <div class="catalog__counter">
                   <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
+                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
                   <span class="catalog__counter-item plus">+</span>
                 </div>
                 <button class="catalog__btn btn btn-green">
                   В корзину
                 </button>
+              </div>
+              <div class="catalog__item-desc">
+                <table class="catalog__table">
+                  <tbody>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Ширина диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>7.5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Посадочный диаметр диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>17</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Межболтовое расстояние</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>114.3</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <div class="catalog__item">
+              <div class="catalog__stickers">
+                <div class="catalog__stickers-item aktsiya">Акция</div>
+                <div class="catalog__stickers-item novinka">Новинка</div>
+                <div class="catalog__stickers-item sovetuem">Советуем</div>
+                <div class="catalog__stickers-item khit">Хит</div>
+              </div>
+              <div class="catalog__icons">
+                <span class="catalog__icons-item wish">
+                  <i></i>
+                </span>
+                <span class="catalog__icons-item compare">
+                  <i></i>
+                </span>
+              </div>
               <a class="catalog__item-img shine" href="/">
                 <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
               </a>
@@ -511,15 +571,59 @@
               <div class="catalog__btns">
                 <div class="catalog__counter">
                   <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
+                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
                   <span class="catalog__counter-item plus">+</span>
                 </div>
                 <button class="catalog__btn btn btn-green">
                   В корзину
                 </button>
+              </div>
+              <div class="catalog__item-desc">
+                <table class="catalog__table">
+                  <tbody>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Ширина диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>7.5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Посадочный диаметр диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>17</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Межболтовое расстояние</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>114.3</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <div class="catalog__item">
+              <div class="catalog__stickers">
+                <div class="catalog__stickers-item aktsiya">Акция</div>
+                <div class="catalog__stickers-item novinka">Новинка</div>
+                <div class="catalog__stickers-item sovetuem">Советуем</div>
+                <div class="catalog__stickers-item khit">Хит</div>
+              </div>
+              <div class="catalog__icons">
+                <span class="catalog__icons-item wish">
+                  <i></i>
+                </span>
+                <span class="catalog__icons-item compare">
+                  <i></i>
+                </span>
+              </div>
               <a class="catalog__item-img shine" href="/">
                 <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
               </a>
@@ -548,15 +652,59 @@
               <div class="catalog__btns">
                 <div class="catalog__counter">
                   <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
+                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
                   <span class="catalog__counter-item plus">+</span>
                 </div>
                 <button class="catalog__btn btn btn-green">
                   В корзину
                 </button>
+              </div>
+              <div class="catalog__item-desc">
+                <table class="catalog__table">
+                  <tbody>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Ширина диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>7.5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Посадочный диаметр диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>17</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Межболтовое расстояние</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>114.3</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <div class="catalog__item">
+              <div class="catalog__stickers">
+                <div class="catalog__stickers-item aktsiya">Акция</div>
+                <div class="catalog__stickers-item novinka">Новинка</div>
+                <div class="catalog__stickers-item sovetuem">Советуем</div>
+                <div class="catalog__stickers-item khit">Хит</div>
+              </div>
+              <div class="catalog__icons">
+                <span class="catalog__icons-item wish">
+                  <i></i>
+                </span>
+                <span class="catalog__icons-item compare">
+                  <i></i>
+                </span>
+              </div>
               <a class="catalog__item-img shine" href="/">
                 <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
               </a>
@@ -585,15 +733,59 @@
               <div class="catalog__btns">
                 <div class="catalog__counter">
                   <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
+                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
                   <span class="catalog__counter-item plus">+</span>
                 </div>
                 <button class="catalog__btn btn btn-green">
                   В корзину
                 </button>
+              </div>
+              <div class="catalog__item-desc">
+                <table class="catalog__table">
+                  <tbody>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Ширина диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>7.5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Посадочный диаметр диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>17</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Межболтовое расстояние</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>114.3</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <div class="catalog__item">
+              <div class="catalog__stickers">
+                <div class="catalog__stickers-item aktsiya">Акция</div>
+                <div class="catalog__stickers-item novinka">Новинка</div>
+                <div class="catalog__stickers-item sovetuem">Советуем</div>
+                <div class="catalog__stickers-item khit">Хит</div>
+              </div>
+              <div class="catalog__icons">
+                <span class="catalog__icons-item wish">
+                  <i></i>
+                </span>
+                <span class="catalog__icons-item compare">
+                  <i></i>
+                </span>
+              </div>
               <a class="catalog__item-img shine" href="/">
                 <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
               </a>
@@ -622,15 +814,59 @@
               <div class="catalog__btns">
                 <div class="catalog__counter">
                   <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
+                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
                   <span class="catalog__counter-item plus">+</span>
                 </div>
                 <button class="catalog__btn btn btn-green">
                   В корзину
                 </button>
+              </div>
+              <div class="catalog__item-desc">
+                <table class="catalog__table">
+                  <tbody>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Ширина диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>7.5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Посадочный диаметр диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>17</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Межболтовое расстояние</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>114.3</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <div class="catalog__item">
+              <div class="catalog__stickers">
+                <div class="catalog__stickers-item aktsiya">Акция</div>
+                <div class="catalog__stickers-item novinka">Новинка</div>
+                <div class="catalog__stickers-item sovetuem">Советуем</div>
+                <div class="catalog__stickers-item khit">Хит</div>
+              </div>
+              <div class="catalog__icons">
+                <span class="catalog__icons-item wish">
+                  <i></i>
+                </span>
+                <span class="catalog__icons-item compare">
+                  <i></i>
+                </span>
+              </div>
               <a class="catalog__item-img shine" href="/">
                 <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
               </a>
@@ -659,15 +895,59 @@
               <div class="catalog__btns">
                 <div class="catalog__counter">
                   <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
+                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
                   <span class="catalog__counter-item plus">+</span>
                 </div>
                 <button class="catalog__btn btn btn-green">
                   В корзину
                 </button>
+              </div>
+              <div class="catalog__item-desc">
+                <table class="catalog__table">
+                  <tbody>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Ширина диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>7.5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Посадочный диаметр диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>17</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Межболтовое расстояние</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>114.3</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <div class="catalog__item">
+              <div class="catalog__stickers">
+                <div class="catalog__stickers-item aktsiya">Акция</div>
+                <div class="catalog__stickers-item novinka">Новинка</div>
+                <div class="catalog__stickers-item sovetuem">Советуем</div>
+                <div class="catalog__stickers-item khit">Хит</div>
+              </div>
+              <div class="catalog__icons">
+                <span class="catalog__icons-item wish">
+                  <i></i>
+                </span>
+                <span class="catalog__icons-item compare">
+                  <i></i>
+                </span>
+              </div>
               <a class="catalog__item-img shine" href="/">
                 <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
               </a>
@@ -696,15 +976,59 @@
               <div class="catalog__btns">
                 <div class="catalog__counter">
                   <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
+                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
                   <span class="catalog__counter-item plus">+</span>
                 </div>
                 <button class="catalog__btn btn btn-green">
                   В корзину
                 </button>
+              </div>
+              <div class="catalog__item-desc">
+                <table class="catalog__table">
+                  <tbody>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Ширина диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>7.5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Посадочный диаметр диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>17</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Межболтовое расстояние</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>114.3</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <div class="catalog__item">
+              <div class="catalog__stickers">
+                <div class="catalog__stickers-item aktsiya">Акция</div>
+                <div class="catalog__stickers-item novinka">Новинка</div>
+                <div class="catalog__stickers-item sovetuem">Советуем</div>
+                <div class="catalog__stickers-item khit">Хит</div>
+              </div>
+              <div class="catalog__icons">
+                <span class="catalog__icons-item wish">
+                  <i></i>
+                </span>
+                <span class="catalog__icons-item compare">
+                  <i></i>
+                </span>
+              </div>
               <a class="catalog__item-img shine" href="/">
                 <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
               </a>
@@ -733,15 +1057,59 @@
               <div class="catalog__btns">
                 <div class="catalog__counter">
                   <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
+                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
                   <span class="catalog__counter-item plus">+</span>
                 </div>
                 <button class="catalog__btn btn btn-green">
                   В корзину
                 </button>
+              </div>
+              <div class="catalog__item-desc">
+                <table class="catalog__table">
+                  <tbody>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Ширина диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>7.5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Посадочный диаметр диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>17</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Межболтовое расстояние</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>114.3</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <div class="catalog__item">
+              <div class="catalog__stickers">
+                <div class="catalog__stickers-item aktsiya">Акция</div>
+                <div class="catalog__stickers-item novinka">Новинка</div>
+                <div class="catalog__stickers-item sovetuem">Советуем</div>
+                <div class="catalog__stickers-item khit">Хит</div>
+              </div>
+              <div class="catalog__icons">
+                <span class="catalog__icons-item wish">
+                  <i></i>
+                </span>
+                <span class="catalog__icons-item compare">
+                  <i></i>
+                </span>
+              </div>
               <a class="catalog__item-img shine" href="/">
                 <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
               </a>
@@ -770,15 +1138,59 @@
               <div class="catalog__btns">
                 <div class="catalog__counter">
                   <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
+                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
                   <span class="catalog__counter-item plus">+</span>
                 </div>
                 <button class="catalog__btn btn btn-green">
                   В корзину
                 </button>
+              </div>
+              <div class="catalog__item-desc">
+                <table class="catalog__table">
+                  <tbody>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Ширина диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>7.5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Посадочный диаметр диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>17</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Межболтовое расстояние</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>114.3</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <div class="catalog__item">
+              <div class="catalog__stickers">
+                <div class="catalog__stickers-item aktsiya">Акция</div>
+                <div class="catalog__stickers-item novinka">Новинка</div>
+                <div class="catalog__stickers-item sovetuem">Советуем</div>
+                <div class="catalog__stickers-item khit">Хит</div>
+              </div>
+              <div class="catalog__icons">
+                <span class="catalog__icons-item wish">
+                  <i></i>
+                </span>
+                <span class="catalog__icons-item compare">
+                  <i></i>
+                </span>
+              </div>
               <a class="catalog__item-img shine" href="/">
                 <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
               </a>
@@ -807,15 +1219,59 @@
               <div class="catalog__btns">
                 <div class="catalog__counter">
                   <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
+                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
                   <span class="catalog__counter-item plus">+</span>
                 </div>
                 <button class="catalog__btn btn btn-green">
                   В корзину
                 </button>
+              </div>
+              <div class="catalog__item-desc">
+                <table class="catalog__table">
+                  <tbody>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Ширина диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>7.5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Посадочный диаметр диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>17</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Межболтовое расстояние</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>114.3</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <div class="catalog__item">
+              <div class="catalog__stickers">
+                <div class="catalog__stickers-item aktsiya">Акция</div>
+                <div class="catalog__stickers-item novinka">Новинка</div>
+                <div class="catalog__stickers-item sovetuem">Советуем</div>
+                <div class="catalog__stickers-item khit">Хит</div>
+              </div>
+              <div class="catalog__icons">
+                <span class="catalog__icons-item wish">
+                  <i></i>
+                </span>
+                <span class="catalog__icons-item compare">
+                  <i></i>
+                </span>
+              </div>
               <a class="catalog__item-img shine" href="/">
                 <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
               </a>
@@ -844,15 +1300,59 @@
               <div class="catalog__btns">
                 <div class="catalog__counter">
                   <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
+                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
                   <span class="catalog__counter-item plus">+</span>
                 </div>
                 <button class="catalog__btn btn btn-green">
                   В корзину
                 </button>
+              </div>
+              <div class="catalog__item-desc">
+                <table class="catalog__table">
+                  <tbody>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Ширина диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>7.5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Посадочный диаметр диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>17</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Межболтовое расстояние</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>114.3</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <div class="catalog__item">
+              <div class="catalog__stickers">
+                <div class="catalog__stickers-item aktsiya">Акция</div>
+                <div class="catalog__stickers-item novinka">Новинка</div>
+                <div class="catalog__stickers-item sovetuem">Советуем</div>
+                <div class="catalog__stickers-item khit">Хит</div>
+              </div>
+              <div class="catalog__icons">
+                <span class="catalog__icons-item wish">
+                  <i></i>
+                </span>
+                <span class="catalog__icons-item compare">
+                  <i></i>
+                </span>
+              </div>
               <a class="catalog__item-img shine" href="/">
                 <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
               </a>
@@ -881,160 +1381,42 @@
               <div class="catalog__btns">
                 <div class="catalog__counter">
                   <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
+                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
                   <span class="catalog__counter-item plus">+</span>
                 </div>
                 <button class="catalog__btn btn btn-green">
                   В корзину
                 </button>
               </div>
-            </div>
-            <div class="catalog__item">
-              <a class="catalog__item-img shine" href="/">
-                <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <a class="catalog__item-img shine" href="/">
-                <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <a class="catalog__item-img shine" href="/">
-                <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <a class="catalog__item-img shine" href="/">
-                <img src="./../images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-text" type="text" name="quantity" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
+              <div class="catalog__item-desc">
+                <table class="catalog__table">
+                  <tbody>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Ширина диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>7.5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Посадочный диаметр диска</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>17</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="catalog__table-text">
+                        <span>Межболтовое расстояние</span>
+                      </td>
+                      <td class="catalog__table-count">
+                        <span>114.3</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>

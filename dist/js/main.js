@@ -228,15 +228,90 @@
     if (!catalogCounter) {
       return;
     } else {
-      (function () {
-        document.querySelectorAll('.catalog__counter-item').forEach((el) => {
-          el.addEventListener('click', () => {
-            el.classList.toggle('catalog__counter-item--active');
-            el.parentNode.classList.toggle('catalog__counter--active');
-          });
+      // Убавляем кол-во по клику
+      document.querySelectorAll('.catalog__counter .minus').forEach(function (element) {
+        element.addEventListener('click', function (event) {
+          event.preventDefault();
+          let input = this.parentElement.querySelector('.catalog__counter-quantity');
+          let count = parseInt(input.value) - 1;
+          count = count < 1 ? 1 : count;
+          input.value = count;
         });
-      })();
+      });
+
+      // Прибавляем кол-во по клику
+      document.querySelectorAll('.catalog__counter .plus').forEach(function (element) {
+        element.addEventListener('click', function (event) {
+          event.preventDefault();
+          let input = this.parentElement.querySelector('.catalog__counter-quantity');
+          let count = parseInt(input.value) + 1;
+          count = count > parseInt(input.dataset.maxCount) ? parseInt(input.dataset.maxCount) : count;
+          input.value = parseInt(count);
+        });
+      });
+
+      // Убираем все лишнее и невозможное при изменении поля
+      document.querySelectorAll('.catalog__counter .catalog__counter-quantity').forEach(function (element) {
+        element.addEventListener("change", function (event) {
+          event.preventDefault();
+          if (this.value.match(/[^0-9]/g)) {
+            this.value = this.value.replace(/[^0-9]/g, '');
+          }
+          if (this.value == "") {
+            this.value = 1;
+          }
+          if (this.value > parseInt(this.dataset.maxCount)) {
+            this.value = parseInt(this.dataset.maxCount);
+          }
+        });
+      });
     }
+
+    /* sorting */
+    (function () {
+      var sortBtn = document.querySelectorAll('.sort__filter-btn');
+      sortBtnActive = document.getElementsByClassName('sort__filter-btn--active');
+
+      Array.from(sortBtn).forEach(function (sortItem, i, sortBtn) {
+        sortItem.addEventListener('click', function (e) {
+          if (sortBtnActive.length > 0 && sortBtnActive[0] !== this)
+            sortBtnActive[0].classList.remove('sort__filter-btn--active');
+
+          this.classList.add('sort__filter-btn--active');
+        });
+      });
+    })();
+    (function () {
+      var sortUp = document.querySelectorAll('.sort__filter-btn');
+      sortUpBtn = document.getElementsByClassName('up');
+
+      Array.from(sortUp).forEach(function (sortUpItem, i, sortUp) {
+        sortUpItem.addEventListener('click', function (e) {
+          if (sortUpBtn.length > 0 && sortUpBtn[0] !== this)
+            sortUpBtn[0].classList.remove('up');
+
+          this.classList.toggle('up');
+        });
+      });
+    })();
+
+    // catalog icons
+    (function () {
+      var iconsItem = document.querySelectorAll('.catalog__icons-item');
+      iconsActive = document.getElementsByClassName('catalog__icons-item--active');
+
+      Array.from(iconsItem).forEach(function (iItem, i, iconsItem) {
+        iItem.addEventListener('click', function (e) {
+          this.classList.toggle('catalog__icons-item--active');
+
+          // if (iconsActive.length > 0 && iconsActive[0] !== this) {
+          //   iconsActive[0].parentNode.classList.add('catalog__icons--active');
+          // } else {
+          //   iconsActive[0].parentNode.classList.remove('catalog__icons--active');
+          // }
+        });
+      });
+    })();
 
   });
 })();
