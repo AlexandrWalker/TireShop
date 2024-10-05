@@ -229,6 +229,81 @@ svg {
   }
 }
 
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 40px;
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 0 5px 5px 0;
+    border-radius: var(--primary-border-radius);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--primary-black-color);
+    text-align: center;
+    text-decoration: none;
+    transition: var(--tertiary-transition-color);
+
+    &:hover {
+      color: var(--primary-green-color);
+    }
+
+    &--active {
+      background-color: var(--primary-green-color);
+      color: var(--primary-white-color);
+    }
+
+    &--all {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--primary-green-color);
+    }
+  }
+
+  &__arrow {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    margin: 0 5px 5px 0;
+    background: url(./../images/icons/arrows_icons.svg) no-repeat;
+    transition: none;
+
+    &.prev {
+      background-position: 4px -20px;
+
+      &:hover {
+        background-position: 4px 4px;
+      }
+    }
+
+    &.next {
+      background-position: -72px -20px;
+
+      &:hover {
+        background-position: -71px 4px;
+      }
+    }
+
+    &.disabled {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+
 input[type=checkbox] {
   display: none;
 

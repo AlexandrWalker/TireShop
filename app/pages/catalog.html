@@ -412,20 +412,23 @@
       <div class="catalog__content">
         <div class="catalog__head">
           <div class="sort__filter">
-            <a class="sort__filter-btn sort__filter-btn--active" href="#!" rel="nofollow">
-              По популярности
+            <a class="sort__filter-btn sort__popular sort__filter-btn--active" href="#!" rel="nofollow">
+              <i class="sort__filter-icon"></i>
+              <span class="sort__filter-text">По популярности</span>
               <svg>
                 <use href="./images/sprite.svg?v7#arrow-down" />
               </svg>
             </a>
-            <a class="sort__filter-btn" href="#!" rel="nofollow">
-              По алфавиту
+            <a class="sort__filter-btn sort__name" href="#!" rel="nofollow">
+              <i class="sort__filter-icon"></i>
+              <span class="sort__filter-text">По алфавиту</span>
               <svg>
                 <use href="./images/sprite.svg?v7#arrow-down" />
               </svg>
             </a>
-            <a class="sort__filter-btn" href="#!" rel="nofollow">
-              По цене
+            <a class="sort__filter-btn sort__price" href="#!" rel="nofollow">
+              <i class="sort__filter-icon"></i>
+              <span class="sort__filter-text">По цене</span>
               <svg>
                 <use href="./images/sprite.svg?v7#arrow-down" />
               </svg>
@@ -444,7 +447,7 @@
           </div>
         </div>
         <div class="catalog__body">
-          <div class="catalog__items block">
+          <div class="catalog__items list">
             <div class="catalog__item">
               <div class="catalog__stickers">
                 <div class="catalog__stickers-item aktsiya">Акция</div>
@@ -1420,6 +1423,20 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="pagination">
+          <a class="pagination__arrow prev disabled" href="/">
+          </a>
+          <div class="pagination__items">
+            <a class="pagination__item pagination__item--active" href="/">1</a>
+            <a class="pagination__item" href="/">2</a>
+            <a class="pagination__item" href="/">3</a>
+            <a class="pagination__item" href="/">...</a>
+            <a class="pagination__item" href="/">93</a>
+            <a class="pagination__item pagination__item--all" href="/">Все</a>
+          </div>
+          <a class="pagination__arrow next" href="/">
+          </a>
         </div>
       </div>
     </div>
