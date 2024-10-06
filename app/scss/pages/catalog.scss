@@ -157,6 +157,8 @@
         &__stock {
           grid-column: 3/4;
           grid-row: 2/3;
+          display: flex;
+          align-items: center;
         }
 
         &__icons {
@@ -252,6 +254,7 @@
       font-weight: 700;
       line-height: 15px;
       color: var(--primary-color);
+      white-space: nowrap;
     }
 
     &-desc {
@@ -698,6 +701,10 @@
     &.opened {
       grid-template-rows: 1fr auto;
       overflow: visible;
+
+      .filter__head svg {
+        transform: rotate(180deg);
+      }
     }
   }
 
@@ -864,6 +871,10 @@
       .filter__item-body {
         visibility: visible;
         opacity: 1;
+      }
+
+      .filter__item-head svg {
+        transform: rotate(180deg);
       }
     }
   }
