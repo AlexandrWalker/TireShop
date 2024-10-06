@@ -282,7 +282,7 @@
     flex-direction: column;
     width: calc(20% - 24px);
     background-color: var(--primary-white-color);
-    transition: var(--tertiary-transition-color);
+    transition: var(--tertiary-transition);
     box-shadow: 0 0 1px #bfbfbf inset;
 
     &:hover {

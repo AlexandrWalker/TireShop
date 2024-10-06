@@ -86,7 +86,7 @@
   &__callback {
     font-size: 11.2px;
     color: var(--primary-green-color);
-    transition: var(--primary-transition-color);
+    transition: var(--primary-transition);
 
     &:hover {
       color: var(--primary-green-color);
@@ -190,7 +190,7 @@
     height: 40px;
     border-radius: 50%;
     overflow: hidden;
-    transition: var(--tertiary-transition-color);
+    transition: var(--tertiary-transition);
     background: url(./../images/icons/social_icons.png) -4px -4px no-repeat;
     font-size: 0;
 

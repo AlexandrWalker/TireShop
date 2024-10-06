@@ -16,6 +16,8 @@
 
   --primary-red-color: #e62222;
 
+  --primary-stock-black-color: #000000;
+
   --primary-black-color: #222222;
   --secondary-black-color: #333333;
   --tertiary-black-color: #555555;
@@ -29,6 +31,7 @@
   --tertiary-smooth-color: #cad2d6;
 
   --primary-disabled-color: #a5a3a3;
+  --secondary-disabled-color: #bababa;
 
   --primary-white-color: #ffffff;
   --secondary-white-color: #e3e3e3;
@@ -54,9 +57,9 @@
   --secondary-box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
 
   /* transition */
-  --primary-transition-color: color ease-out 70ms;
-  --secondary-transition-color: all ease .3s;
-  --tertiary-transition-color: all .3s ease;
+  --primary-transition: color ease-out 70ms;
+  --secondary-transition: all ease .3s;
+  --tertiary-transition: all .3s ease;
 
   /* box-shadow */
   --primary-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);

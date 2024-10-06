@@ -4353,7 +4353,7 @@
     <div class="catalog__container container">
       <div class="sidebar">
         <div class="filter">
-          <form action="#" class="filter__form">
+          <form action="#" class="filter__form" method="get">
             <div class="filter__wrap cars">
               <div class="filter__head accardion__btn">
                 Фильтр по автомобилю
@@ -4363,196 +4363,211 @@
               </div>
               <div class="filter__body">
                 <input type="hidden">
-                <div class="filter__item cars__mark">
-                  <label class="filter__label" for="mark">Марка</label>
-                  <select class="filter__select" id="mark" name="cars_mark">
-                    <option value="" selected="selected">—</option>
-                    <option value="Acura">Acura</option>
-                    <option value="Alfa Romeo">Alfa Romeo</option>
-                    <option value="Alpine">Alpine</option>
-                    <option value="ARO">ARO</option>
-                    <option value="Aston Martin">Aston Martin</option>
-                    <option value="Audi">Audi</option>
-                    <option value="Bentley">Bentley</option>
-                    <option value="BMW">BMW</option>
-                    <option value="BMW Alpina">BMW Alpina</option>
-                    <option value="Brilliance">Brilliance</option>
-                    <option value="Bugatti">Bugatti</option>
-                    <option value="Buick">Buick</option>
-                    <option value="BYD">BYD</option>
-                    <option value="Cadillac">Cadillac</option>
-                    <option value="Changan">Changan</option>
-                    <option value="Chery">Chery</option>
-                    <option value="Chevrolet">Chevrolet</option>
-                    <option value="Chrysler">Chrysler</option>
-                    <option value="Citroen">Citroen</option>
-                    <option value="Dacia">Dacia</option>
-                    <option value="Daewoo">Daewoo</option>
-                    <option value="Daihatsu">Daihatsu</option>
-                    <option value="Datsun">Datsun</option>
-                    <option value="Dodge">Dodge</option>
-                    <option value="Dongfeng">Dongfeng</option>
-                    <option value="DS">DS</option>
-                    <option value="Eagle">Eagle</option>
-                    <option value="FAW">FAW</option>
-                    <option value="FAW Besturn">FAW Besturn</option>
-                    <option value="Ferrari">Ferrari</option>
-                    <option value="Fiat">Fiat</option>
-                    <option value="Fisker">Fisker</option>
-                    <option value="Force">Force</option>
-                    <option value="Ford">Ford</option>
-                    <option value="Geely">Geely</option>
-                    <option value="GEO">GEO</option>
-                    <option value="GMC">GMC</option>
-                    <option value="Great Wall">Great Wall</option>
-                    <option value="Haval">Haval</option>
-                    <option value="Hindustan">Hindustan</option>
-                    <option value="Holden">Holden</option>
-                    <option value="Honda">Honda</option>
-                    <option value="Hummer">Hummer</option>
-                    <option value="Hyundai">Hyundai</option>
-                    <option value="Infiniti">Infiniti</option>
-                    <option value="Isuzu">Isuzu</option>
-                    <option value="Iveco">Iveco</option>
-                    <option value="JAC">JAC</option>
-                    <option value="Jaguar">Jaguar</option>
-                    <option value="Jeep">Jeep</option>
-                    <option value="Jinbei">Jinbei</option>
-                    <option value="Kia">Kia</option>
-                    <option value="LADA">LADA</option>
-                    <option value="Lamborghini">Lamborghini</option>
-                    <option value="Lancia">Lancia</option>
-                    <option value="Land Rover">Land Rover</option>
-                    <option value="Lexus">Lexus</option>
-                    <option value="Lifan">Lifan</option>
-                    <option value="Lincoln">Lincoln</option>
-                    <option value="Mahindra">Mahindra</option>
-                    <option value="Maruti">Maruti</option>
-                    <option value="Maserati">Maserati</option>
-                    <option value="Mazda">Mazda</option>
-                    <option value="Mercedes-Benz">Mercedes-Benz</option>
-                    <option value="Mercury">Mercury</option>
-                    <option value="MG">MG</option>
-                    <option value="MINI">MINI</option>
-                    <option value="Mitsubishi">Mitsubishi</option>
-                    <option value="Mosler">Mosler</option>
-                    <option value="Nissan">Nissan</option>
-                    <option value="Oldsmobile">Oldsmobile</option>
-                    <option value="Opel">Opel</option>
-                    <option value="Panoz">Panoz</option>
-                    <option value="Perodua">Perodua</option>
-                    <option value="Peugeot">Peugeot</option>
-                    <option value="Plymouth">Plymouth</option>
-                    <option value="Pontiac">Pontiac</option>
-                    <option value="Porsche">Porsche</option>
-                    <option value="Proton">Proton</option>
-                    <option value="Ram">Ram</option>
-                    <option value="Ravon">Ravon</option>
-                    <option value="Renault">Renault</option>
-                    <option value="Renault Samsung">Renault Samsung</option>
-                    <option value="Roewe">Roewe</option>
-                    <option value="Rover">Rover</option>
-                    <option value="Saab">Saab</option>
-                    <option value="Saturn">Saturn</option>
-                    <option value="Scion">Scion</option>
-                    <option value="Seat">Seat</option>
-                    <option value="Skoda">Skoda</option>
-                    <option value="Smart">Smart</option>
-                    <option value="SsangYong">SsangYong</option>
-                    <option value="Subaru">Subaru</option>
-                    <option value="Suzuki">Suzuki</option>
-                    <option value="Tata">Tata</option>
-                    <option value="Tesla">Tesla</option>
-                    <option value="Toyota">Toyota</option>
-                    <option value="Vauxhall">Vauxhall</option>
-                    <option value="VAZ">VAZ</option>
-                    <option value="Venucia">Venucia</option>
-                    <option value="Volkswagen">Volkswagen</option>
-                    <option value="Volvo">Volvo</option>
-                    <option value="Vortex">Vortex</option>
-                    <option value="ZAZ">ZAZ</option>
-                    <option value="ГАЗ">ГАЗ</option>
-                    <option value="ТагАЗ">ТагАЗ</option>
-                    <option value="УАЗ">УАЗ</option>
-                  </select>
+                <div class="filter__item cars cars__mark">
+                  <label class="filter__label">Марка</label>
+                  <div class="select">
+                    <button class="select__button" type="button" name="cars_mark" value="none">
+                      —
+                    </button>
+                    <ul class="select__list">
+                      <li class="select__list-item select__list-item--first" data-value="none">—</li>
+                      <li class="select__list-item" data-value="Acura">Acura</li>
+                      <li class="select__list-item" data-value="Alfa Romeo">Alfa Romeo</li>
+                      <li class="select__list-item" data-value="Alpine">Alpine</li>
+                      <li class="select__list-item" data-value="ARO">ARO</li>
+                      <li class="select__list-item" data-value="Aston Martin">Aston Martin</li>
+                      <li class="select__list-item" data-value="Audi">Audi</li>
+                      <li class="select__list-item" data-value="Bentley">Bentley</li>
+                      <li class="select__list-item" data-value="BMW">BMW</li>
+                      <li class="select__list-item" data-value="BMW Alpina">BMW Alpina</li>
+                      <li class="select__list-item" data-value="Brilliance">Brilliance</li>
+                      <li class="select__list-item" data-value="Bugatti">Bugatti</li>
+                      <li class="select__list-item" data-value="Buick">Buick</li>
+                      <li class="select__list-item" data-value="BYD">BYD</li>
+                      <li class="select__list-item" data-value="Cadillac">Cadillac</li>
+                      <li class="select__list-item" data-value="Changan">Changan</li>
+                      <li class="select__list-item" data-value="Chery">Chery</li>
+                      <li class="select__list-item" data-value="Chevrolet">Chevrolet</li>
+                      <li class="select__list-item" data-value="Chrysler">Chrysler</li>
+                      <li class="select__list-item" data-value="Citroen">Citroen</li>
+                      <li class="select__list-item" data-value="Dacia">Dacia</li>
+                      <li class="select__list-item" data-value="Daewoo">Daewoo</li>
+                      <li class="select__list-item" data-value="Daihatsu">Daihatsu</li>
+                      <li class="select__list-item" data-value="Datsun">Datsun</li>
+                      <li class="select__list-item" data-value="Dodge">Dodge</li>
+                      <li class="select__list-item" data-value="Dongfeng">Dongfeng</li>
+                      <li class="select__list-item" data-value="DS">DS</li>
+                      <li class="select__list-item" data-value="Eagle">Eagle</li>
+                      <li class="select__list-item" data-value="FAW">FAW</li>
+                      <li class="select__list-item" data-value="FAW Besturn">FAW Besturn</li>
+                      <li class="select__list-item" data-value="Ferrari">Ferrari</li>
+                      <li class="select__list-item" data-value="Fiat">Fiat</li>
+                      <li class="select__list-item" data-value="Fisker">Fisker</li>
+                      <li class="select__list-item" data-value="Force">Force</li>
+                      <li class="select__list-item" data-value="Ford">Ford</li>
+                      <li class="select__list-item" data-value="Geely">Geely</li>
+                      <li class="select__list-item" data-value="GEO">GEO</li>
+                      <li class="select__list-item" data-value="GMC">GMC</li>
+                      <li class="select__list-item" data-value="Great Wall">Great Wall</li>
+                      <li class="select__list-item" data-value="Haval">Haval</li>
+                      <li class="select__list-item" data-value="Hindustan">Hindustan</li>
+                      <li class="select__list-item" data-value="Holden">Holden</li>
+                      <li class="select__list-item" data-value="Honda">Honda</li>
+                      <li class="select__list-item" data-value="Hummer">Hummer</li>
+                      <li class="select__list-item" data-value="Hyundai">Hyundai</li>
+                      <li class="select__list-item" data-value="Infiniti">Infiniti</li>
+                      <li class="select__list-item" data-value="Isuzu">Isuzu</li>
+                      <li class="select__list-item" data-value="Iveco">Iveco</li>
+                      <li class="select__list-item" data-value="JAC">JAC</li>
+                      <li class="select__list-item" data-value="Jaguar">Jaguar</li>
+                      <li class="select__list-item" data-value="Jeep">Jeep</li>
+                      <li class="select__list-item" data-value="Jinbei">Jinbei</li>
+                      <li class="select__list-item" data-value="Kia">Kia</li>
+                      <li class="select__list-item" data-value="LADA">LADA</li>
+                      <li class="select__list-item" data-value="Lamborghini">Lamborghini</li>
+                      <li class="select__list-item" data-value="Lancia">Lancia</li>
+                      <li class="select__list-item" data-value="Land Rover">Land Rover</li>
+                      <li class="select__list-item" data-value="Lexus">Lexus</li>
+                      <li class="select__list-item" data-value="Lifan">Lifan</li>
+                      <li class="select__list-item" data-value="Lincoln">Lincoln</li>
+                      <li class="select__list-item" data-value="Mahindra">Mahindra</li>
+                      <li class="select__list-item" data-value="Maruti">Maruti</li>
+                      <li class="select__list-item" data-value="Maserati">Maserati</li>
+                      <li class="select__list-item" data-value="Mazda">Mazda</li>
+                      <li class="select__list-item" data-value="Mercedes-Benz">Mercedes-Benz</li>
+                      <li class="select__list-item" data-value="Mercury">Mercury</li>
+                      <li class="select__list-item" data-value="MG">MG</li>
+                      <li class="select__list-item" data-value="MINI">MINI</li>
+                      <li class="select__list-item" data-value="Mitsubishi">Mitsubishi</li>
+                      <li class="select__list-item" data-value="Mosler">Mosler</li>
+                      <li class="select__list-item" data-value="Nissan">Nissan</li>
+                      <li class="select__list-item" data-value="Oldsmobile">Oldsmobile</li>
+                      <li class="select__list-item" data-value="Opel">Opel</li>
+                      <li class="select__list-item" data-value="Panoz">Panoz</li>
+                      <li class="select__list-item" data-value="Perodua">Perodua</li>
+                      <li class="select__list-item" data-value="Peugeot">Peugeot</li>
+                      <li class="select__list-item" data-value="Plymouth">Plymouth</li>
+                      <li class="select__list-item" data-value="Pontiac">Pontiac</li>
+                      <li class="select__list-item" data-value="Porsche">Porsche</li>
+                      <li class="select__list-item" data-value="Proton">Proton</li>
+                      <li class="select__list-item" data-value="Ram">Ram</li>
+                      <li class="select__list-item" data-value="Ravon">Ravon</li>
+                      <li class="select__list-item" data-value="Renault">Renault</li>
+                      <li class="select__list-item" data-value="Renault Samsung">Renault Samsung</li>
+                      <li class="select__list-item" data-value="Roewe">Roewe</li>
+                      <li class="select__list-item" data-value="Rover">Rover</li>
+                      <li class="select__list-item" data-value="Saab">Saab</li>
+                      <li class="select__list-item" data-value="Saturn">Saturn</li>
+                      <li class="select__list-item" data-value="Scion">Scion</li>
+                      <li class="select__list-item" data-value="Seat">Seat</li>
+                      <li class="select__list-item" data-value="Skoda">Skoda</li>
+                      <li class="select__list-item" data-value="Smart">Smart</li>
+                      <li class="select__list-item" data-value="SsangYong">SsangYong</li>
+                      <li class="select__list-item" data-value="Subaru">Subaru</li>
+                      <li class="select__list-item" data-value="Suzuki">Suzuki</li>
+                      <li class="select__list-item" data-value="Tata">Tata</li>
+                      <li class="select__list-item" data-value="Tesla">Tesla</li>
+                      <li class="select__list-item" data-value="Toyota">Toyota</li>
+                      <li class="select__list-item" data-value="Vauxhall">Vauxhall</li>
+                      <li class="select__list-item" data-value="VAZ">VAZ</li>
+                      <li class="select__list-item" data-value="Venucia">Venucia</li>
+                      <li class="select__list-item" data-value="Volkswagen">Volkswagen</li>
+                      <li class="select__list-item" data-value="Volvo">Volvo</li>
+                      <li class="select__list-item" data-value="Vortex">Vortex</li>
+                      <li class="select__list-item" data-value="ZAZ">ZAZ</li>
+                      <li class="select__list-item" data-value="ГАЗ">ГАЗ</li>
+                      <li class="select__list-item" data-value="ТагАЗ">ТагАЗ</li>
+                      <li class="select__list-item" data-value="УАЗ">УАЗ</li>
+                    </ul>
+                    <input class="select__input-hidden" type="hidden" name="cars_mark" value="none">
+                  </div>
                 </div>
-                <div class="filter__item cars__model">
-                  <label class="filter__label" for="model">Модель</label>
-                  <select class="filter__select" id="model" name="cars_model">
-                    <option value="" selected="selected">—</option>
-                    <option value="CL">CL</option>
-                    <option value="CL Type-S">CL Type-S</option>
-                    <option value="CSX">CSX</option>
-                    <option value="EL">EL</option>
-                    <option value="ILX">ILX</option>
-                    <option value="Integra">Integra</option>
-                    <option value="Integra Type-R">Integra Type-R</option>
-                    <option value="Legend">Legend</option>
-                    <option value="MDX">MDX</option>
-                    <option value="NSX">NSX</option>
-                    <option value="RDX">RDX</option>
-                    <option value="RL">RL</option>
-                    <option value="RLX">RLX</option>
-                    <option value="RSX">RSX</option>
-                    <option value="SLX">SLX</option>
-                    <option value="TL">TL</option>
-                    <option value="TL SH-AWD">TL SH-AWD</option>
-                    <option value="TLX">TLX</option>
-                    <option value="TSX">TSX</option>
-                    <option value="Vigor">Vigor</option>
-                    <option value="ZDX">ZDX</option>
-                  </select>
+                <div class="filter__item cars cars__model">
+                  <label class="filter__label">Модель</label>
+                  <div class="select">
+                    <button class="select__button" type="button" name="cars_model" value="none">
+                      —
+                    </button>
+                    <ul class="select__list">
+                      <li class="select__list-item select__list-item--first" data-value="none">—</li>
+                      <li class="select__list-item" data-value="CL">CL</li>
+                      <li class="select__list-item" data-value="L Type-S">L Type-S</li>
+                      <li class="select__list-item" data-value="CSX">CSX</li>
+                      <li class="select__list-item" data-value="EL">EL</li>
+                      <li class="select__list-item" data-value="ILX">ILX</li>
+                      <li class="select__list-item" data-value="Integra">Integra</li>
+                      <li class="select__list-item" data-value="Integra Type-R">Integra Type-R</li>
+                      <li class="select__list-item" data-value="Legend">Legend</li>
+                      <li class="select__list-item" data-value="MDX">MDX</li>
+                      <li class="select__list-item" data-value="NSX">NSX</li>
+                      <li class="select__list-item" data-value="RDX">RDX</li>
+                      <li class="select__list-item" data-value="RL">RL</li>
+                      <li class="select__list-item" data-value="RLX">RLX</li>
+                      <li class="select__list-item" data-value="RSX">RSX</li>
+                      <li class="select__list-item" data-value="SLX">SLX</li>
+                      <li class="select__list-item" data-value="TL">TL</li>
+                      <li class="select__list-item" data-value="TL SH-AWD">TL SH-AWD</li>
+                      <li class="select__list-item" data-value="TLX">TLX</li>
+                      <li class="select__list-item" data-value="TSX">TSX</li>
+                      <li class="select__list-item" data-value="Vigor">Vigor</li>
+                      <li class="select__list-item" data-value="ZDX">ZDX</li>
+                    </ul>
+                    <input class="select__input-hidden" type="hidden" name="cars_model" value="none">
+                  </div>
                 </div>
-                <div class="filter__item cars__year">
-                  <label class="filter__label" for="year">Год выпуска</label>
-                  <select class="filter__select" id="year" name="cars_year">
-                    <option value="" selected="selected">—</option>
-                    <option value="2000">2000</option>
-                    <option value="2001">2001</option>
-                    <option value="2002">2002</option>
-                    <option value="2003">2003</option>
-                    <option value="2004">2004</option>
-                    <option value="2005">2005</option>
-                    <option value="2006">2006</option>
-                    <option value="2007">2007</option>
-                    <option value="2008">2008</option>
-                    <option value="2009">2009</option>
-                    <option value="2010">2010</option>
-                    <option value="2011">2011</option>
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                  </select>
+                <div class="filter__item cars cars__year">
+                  <label class="filter__label">Год выпуска</label>
+                  <div class="select">
+                    <button class="select__button" type="button" name="cars_year" value="none">
+                      —
+                    </button>
+                    <ul class="select__list">
+                      <li class="select__list-item select__list-item--first" data-value="none">—</li>
+                      <li class="select__list-item" data-value="2000">2000</li>
+                      <li class="select__list-item" data-value="2001">2001</li>
+                      <li class="select__list-item" data-value="2002">2002</li>
+                      <li class="select__list-item" data-value="2003">2003</li>
+                      <li class="select__list-item" data-value="2004">2004</li>
+                      <li class="select__list-item" data-value="2005">2005</li>
+                      <li class="select__list-item" data-value="2006">2006</li>
+                      <li class="select__list-item" data-value="2007">2007</li>
+                      <li class="select__list-item" data-value="2008">2008</li>
+                      <li class="select__list-item" data-value="2009">2009</li>
+                      <li class="select__list-item" data-value="2010">2010</li>
+                      <li class="select__list-item" data-value="2011">2011</li>
+                      <li class="select__list-item" data-value="2012">2012</li>
+                      <li class="select__list-item" data-value="2013">2013</li>
+                      <li class="select__list-item" data-value="2014">2014</li>
+                      <li class="select__list-item" data-value="2015">2015</li>
+                      <li class="select__list-item" data-value="2016">2016</li>
+                      <li class="select__list-item" data-value="2017">2017</li>
+                      <li class="select__list-item" data-value="2018">2018</li>
+                      <li class="select__list-item" data-value="2019">2019</li>
+                      <li class="select__list-item" data-value="2020">2020</li>
+                      <li class="select__list-item" data-value="2021">2021</li>
+                      <li class="select__list-item" data-value="2022">2022</li>
+                      <li class="select__list-item" data-value="2023">2023</li>
+                      <li class="select__list-item" data-value="2024">2024</li>
+                    </ul>
+                    <input class="select__input-hidden" type="hidden" name="cars_year" value="none">
+                  </div>
                 </div>
-                <div class="filter__item cars__comp">
-                  <label class="filter__label" for="comp">Комплектация</label>
-                  <select class="filter__select" id="comp" name="cars_comp">
-                    <option value="" selected="selected">—</option>
-                    <option value="M 3.5">M 3.5</option>
-                    <option value="M 3.5">M 3.5</option>
-                    <option value="M 3.5">M 3.5</option>
-                    <option value="M 3.5">M 3.5</option>
-                    <option value="M 3.5">M 3.5</option>
-                    <option value="M 3.5">M 3.5</option>
-                    <option value="M 3.5">M 3.5</option>
-                    <option value="M 3.5">M 3.5</option>
-                    <option value="M 3.5">M 3.5</option>
-                    <option value="M 3.5">M 3.5</option>
-                    <option value="M 3.5">M 3.5</option>
-                    <option value="M 3.5">M 3.5</option>
-                    <option value="M 3.5">M 3.5</option>
-                    <option value="M 3.5">M 3.5</option>
-                  </select>
+                <div class="filter__item cars cars__comp">
+                  <label class="filter__label">Комплектация</label>
+                  <div class="select">
+                    <button class="select__button" type="button" name="cars_comp" value="none">
+                      —
+                    </button>
+                    <ul class="select__list">
+                      <li class="select__list-item select__list-item--first" data-value="none">—</li>
+                      <li class="select__list-item" data-value="M 3.5">M 3.5</li>
+                      <li class="select__list-item" data-value="M 3.5">M 3.5</li>
+                      <li class="select__list-item disabled" data-value="M 3.5">M 3.5</li>
+                      <li class="select__list-item" data-value="M 3.5">M 3.5</li>
+                      <li class="select__list-item" data-value="M 3.5">M 3.5</li>
+                    </ul>
+                    <input class="select__input-hidden" type="hidden" name="cars_comp" value="none">
+                  </div>
                 </div>
               </div>
             </div>
@@ -4564,149 +4579,176 @@
                 </svg>
               </div>
               <div class="filter__body">
-                <input type="hidden">
+                <input id="tires_offers" type="hidden">
                 <div class="filter__item">
-                  <label class="filter__label accardion__btn filter__item-head" for="tires_width">
+                  <label class="filter__label filter__item-head" for="tires_offers">
+                    Наши предложения
+                    <svg>
+                      <use href="./images/sprite.svg?v7#arrow-down" />
+                    </svg>
+                  </label>
+                  <div class="filter__item-body">
+                    <div class="filter__checkbox">
+                      <input class="filter__checkbox-input" id="tires_aktsiya" type="checkbox">
+                      <label class="filter__checkbox-label" for="tires_aktsiya">
+                        Акция
+                      </label>
+                      <input class="filter__checkbox-input" id="tires_novinka" type="checkbox">
+                      <label class="filter__checkbox-label" for="tires_novinka">
+                        Новинка
+                      </label>
+                      <input class="filter__checkbox-input" id="tires_sovetuem" type="checkbox">
+                      <label class="filter__checkbox-label" for="tires_sovetuem">
+                        Советуем
+                      </label>
+                      <input class="filter__checkbox-input" id="tires_khit" type="checkbox">
+                      <label class="filter__checkbox-label" for="tires_khit">
+                        Хит
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label filter__item-head" for="tires_width">
                     Ширина диска
                     <svg>
                       <use href="./images/sprite.svg?v7#arrow-down" />
                     </svg>
                   </label>
-                  <div class="filter__item-body">
-                    <select class="filter__select" id="tires_width" name="tires_width">
-                      <option value="" selected="selected">Все</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
+                  <div class="select">
+                    <button class="select__button" type="button" name="tires_width" value="all">
+                      Все
+                    </button>
+                    <ul class="select__list">
+                      <li class="select__list-item select__list-item--first" data-value="all">Все</li>
+                      <li class="select__list-item" data-value="5">5</li>
+                      <li class="select__list-item" data-value="5.5">5.5</li>
+                      <li class="select__list-item" data-value="6">6</li>
+                      <li class="select__list-item" data-value="6.5">6.5</li>
+                      <li class="select__list-item" data-value="7">7</li>
+                      <li class="select__list-item" data-value="7.5">7.5</li>
+                      <li class="select__list-item" data-value="8">8</li>
+                      <li class="select__list-item" data-value="8.5">8.5</li>
+                      <li class="select__list-item" data-value="9">9</li>
+                      <li class="select__list-item" data-value="9.5">9.5</li>
+                      <li class="select__list-item" data-value="10">10</li>
+                      <li class="select__list-item" data-value="10.5">10.5</li>
+                      <li class="select__list-item" data-value="11">11</li>
+                    </ul>
+                    <input class="select__input-hidden" type="hidden" name="tires_width" value="all">
                   </div>
                 </div>
                 <div class="filter__item">
-                  <label class="filter__label accardion__btn filter__item-head" for="tires_disc_landing_diameter">
+                  <label class="filter__label filter__item-head" for="tires_disc_landing_diameter">
                     Посадочный диаметр диска
                     <svg>
                       <use href="./images/sprite.svg?v7#arrow-down" />
                     </svg>
                   </label>
-                  <div class="filter__item-body">
-                    <select class="filter__select" id="tires_disc_landing_diameter" name="tires_disc_landing_diameter">
-                      <option value="" selected="selected">Все</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
+                  <div class="select">
+                    <button class="select__button" type="button" name="tires_disc_landing_diameter" value="all">
+                      Все
+                    </button>
+                    <ul class="select__list">
+                      <li class="select__list-item select__list-item--first" data-value="all">Все</li>
+                      <li class="select__list-item" data-value="13">13</li>
+                      <li class="select__list-item" data-value="14">14</li>
+                      <li class="select__list-item" data-value="15">15</li>
+                      <li class="select__list-item" data-value="16">16</li>
+                      <li class="select__list-item" data-value="17">17</li>
+                      <li class="select__list-item" data-value="18">18</li>
+                      <li class="select__list-item" data-value="19">19</li>
+                      <li class="select__list-item" data-value="20">20</li>
+                      <li class="select__list-item" data-value="21">21</li>
+                      <li class="select__list-item" data-value="22">22</li>
+                      <li class="select__list-item" data-value="23">23</li>
+                      <li class="select__list-item" data-value="24">24</li>
+                    </ul>
+                    <input class="select__input-hidden" type="hidden" name="tires_disc_landing_diameter" value="all">
                   </div>
                 </div>
                 <div class="filter__item">
-                  <label class="filter__label accardion__btn filter__item-head" for="tires_number_of_holes">
+                  <label class="filter__label filter__item-head" for="tires_number_of_holes">
                     Количество отверстий
                     <svg>
                       <use href="./images/sprite.svg?v7#arrow-down" />
                     </svg>
                   </label>
-                  <div class="filter__item-body">
-                    <select class="filter__select" id="tires_number_of_holes" name="tires_number_of_holes">
-                      <option value="" selected="selected">Все</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
+                  <div class="select">
+                    <button class="select__button" type="button" name="tires_number_of_holes" value="all">
+                      Все
+                    </button>
+                    <ul class="select__list">
+                      <li class="select__list-item select__list-item--first" data-value="all">Все</li>
+                      <li class="select__list-item" data-value="4">4</li>
+                      <li class="select__list-item" data-value="5">5</li>
+                      <li class="select__list-item disabled" data-value="6">6</li>
+                      <li class="select__list-item disabled" data-value="8">8</li>
+                      <li class="select__list-item disabled" data-value="10">10</li>
+                      <li class="select__list-item disabled" data-value="13">13</li>
+                    </ul>
+                    <input class="select__input-hidden" type="hidden" name="tires_number_of_holes" value="all">
                   </div>
                 </div>
                 <div class="filter__item">
-                  <label class="filter__label accardion__btn filter__item-head" for="tires_bolt_spacing">
+                  <label class="filter__label filter__item-head" for="tires_bolt_spacing">
                     Межболтовое расстояние
                     <svg>
                       <use href="./images/sprite.svg?v7#arrow-down" />
                     </svg>
                   </label>
-                  <div class="filter__item-body">
-                    <select class="filter__select" id="tires_bolt_spacing" name="tires_bolt_spacing">
-                      <option value="" selected="selected">Все</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
+                  <div class="select">
+                    <button class="select__button" type="button" name="tires_bolt_spacing" value="all">
+                      Все
+                    </button>
+                    <ul class="select__list">
+                      <li class="select__list-item select__list-item--first" data-value="all">Все</li>
+                      <li class="select__list-item" data-value="5">5</li>
+                      <li class="select__list-item" data-value="98">98</li>
+                      <li class="select__list-item" data-value="100">100</li>
+                      <li class="select__list-item" data-value="105">105</li>
+                      <li class="select__list-item" data-value="108">108</li>
+                      <li class="select__list-item" data-value="110">110</li>
+                      <li class="select__list-item" data-value="112">112</li>
+                      <li class="select__list-item" data-value="114.3">114.3</li>
+                      <li class="select__list-item" data-value="115">115</li>
+                      <li class="select__list-item" data-value="120">120</li>
+                      <li class="select__list-item" data-value="127">127</li>
+                      <li class="select__list-item" data-value="130">130</li>
+                      <li class="select__list-item" data-value="139.7">139.7</li>
+                      <li class="select__list-item" data-value="150">150</li>
+                      <li class="select__list-item" data-value="160">160</li>
+                      <li class="select__list-item" data-value="165">165</li>
+                      <li class="select__list-item" data-value="165.1">165.1</li>
+                      <li class="select__list-item" data-value="170">170</li>
+                      <li class="select__list-item" data-value="205">205</li>
+                    </ul>
+                    <input class="select__input-hidden" type="hidden" name="tires_bolt_spacing" value="all">
                   </div>
                 </div>
                 <div class="filter__item">
-                  <label class="filter__label accardion__btn filter__item-head" for="tires_proizvoditel">
+                  <label class="filter__label filter__item-head" for="tires_proizvoditel">
                     Производитель
                     <svg>
                       <use href="./images/sprite.svg?v7#arrow-down" />
                     </svg>
                   </label>
-                  <div class="filter__item-body">
-                    <select class="filter__select" id="tires_proizvoditel" name="tires_proizvoditel">
-                      <option value="" selected="selected">Все</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
+                  <div class="select">
+                    <button class="select__button" type="button" name="tires_proizvoditel" value="all">
+                      Все
+                    </button>
+                    <ul class="select__list">
+                      <li class="select__list-item select__list-item--first" data-value="all">Все</li>
+                      <li class="select__list-item disabled" data-value="Carwel">Carwel</li>
+                      <li class="select__list-item disabled" data-value="Forsage">Forsage</li>
+                      <li class="select__list-item disabled" data-value="Konig">Konig</li>
+                      <li class="select__list-item disabled" data-value="Replica">Replica</li>
+                    </ul>
+                    <input class="select__input-hidden" type="hidden" name="tires_proizvoditel" value="all">
                   </div>
                 </div>
                 <div class="filter__item">
-                  <label class="filter__label accardion__btn filter__item-head" for="tires_type">
+                  <label class="filter__label filter__item-head" for="tires_type">
                     Тип диска
                     <svg>
                       <use href="./images/sprite.svg?v7#arrow-down" />
@@ -4728,6 +4770,11 @@
                       </label>
                     </div>
                   </div>
+                </div>
+                <div class="filter__btn">
+                  <button class="filter__reset btn btn-black" type="reset">
+                    Сбросить
+                  </button>
                 </div>
               </div>
             </div>
@@ -4760,19 +4807,19 @@
             </a>
           </div>
           <div class="sort__display">
-            <a class="sort__display-btn block active" href="#!" rel="nofollow">
+            <a class="sort__display-btn block active" href="#!" rel="nofollow" data-value="block">
               <i class="sort__display-icon" title="плиткой"></i>
             </a>
-            <a class="sort__display-btn list" href="#!" rel="nofollow">
+            <a class="sort__display-btn list" href="#!" rel="nofollow" data-value="list">
               <i class="sort__display-icon" title="списком"></i>
             </a>
-            <a class="sort__display-btn table" href="#!" rel="nofollow">
+            <a class="sort__display-btn table" href="#!" rel="nofollow" data-value="table">
               <i class="sort__display-icon" title="таблицей"></i>
             </a>
           </div>
         </div>
         <div class="catalog__body">
-          <div class="catalog__items list">
+          <div class="catalog__items block">
             <div class="catalog__item">
               <div class="catalog__stickers">
                 <div class="catalog__stickers-item aktsiya">Акция</div>

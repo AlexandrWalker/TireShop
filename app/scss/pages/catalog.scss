@@ -35,7 +35,7 @@
           &-img {
             grid-column: 1/2;
             grid-row: 1/6;
-            padding-right: 25px;
+            margin-right: 25px;
             margin-bottom: 0;
           }
 
@@ -309,7 +309,7 @@
     top: 25px;
     right: 25px;
     z-index: 2;
-    transition: var(--tertiary-transition-color);
+    transition: var(--tertiary-transition);
     visibility: hidden;
     opacity: 0;
 
@@ -318,7 +318,7 @@
       width: 30px;
       height: 30px;
       overflow: hidden;
-      transition: var(--tertiary-transition-color);
+      transition: var(--tertiary-transition);
       cursor: pointer;
       font-size: 0;
       color: var(--tertiary-black-color);
@@ -542,7 +542,7 @@
       gap: 10px;
       font-size: 13px;
       color: var(--primary-disabled-color);
-      transition: var(--primary-transition-color);
+      transition: var(--primary-transition);
 
       &.up svg {
         transform: rotate(180deg);
@@ -692,9 +692,13 @@
 
   &__wrap {
     display: grid;
+    grid-template-rows: 1fr 0;
     overflow: hidden;
 
-    &.opened {}
+    &.opened {
+      grid-template-rows: 1fr auto;
+      overflow: visible;
+    }
   }
 
   &__head {
@@ -732,14 +736,23 @@
     background-color: var(--tertiary-bg-color);
     border: var(--primary-border);
     border-top: 0;
-    transition: var(--tertiary-transition-color);
-    overflow: hidden;
+    transition: var(--tertiary-transition);
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     gap: 5px;
+
+    &.cars {
+      .select {
+        padding: 0;
+      }
+
+      .select__list {
+        left: 0;
+      }
+    }
 
     &-head {
       display: flex;
@@ -815,6 +828,16 @@
       color: var(--tertiary-grey-color);
     }
   }
+
+  &__btn {
+    padding: 19px;
+    background-color: var(--primary-white-color);
+    border: var(--primary-border);
+
+    .btn {
+      width: 100%;
+    }
+  }
 }
 
 .parameters {
@@ -825,9 +848,24 @@
   }
 
   .filter__item {
+    display: grid;
+    grid-template-rows: 1fr 0;
     gap: 0;
     border: var(--primary-border);
     border-top: 0;
+    overflow: hidden;
+    transition: var(--tertiary-transition);
+
+    &.opened {
+      overflow: visible;
+      grid-template-rows: 1fr auto;
+
+      .select,
+      .filter__item-body {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
   }
 
   input[type=checkbox]+label::after {
@@ -836,5 +874,12 @@
 
   input[type=checkbox]:checked+label::before {
     top: 0;
+  }
+
+  .select,
+  .filter__item-body {
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--tertiary-transition);
   }
 }

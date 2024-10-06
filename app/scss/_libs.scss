@@ -35,13 +35,13 @@
   height: 42px;
   border-radius: 50%;
   background-color: var(--primary-white-color);
-  transition: var(--tertiary-transition-color);
+  transition: var(--tertiary-transition);
 
   &::after {
     color: var(--secondary-color);
     font-size: 18px;
     font-weight: 700;
-    transition: var(--tertiary-transition-color);
+    transition: var(--tertiary-transition);
   }
 
   &:hover {
