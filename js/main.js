@@ -66,6 +66,24 @@
       }
     });
 
+    var reviews__slider = new Swiper(".rec__slider-init", {
+      spaceBetween: 0,
+      slidesPerView: 1,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        500: {
+          slidesPerView: 3,
+        },
+        991: {
+          slidesPerView: 5,
+        }
+      }
+    });
+
     /**
      * Управляет поведением меню-бургера.
      */
@@ -223,6 +241,19 @@
       });
     })();
 
+    (function () {
+      var filterHead = document.querySelectorAll('.filter__item-head');
+      // opened = document.getElementsByClassName('opened');
+
+      Array.from(filterHead).forEach(function (filterItem, i, filterHead) {
+        filterItem.addEventListener('click', function (e) {
+          // if (opened.length > 0 && opened[0] !== this)
+          //   opened[0].classList.remove('opened');
+          this.parentNode.classList.toggle('opened');
+        });
+      });
+    })();
+
     // filter dropdown
     let catalogCounter = document.querySelector('.catalog__counter');
     if (!catalogCounter) {
@@ -281,6 +312,7 @@
         });
       });
     })();
+
     (function () {
       var sortUp = document.querySelectorAll('.sort__filter-btn');
       sortUpBtn = document.getElementsByClassName('up');
@@ -291,6 +323,27 @@
             sortUpBtn[0].classList.remove('up');
 
           this.classList.toggle('up');
+        });
+      });
+    })();
+
+    (function () {
+      var displayBtn = document.querySelectorAll('.sort__display-btn'),
+        displayBtnActive = document.getElementsByClassName('active'),
+        catalogItems = document.querySelector('.catalog__items');
+
+      Array.from(displayBtn).forEach(function (displayItem, i, displayBtn) {
+        displayItem.addEventListener('click', function (e) {
+          if (displayBtnActive.length > 0 && displayBtnActive[0] !== this)
+            displayBtnActive[0].classList.remove('active');
+
+          this.classList.add('active');
+
+          catalogItems.classList.remove('block');
+          catalogItems.classList.remove('list');
+          catalogItems.classList.remove('table');
+
+          catalogItems.classList.add(this.dataset.value);
         });
       });
     })();
@@ -312,6 +365,52 @@
         });
       });
     })();
+
+    document.querySelectorAll('.select').forEach(function (dropDownWrapper) {
+      const dropDownBtn = dropDownWrapper.querySelector('.select__button');
+      const dropDownList = dropDownWrapper.querySelector('.select__list');
+      const dropDownListItems = dropDownList.querySelectorAll('.select__list-item');
+      const dropDownInput = dropDownWrapper.querySelector('.select__input-hidden');
+      const dropDownReset = document.querySelector('.filter__reset');
+      const defaultItem = document.querySelectorAll('.select__list-item--first');
+
+      defaultItem.forEach(function (defaultItem) {
+        dropDownReset.addEventListener('click', function (e) {
+          e.stopPropagation();
+          defaultItem.click();
+        });
+      });
+
+      dropDownBtn.addEventListener('click', function (e) {
+        dropDownList.classList.toggle('select__list--visible');
+        this.classList.add('select__button--active');
+      });
+
+      dropDownListItems.forEach(function (listItem) {
+        listItem.addEventListener('click', function (e) {
+          e.stopPropagation();
+          dropDownBtn.innerHTML = this.innerHTML;
+          dropDownBtn.value = this.dataset.value;
+          dropDownBtn.focus();
+          dropDownInput.value = this.dataset.value;
+          dropDownList.classList.remove('select__list--visible');
+        });
+      });
+
+      document.addEventListener('click', function (e) {
+        if (e.target !== dropDownBtn) {
+          dropDownBtn.classList.remove('select__button--active');
+          dropDownList.classList.remove('select__list--visible');
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Tab' || e.key === 'Escape') {
+          dropDownBtn.classList.remove('select__button--active');
+          dropDownList.classList.remove('select__list--visible');
+        }
+      });
+    });
 
   });
 })();
