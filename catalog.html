@@ -8,6 +8,8 @@
   <title>TireShop</title>
   <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="./libs/priority-nav/priority-nav-core.css">
+  <link rel="stylesheet" href="./libs/nouislider/nouislider.min.css">
+  <link rel="stylesheet" href="./libs/bitrix/template.css">
   <!-- <link
     href="https://magnitogorsk.tires2.aspro-demo.ru/bitrix/js/ui/design-tokens/dist/ui.design-tokens.min.css?171740409423233"
     rel="stylesheet">
@@ -4582,6 +4584,31 @@
                 <input id="tires_offers" type="hidden">
                 <div class="filter__item">
                   <label class="filter__label filter__item-head" for="tires_offers">
+                    Розничная цена
+                    <svg>
+                      <use href="./images/sprite.svg?v7#arrow-down" />
+                    </svg>
+                  </label>
+                  <div class="filter__item-body">
+                    <div class="filters-price__inputs">
+                      <label class="filters-price__label">
+                        <input type="number" min="3000" max="5999" placeholder="3000" class="filters-price__input"
+                          id="input-0">
+                      </label>
+                      <label class="filters-price__label">
+                        <input type="number" min="3000" max="5999" placeholder="5999" class="filters-price__input"
+                          id="input-1">
+                      </label>
+                    </div>
+                    <div class="filters-price__spans">
+                      <span class="filters-price__span">3000</span>
+                      <span class="filters-price__span">5999</span>
+                    </div>
+                    <div class="filters-price__slider" id="range-slider"></div>
+                  </div>
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label filter__item-head" for="tires_offers">
                     Наши предложения
                     <svg>
                       <use href="./images/sprite.svg?v7#arrow-down" />
@@ -4748,6 +4775,56 @@
                   </div>
                 </div>
                 <div class="filter__item">
+                  <label class="filter__label filter__item-head">
+                    Вылет диска
+                    <svg>
+                      <use href="./images/sprite.svg?v7#arrow-down" />
+                    </svg>
+                  </label>
+                  <div class="filter__item-body">
+                    <div class="filters-price__inputs">
+                      <label class="filters-price__label">
+                        <input type="number" min="-35" max="115" placeholder="-35" class="filters-price__input"
+                          id="input-2">
+                      </label>
+                      <label class="filters-price__label">
+                        <input type="number" min="-35" max="115" placeholder="115" class="filters-price__input"
+                          id="input-3">
+                      </label>
+                    </div>
+                    <div class="filters-price__spans">
+                      <span class="filters-price__span">-35</span>
+                      <span class="filters-price__span">115</span>
+                    </div>
+                    <div class="filters-price__slider" id="range-slider-2"></div>
+                  </div>
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label filter__item-head">
+                    Диаметр ступицы
+                    <svg>
+                      <use href="./images/sprite.svg?v7#arrow-down" />
+                    </svg>
+                  </label>
+                  <div class="filter__item-body">
+                    <div class="filters-price__inputs">
+                      <label class="filters-price__label">
+                        <input type="number" min="0" max="161" placeholder="0" class="filters-price__input"
+                          id="input-4">
+                      </label>
+                      <label class="filters-price__label">
+                        <input type="number" min="0" max="161" placeholder="161" class="filters-price__input"
+                          id="input-5">
+                      </label>
+                    </div>
+                    <div class="filters-price__spans">
+                      <span class="filters-price__span">0</span>
+                      <span class="filters-price__span">161</span>
+                    </div>
+                    <div class="filters-price__slider" id="range-slider-3"></div>
+                  </div>
+                </div>
+                <div class="filter__item">
                   <label class="filter__label filter__item-head" for="tires_type">
                     Тип диска
                     <svg>
@@ -4784,6 +4861,10 @@
       <div class="catalog__content">
         <div class="catalog__head">
           <div class="sort__filter">
+            <a class="sort__filter-btn mob-filter" href="#!" rel="nofollow">
+              <i class="sort__filter-icon"></i>
+              <span class="sort__filter-text">Фильтр</span>
+            </a>
             <a class="sort__filter-btn sort__popular sort__filter-btn--active" href="#!" rel="nofollow">
               <i class="sort__filter-icon"></i>
               <span class="sort__filter-text">По популярности</span>
@@ -5813,6 +5894,8 @@
       </div>
     </div>
   </section>
+  <!-- scroll top -->
+  <a id="scroll-top" class="scroll-top" href="#wrapper"></a>
 </main>
 <footer class="footer">
   <div class="footer__container container">
@@ -5943,6 +6026,7 @@
 <script src="./libs/swiper/swiper-bundle.min.js"></script>
 <script src="./libs/priority-nav/priority-nav.min.js"></script>
 <script src="./libs/inputmask.min.js"></script>
+<script src="./libs/nouislider/nouislider.min.js"></script>
 <!-- JavaScript -->
 <script src="./js/main.js"></script>
 
