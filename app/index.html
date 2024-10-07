@@ -8,6 +8,8 @@
   <title>TireShop</title>
   <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="./libs/priority-nav/priority-nav-core.css">
+  <link rel="stylesheet" href="./libs/nouislider/nouislider.min.css">
+  <link rel="stylesheet" href="./libs/bitrix/template.css">
   <!-- <link
     href="https://magnitogorsk.tires2.aspro-demo.ru/bitrix/js/ui/design-tokens/dist/ui.design-tokens.min.css?171740409423233"
     rel="stylesheet">
@@ -4435,7 +4437,7 @@
     </div>
   </section>
   <!-- selection -->
-  <!-- <div class="drag-block container FILTER " data-class="FILTER_drag">
+  <div class="drag-block container FILTER " data-class="FILTER_drag">
     <div class="maxwidth-theme">
       <div class="filters_wrap">
         <div class="row flexbox">
@@ -4443,7 +4445,7 @@
             <div class="front_filter_wrap tires load"
               data-params="{&quot;IBLOCK_TYPE&quot;:&quot;aspro_tires2_catalog&quot;,&quot;IBLOCK_ID&quot;:&quot;161&quot;,&quot;FILTER_URL&quot;:&quot;/catalog/tires/&quot;,&quot;SECTION_ID&quot;:&quot;0&quot;,&quot;FILTER_NAME&quot;:&quot;arTires2Filter&quot;,&quot;PRICE_CODE&quot;:[],&quot;CACHE_TYPE&quot;:&quot;A&quot;,&quot;CACHE_TIME&quot;:&quot;86400&quot;,&quot;CACHE_NOTES&quot;:&quot;&quot;,&quot;CACHE_GROUPS&quot;:false,&quot;SAVE_IN_SESSION&quot;:false,&quot;XML_EXPORT&quot;:&quot;Y&quot;,&quot;SECTION_TITLE&quot;:&quot;NAME&quot;,&quot;SECTION_DESCRIPTION&quot;:&quot;DESCRIPTION&quot;,&quot;SHOW_HINTS&quot;:&quot;N&quot;,&quot;CONVERT_CURRENCY&quot;:false,&quot;CURRENCY_ID&quot;:&quot;&quot;,&quot;DISPLAY_ELEMENT_COUNT&quot;:&quot;N&quot;,&quot;INSTANT_RELOAD&quot;:true,&quot;VIEW_MODE&quot;:&quot;&quot;,&quot;SEF_MODE&quot;:&quot;N&quot;,&quot;SEF_RULE&quot;:&quot;&quot;,&quot;SMART_FILTER_PATH&quot;:&quot;&quot;,&quot;HIDE_NOT_AVAILABLE&quot;:&quot;N&quot;,&quot;COMPONENT_TEMPLATE&quot;:&quot;front&quot;,&quot;SECTION_CODE&quot;:&quot;&quot;,&quot;PAGER_PARAMS_NAME&quot;:&quot;arrPager&quot;,&quot;BLOCK_TITLE_TIRES&quot;:&quot;шин&quot;,&quot;BLOCK_TITLE_TIRES_MOTO&quot;:&quot;мотошин&quot;,&quot;BLOCK_TITLE_TIRES_TRUCK&quot;:&quot;грузовых шин&quot;,&quot;TYPE&quot;:&quot;tires&quot;,&quot;ALL_LINK_TITLE&quot;:&quot;Все шины&quot;,&quot;PREFILTER_NAME&quot;:&quot;smartPreFilter&quot;,&quot;~IBLOCK_TYPE&quot;:&quot;aspro_tires2_catalog&quot;,&quot;~IBLOCK_ID&quot;:&quot;161&quot;,&quot;~FILTER_URL&quot;:&quot;/catalog/tires/&quot;,&quot;~SECTION_ID&quot;:&quot;0&quot;,&quot;~FILTER_NAME&quot;:&quot;arTires2Filter&quot;,&quot;~PRICE_CODE&quot;:[],&quot;~CACHE_TYPE&quot;:&quot;A&quot;,&quot;~CACHE_TIME&quot;:&quot;86400&quot;,&quot;~CACHE_NOTES&quot;:&quot;&quot;,&quot;~CACHE_GROUPS&quot;:false,&quot;~SAVE_IN_SESSION&quot;:false,&quot;~XML_EXPORT&quot;:&quot;Y&quot;,&quot;~SECTION_TITLE&quot;:&quot;NAME&quot;,&quot;~SECTION_DESCRIPTION&quot;:&quot;DESCRIPTION&quot;,&quot;~SHOW_HINTS&quot;:&quot;N&quot;,&quot;~CONVERT_CURRENCY&quot;:false,&quot;~CURRENCY_ID&quot;:&quot;&quot;,&quot;~DISPLAY_ELEMENT_COUNT&quot;:&quot;N&quot;,&quot;~INSTANT_RELOAD&quot;:true,&quot;~VIEW_MODE&quot;:&quot;&quot;,&quot;~SEF_MODE&quot;:&quot;N&quot;,&quot;~SEF_RULE&quot;:&quot;&quot;,&quot;~SMART_FILTER_PATH&quot;:&quot;&quot;,&quot;~HIDE_NOT_AVAILABLE&quot;:&quot;N&quot;,&quot;~COMPONENT_TEMPLATE&quot;:&quot;front&quot;,&quot;~SECTION_CODE&quot;:&quot;&quot;,&quot;~PAGER_PARAMS_NAME&quot;:&quot;arrPager&quot;,&quot;~BLOCK_TITLE_TIRES&quot;:&quot;шин&quot;,&quot;~BLOCK_TITLE_TIRES_MOTO&quot;:&quot;мотошин&quot;,&quot;~BLOCK_TITLE_TIRES_TRUCK&quot;:&quot;грузовых шин&quot;,&quot;~TYPE&quot;:&quot;tires&quot;,&quot;~ALL_LINK_TITLE&quot;:&quot;Все шины&quot;,&quot;~PREFILTER_NAME&quot;:&quot;smartPreFilter&quot;,&quot;POPUP_POSITION&quot;:&quot;left&quot;}"
               data-template="front">
-              <div class="title_block clearfix" style="height: 32px;">
+              <div class="title_block clearfix">
                 <span class="link_item pull-right" data-filter="avto">По авто</span>
                 <span class="link_item pull-right active" data-filter="params">По параметрам</span>
                 <div class="title with_dropdown">
@@ -5284,7 +5286,7 @@
             <div class="front_filter_wrap wheels load"
               data-params="{&quot;IBLOCK_TYPE&quot;:&quot;aspro_tires2_catalog&quot;,&quot;IBLOCK_ID&quot;:&quot;162&quot;,&quot;FILTER_URL&quot;:&quot;/catalog/wheels/&quot;,&quot;SECTION_ID&quot;:&quot;0&quot;,&quot;FILTER_NAME&quot;:&quot;arTires2Filter&quot;,&quot;PRICE_CODE&quot;:[],&quot;CACHE_TYPE&quot;:&quot;A&quot;,&quot;CACHE_TIME&quot;:&quot;86400&quot;,&quot;CACHE_NOTES&quot;:&quot;&quot;,&quot;CACHE_GROUPS&quot;:false,&quot;SAVE_IN_SESSION&quot;:false,&quot;XML_EXPORT&quot;:&quot;Y&quot;,&quot;SECTION_TITLE&quot;:&quot;NAME&quot;,&quot;SECTION_DESCRIPTION&quot;:&quot;DESCRIPTION&quot;,&quot;SHOW_HINTS&quot;:&quot;N&quot;,&quot;CONVERT_CURRENCY&quot;:false,&quot;CURRENCY_ID&quot;:&quot;&quot;,&quot;DISPLAY_ELEMENT_COUNT&quot;:&quot;N&quot;,&quot;INSTANT_RELOAD&quot;:true,&quot;VIEW_MODE&quot;:&quot;&quot;,&quot;SEF_MODE&quot;:&quot;N&quot;,&quot;SEF_RULE&quot;:&quot;&quot;,&quot;SMART_FILTER_PATH&quot;:&quot;&quot;,&quot;HIDE_NOT_AVAILABLE&quot;:&quot;N&quot;,&quot;COMPONENT_TEMPLATE&quot;:&quot;front&quot;,&quot;SECTION_CODE&quot;:&quot;&quot;,&quot;PAGER_PARAMS_NAME&quot;:&quot;arrPager&quot;,&quot;BLOCK_TITLE_WHEELS&quot;:&quot;дисков&quot;,&quot;TYPE&quot;:&quot;wheels&quot;,&quot;ALL_LINK_TITLE&quot;:&quot;Все диски&quot;,&quot;PREFILTER_NAME&quot;:&quot;smartPreFilter&quot;,&quot;~IBLOCK_TYPE&quot;:&quot;aspro_tires2_catalog&quot;,&quot;~IBLOCK_ID&quot;:&quot;162&quot;,&quot;~FILTER_URL&quot;:&quot;/catalog/wheels/&quot;,&quot;~SECTION_ID&quot;:&quot;0&quot;,&quot;~FILTER_NAME&quot;:&quot;arTires2Filter&quot;,&quot;~PRICE_CODE&quot;:[],&quot;~CACHE_TYPE&quot;:&quot;A&quot;,&quot;~CACHE_TIME&quot;:&quot;86400&quot;,&quot;~CACHE_NOTES&quot;:&quot;&quot;,&quot;~CACHE_GROUPS&quot;:false,&quot;~SAVE_IN_SESSION&quot;:false,&quot;~XML_EXPORT&quot;:&quot;Y&quot;,&quot;~SECTION_TITLE&quot;:&quot;NAME&quot;,&quot;~SECTION_DESCRIPTION&quot;:&quot;DESCRIPTION&quot;,&quot;~SHOW_HINTS&quot;:&quot;N&quot;,&quot;~CONVERT_CURRENCY&quot;:false,&quot;~CURRENCY_ID&quot;:&quot;&quot;,&quot;~DISPLAY_ELEMENT_COUNT&quot;:&quot;N&quot;,&quot;~INSTANT_RELOAD&quot;:true,&quot;~VIEW_MODE&quot;:&quot;&quot;,&quot;~SEF_MODE&quot;:&quot;N&quot;,&quot;~SEF_RULE&quot;:&quot;&quot;,&quot;~SMART_FILTER_PATH&quot;:&quot;&quot;,&quot;~HIDE_NOT_AVAILABLE&quot;:&quot;N&quot;,&quot;~COMPONENT_TEMPLATE&quot;:&quot;front&quot;,&quot;~SECTION_CODE&quot;:&quot;&quot;,&quot;~PAGER_PARAMS_NAME&quot;:&quot;arrPager&quot;,&quot;~BLOCK_TITLE_WHEELS&quot;:&quot;дисков&quot;,&quot;~TYPE&quot;:&quot;wheels&quot;,&quot;~ALL_LINK_TITLE&quot;:&quot;Все диски&quot;,&quot;~PREFILTER_NAME&quot;:&quot;smartPreFilter&quot;,&quot;POPUP_POSITION&quot;:&quot;left&quot;}"
               data-template="front">
-              <div class="title_block clearfix" style="height: 32px;">
+              <div class="title_block clearfix">
                 <span class="link_item pull-right" data-filter="avto">По авто</span>
                 <span class="link_item pull-right active" data-filter="params">По параметрам</span>
                 <div class="title">
@@ -6115,7 +6117,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
   <!-- features -->
   <section class="features">
     <div class="features__container container">
@@ -6615,6 +6617,7 @@
 <script src="./libs/swiper/swiper-bundle.min.js"></script>
 <script src="./libs/priority-nav/priority-nav.min.js"></script>
 <script src="./libs/inputmask.min.js"></script>
+<script src="./libs/nouislider/nouislider.min.js"></script>
 <!-- JavaScript -->
 <script src="./js/main.js"></script>
 

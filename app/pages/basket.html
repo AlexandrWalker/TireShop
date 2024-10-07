@@ -18,12 +18,72 @@
   </section>
   <section class="basket">
     <div class="basket__container container">
-      <div class="basket__empty">
+      <div class="basket__empty" style="display: none;">
         <img src="./images/basket/empty_cart.svg" alt="">
         <h2 class="basket__empty-title">Ваша корзина пуста</h2>
         <p class="basket__empty-subtitle">
           <a href="/">Нажмите здесь</a>, чтобы продолжить покупки
         </p>
+      </div>
+      <div class="basket__head">
+        <div class="basket__coupon">
+          <p class="basket__coupon-text">
+            Введите код купона для скидки:
+          </p>
+          <div class="basket__coupon-item">
+            <input class="basket__coupon-input" type="text">
+            <input class="basket__coupon-btn" type="button">
+          </div>
+        </div>
+        <div class="basket__block">
+          <div class="basket__block-text">
+            <h3>Итого:</h3>
+            <p>Сумма НДС: 0 руб.</p>
+          </div>
+          <div class="basket__block-price">
+            2 100 руб.
+          </div>
+        </div>
+        <div class="basket__btns">
+          <a class="basket__btn btn" href="/">Оформить заказ</a>
+          <a class="basket__btn btn btn-green" href="/">Быстрый заказ</a>
+        </div>
+      </div>
+      <div class="basket__body">
+        <div class="basket__items">
+          <div class="basket__item">
+            <a class="basket__item-img" href="/">
+              <img src="./../images/basket/akb.jpg" alt="Аккумулятор автомобильный Bosch 0092S30010">
+            </a>
+            <p class="basket__item-text">Аккумулятор автомобильный Bosch 0092S30010</p>
+            <div class="basket__properties">
+              <p class="basket__properties-type">Тип цены</p>
+              <p class="basket__properties-text">Розничная цена</p>
+            </div>
+            <div class="basket__price">
+              <p class="basket__price-item">
+                <span>2 100</span> руб.
+              </p>
+              <p class="basket__price-text">
+                цена за <span>1</span> шт
+              </p>
+            </div>
+            <div class="basket__counter">
+              <div class="catalog__counter">
+                <span class="catalog__counter-item minus">-</span>
+                <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
+                <span class="catalog__counter-item plus">+</span>
+              </div>
+              <span class="basket__counter-text">шт</span>
+            </div>
+            <div class="basket__result">
+              <span>2 100</span> руб.
+            </div>
+            <span class="close">
+              Восстановить
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -464,5 +524,7 @@
       </div>
     </div>
   </section>
+  <!-- scroll top -->
+  <a id="scroll-top" class="scroll-top" href="#wrapper"></a>
 </main>
 <!--=include footer.html-->

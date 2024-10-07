@@ -41,7 +41,7 @@ body {
   visibility: hidden;
 
   &:hover {
-    background-color: #5e9a42;
+    background-color: var(--tertiary-green-color);
   }
 
   &.show {

@@ -547,6 +547,30 @@
       color: var(--primary-disabled-color);
       transition: var(--primary-transition);
 
+      &.mob-filter {
+        display: none;
+        align-items: center;
+        gap: 0;
+        width: fit-content;
+        background-color: #e5e5e5;
+        border-radius: var(--primary-border-radius);
+        color: var(--secondary-color);
+        white-space: nowrap;
+        font-size: 13px;
+        line-height: 14px;
+        padding: 10px 14px;
+
+        .sort__filter-icon {
+          display: block;
+          background: url(./../images/icons/sort_icons.svg);
+          background-repeat: no-repeat;
+          background-position: -1px -62px;
+          width: 15px;
+          height: 13px;
+          margin: 0 7px 0 0;
+        }
+      }
+
       &.up svg {
         transform: rotate(180deg);
       }

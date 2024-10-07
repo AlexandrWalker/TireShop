@@ -146,6 +146,7 @@
       text-align: center;
       white-space: nowrap;
       text-decoration: none;
+      position: static;
 
       &:hover {
         color: var(--primary-green-color);
