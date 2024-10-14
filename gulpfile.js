@@ -71,6 +71,15 @@ function styles() {
     .pipe(browserSync.stream())
 }
 
+function styles() {
+  return src('app/scss/elements/sidebar.scss')
+    .pipe(autoprefixer({ overrideBrowserslist: ['last 10 version'] }))
+    .pipe(concat('sidebar.css'))
+    .pipe(scss({ outputStyle: 'expanded' }))
+    .pipe(dest('app/css'))
+    .pipe(browserSync.stream())
+}
+
 function watching() {
   browserSync.init({
     server: {
@@ -94,6 +103,7 @@ function building() {
     '!app/pages/*.html',
 
     'app/css/style.css',
+    'app/css/sidebar.css',
 
     'app/js/*.js',
     '!app/js/main.min.js',
@@ -102,7 +112,7 @@ function building() {
     'app/images/*.*',
     '!app/images/src/**/*.*',
     '!app/images/src/*.*',
-    
+
     'app/fonts/*.*',
 
     'app/libs/**/*.*',
