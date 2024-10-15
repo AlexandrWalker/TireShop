@@ -1,0 +1,163 @@
+/* panel style start */
+.panel {
+  float: left;
+  width: 234px;
+}
+.panel__items {
+  display: flex;
+  flex-direction: column;
+}
+.panel__item {
+  background: var(--primary-white-color);
+  border: var(--primary-border);
+  position: relative;
+}
+.panel__item:hover {
+  color: var(--primary-green-color);
+}
+.panel__item:hover::before {
+  display: block;
+}
+.panel__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--primary-green-color);
+  display: none;
+}
+.panel__item-link {
+  display: block;
+  padding: 12px 31px 12px 17px;
+  font-size: 13px;
+  font-weight: 400;
+  color: inherit;
+}
+.panel__item-exit {
+  color: var(--primary-green-color);
+}
+.panel__item-exit:hover::before {
+  display: none;
+}
+.panel__item-exit .panel__item-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.panel__item-exit .panel__item-link::before {
+  content: "";
+  display: inline-block !important;
+  width: 5px;
+  height: 8px;
+  position: static;
+  background-color: transparent;
+  background-image: url(./../../images/icons/down_arrow_icons.png);
+  background-repeat: no-repeat;
+  background-position: -3px -292px;
+}
+
+@media (max-width: 1200px) {
+  .panel {
+    width: 210px;
+  }
+}
+@media (max-width: 991px) {
+  .panel__item {
+    border: 0;
+    width: fit-content;
+  }
+  .panel__item:not(.panel__item-exit) {
+    display: none;
+  }
+}
+/* panel style end */
+.private {
+  display: flex;
+}
+.private-panel__item {
+  color: var(--primary-white-color);
+  background-color: var(--primary-green-color);
+}
+.private-panel__item:hover {
+  color: var(--primary-white-color);
+}
+.private__content {
+  float: right;
+  position: relative;
+  padding: 38px 43px;
+  width: calc(100% - 264px);
+  border: var(--primary-border);
+}
+.private .callback__form {
+  gap: 20px 25px;
+}
+.private .callback__inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.private .callback__input {
+  display: block;
+  width: 59%;
+  float: left;
+}
+.private .callback__label-head {
+  width: 59%;
+}
+.private .callback__label-body {
+  width: 100%;
+}
+.private .callback__label-text {
+  width: calc(41% - 25px);
+  float: right;
+  font-size: 12px;
+  color: var(--secondary-smooth-color);
+}
+.private .callback__btns {
+  gap: 26px;
+}
+
+@media (max-width: 1200px) {
+  .private__content {
+    width: calc(100% - 240px);
+  }
+}
+@media (max-width: 991px) {
+  .private__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .private__content {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .private .callback__label-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .private__content {
+    padding: 20px;
+  }
+  .private .callback__label-head {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .private .callback__input {
+    width: 100%;
+    margin: 0;
+  }
+  .private .callback__label-text {
+    width: 100%;
+  }
+  .private .callback__label {
+    margin-bottom: 20px;
+  }
+  .private .callback__label-error {
+    margin: 0 0 0 auto;
+  }
+}

@@ -1,0 +1,116 @@
+.private {
+  display: flex;
+
+  &-panel__item {
+    color: var(--primary-white-color);
+    background-color: var(--primary-green-color);
+
+    &:hover {
+      color: var(--primary-white-color);
+    }
+  }
+
+  &__container {}
+
+  &__content {
+    float: right;
+    position: relative;
+    padding: 38px 43px;
+    width: calc(100% - 264px);
+    border: var(--primary-border);
+  }
+
+  &__inputs {}
+
+  .callback {
+
+    &__form {
+      gap: 20px 25px;
+    }
+
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__input {
+      display: block;
+      width: 59%;
+      float: left;
+    }
+
+    &__label {
+
+      &-head {
+        width: 59%;
+      }
+
+      &-body {
+        width: 100%;
+      }
+
+      &-text {
+        width: calc(41% - 25px);
+        float: right;
+        font-size: 12px;
+        color: var(--secondary-smooth-color);
+      }
+    }
+
+    &__btns {
+      gap: 26px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .private__content {
+    width: calc(100% - 240px);
+  }
+}
+
+@media (max-width: 991px) {
+  .private__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .private__content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .private .callback__label-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .private__content {
+    padding: 20px;
+  }
+
+  .private .callback__label-head {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .private .callback__input {
+    width: 100%;
+    margin: 0;
+  }
+
+  .private .callback__label-text {
+    width: 100%;
+  }
+
+  .private .callback__label {
+    margin-bottom: 20px;
+  }
+
+  .private .callback__label-error {
+    margin: 0 0 0 auto;
+  }
+}

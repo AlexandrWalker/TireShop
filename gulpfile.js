@@ -62,6 +62,14 @@ function scripts() {
     .pipe(browserSync.stream())
 }
 
+function scripts() {
+  return src([
+    'app/js/main-v2.js'
+  ])
+    .pipe(dest('app/js'))
+    .pipe(browserSync.stream())
+}
+
 function styles() {
   return src('app/scss/style.scss')
     .pipe(autoprefixer({ overrideBrowserslist: ['last 10 version'] }))
@@ -72,9 +80,9 @@ function styles() {
 }
 
 function styles() {
-  return src('app/scss/elements/sidebar.scss')
+  return src('app/scss/style-v2.scss')
     .pipe(autoprefixer({ overrideBrowserslist: ['last 10 version'] }))
-    .pipe(concat('sidebar.css'))
+    .pipe(concat('style-v2.css'))
     .pipe(scss({ outputStyle: 'expanded' }))
     .pipe(dest('app/css'))
     .pipe(browserSync.stream())
@@ -89,6 +97,7 @@ function watching() {
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/images/src'], images);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
+  watch(['app/js/**/*.js', '!app/js/main-v2.js'], scripts);
   watch(['app/components/*', 'app/pages/*'], pages);
   watch(['app/*.html']).on('change', browserSync.reload);
 }
