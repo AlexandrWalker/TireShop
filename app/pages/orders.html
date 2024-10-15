@@ -1,0 +1,101 @@
+<!--=include header.html-->
+<main class="main">
+  <section class="page">
+    <div class="page__container container">
+      <h1 class="page__title">
+        Профиль пользователя
+      </h1>
+      <div class="breadcrumb">
+        <a class="breadcrumb__link" href="/">
+          Главная
+        </a>
+        <span>-</span>
+        <a class="breadcrumb__link" href="/">
+          Личный кабинет
+        </a>
+        <span>-</span>
+        <p>
+          Мои заказы
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="personal orders">
+    <div class="personal__container container">
+      <!--=include panel.html-->
+      <script>
+        document.querySelector('.orders-panel__item').classList.add('active');
+      </script>
+      <div class="personal__content">
+        <div class="orders__content">
+          <h2 class="orders__title">Текущие заказы не найдены</h2>
+          <div class="orders__block">
+            <a class="orders__block-link" href="/">
+              Посмотреть историю заказов
+            </a>
+            <a class="orders__block-link" href="/">
+              Посмотреть историю отмененных заказов
+            </a>
+          </div>
+          <div class="orders__block">
+            <a class="orders__block-link" href="/">
+              Перейти в каталог
+            </a>
+          </div>
+        </div>
+
+        <h2 class="orders__title">
+          Заказы в статусе «Принят, ожидается оплата»
+        </h2>
+        <div class="orders__inner">
+          <div class="orders__head">
+            <p class="orders__head-text">Заказ №2778 от 15.10.2024, 2 товара на сумму 5 156 руб.</p>
+          </div>
+          <div class="orders__body">
+            <div class="orders__item">
+              <p class="orders__item-title">Оплата</p>
+              <div class="orders__list">
+                <div class="orders__list-item">
+                  <div class="orders__list-name">Счет №2778/1 от 15.10.2024,</div>
+                  <div class="orders__list-payment"> Яндекс.Деньги</div>
+                  <div class="orders__list-status">Не оплачено</div>
+                </div>
+                <div class="orders__list-sum">
+                  Сумма к оплате по счету: <span>5 156 руб</span>.
+                </div>
+                <a class="orders__list-change" href="#!">
+                  сменить способ оплаты
+                </a>
+              </div>
+              <div class="orders__btn">
+                <a class="btn btn-green" href="/">Оплатить</a>
+              </div>
+            </div>
+            <div class="orders__item">
+              <p class="orders__item-title">Доставка</p>
+              <div class="orders__list">
+                <div class="orders__list-item">
+                  <div class="orders__list-name">Отгрузка №2778/2, </div>
+                  <div class="orders__list-payment">стоимость доставки 0 руб.</div>
+                  <div class="orders__list-status">Не отгружено</div>
+                </div>
+                <div class="orders__list-shipments">
+                  Статус отгрузки: <span>Ожидает обработки</span>
+                </div>
+                <div class="orders__list-delivery">
+                  Служба доставки: <span>Самовывоз</span>.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="orders__footer">
+            <a href="/" class="btn btn-green"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- scroll top -->
+  <a id="scroll-top" class="scroll-top" href="#wrapper"></a>
+</main>
+<!--=include footer.html-->

@@ -20,62 +20,71 @@
       </div>
     </div>
   </section>
-  <section class="private">
-    <div class="private__container container">
+  <section class="personal private">
+    <div class="personal__container container">
       <!--=include panel.html-->
-      <div class="private__content">
-        <form class="callback__form" action="#" method="post">
 
-          <div class="callback__inputs">
+      <script>
+        document.querySelector('.private-panel__item').classList.add('active');
+      </script>
 
-            <label class="callback__label" for="name">
-              <div class="callback__label-head">
-                <p class="callback__label-title">Фамилия Имя Отчество <span>*</span></p>
-                <p class="callback__label-error">Обязательное поле</p>
-              </div>
-              <div class="callback__label-body">
-                <input class="callback__input required" id="name" type="text" data-sid="CLIENT_NAME" required=""
-                  name="form_name" value="" aria-required="true" aria-invalid="true">
-                <p class="callback__label-text">Заполните, чтобы мы знали, как к вам обращаться</p>
-              </div>
-            </label>
+      <div class="personal__content">
+        <div class="private__content">
 
-            <label class="callback__label" for="tel">
-              <div class="callback__label-head">
-                <p class="callback__label-title">Телефон <span>*</span></p>
-                <p class="callback__label-error">Обязательное поле</p>
-              </div>
-              <div class="callback__label-body">
-                <input class="callback__input required" id="tel" type="tel" data-sid="PHONE" required="" name="form_tel"
-                  value="" aria-required="true" aria-invalid="true">
-                <p class="callback__label-text">Необходим для уточнения деталей заказа</p>
-              </div>
-            </label>
+          <form class="callback__form" action="#" method="post">
 
-            <label class="callback__label" for="email">
-              <div class="callback__label-head">
-                <p class="callback__label-title">E-mail</p>
-              </div>
-              <div class="callback__label-body">
-                <input class="callback__input" id="email" type="email" placeholder="mail@domen.com" data-sid="EMAIL"
-                  name="form_email" value="">
-                <p class="callback__label-text">Для отправки уведомлений о статусе заказа. Используйте как логин для
-                  входа
-                  в личный кабинет</p>
-              </div>
-            </label>
-          </div>
+            <div class="callback__inputs">
 
-          <div class="callback__btns">
-            <p class="callback__text">
-              <span>*</span> — Обязательные поля
-            </p>
-            <button class="callback__btn btn btn-green">
-              Сохранить изменения
-            </button>
-          </div>
+              <label class="callback__label" for="name">
+                <div class="callback__label-head">
+                  <p class="callback__label-title">Фамилия Имя Отчество <span>*</span></p>
+                  <p class="callback__label-error">Обязательное поле</p>
+                </div>
+                <div class="callback__label-body">
+                  <input class="callback__input required" id="name" type="text" data-sid="CLIENT_NAME" required=""
+                    name="form_name" value="" aria-required="true" aria-invalid="true">
+                  <p class="callback__label-text">Заполните, чтобы мы знали, как к вам обращаться</p>
+                </div>
+              </label>
 
-        </form>
+              <label class="callback__label" for="tel">
+                <div class="callback__label-head">
+                  <p class="callback__label-title">Телефон <span>*</span></p>
+                  <p class="callback__label-error">Обязательное поле</p>
+                </div>
+                <div class="callback__label-body">
+                  <input class="callback__input required" id="tel" type="tel" data-sid="PHONE" required=""
+                    name="form_tel" value="" aria-required="true" aria-invalid="true">
+                  <p class="callback__label-text">Необходим для уточнения деталей заказа</p>
+                </div>
+              </label>
+
+              <label class="callback__label" for="email">
+                <div class="callback__label-head">
+                  <p class="callback__label-title">E-mail</p>
+                </div>
+                <div class="callback__label-body">
+                  <input class="callback__input" id="email" type="email" placeholder="mail@domen.com" data-sid="EMAIL"
+                    name="form_email" value="">
+                  <p class="callback__label-text">Для отправки уведомлений о статусе заказа. Используйте как логин для
+                    входа
+                    в личный кабинет</p>
+                </div>
+              </label>
+            </div>
+
+            <div class="callback__btns">
+              <p class="callback__text">
+                <span>*</span> — Обязательные поля
+              </p>
+              <button class="callback__btn btn btn-green">
+                Сохранить изменения
+              </button>
+            </div>
+
+          </form>
+        </div>
+
       </div>
     </div>
   </section>

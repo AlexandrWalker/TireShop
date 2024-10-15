@@ -32,6 +32,16 @@
       display: none;
     }
 
+    &.active {
+      color: var(--primary-white-color);
+      background-color: var(--primary-green-color);
+      border-color: var(--primary-green-color);
+
+      &:hover {
+        color: var(--primary-white-color);
+      }
+    }
+
     &-link {
       display: block;
       padding: 12px 31px 12px 17px;

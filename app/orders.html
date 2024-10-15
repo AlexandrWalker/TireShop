@@ -4343,12 +4343,12 @@
         </a>
         <span>-</span>
         <p>
-          Персональные данные
+          Мои заказы
         </p>
       </div>
     </div>
   </section>
-  <section class="personal private">
+  <section class="personal orders">
     <div class="personal__container container">
       <aside class="panel">
         <div class="panel__container">
@@ -4371,68 +4371,75 @@
           </div>
         </div>
       </aside>
-
       <script>
-        document.querySelector('.private-panel__item').classList.add('active');
+        document.querySelector('.orders-panel__item').classList.add('active');
       </script>
-
       <div class="personal__content">
-        <div class="private__content">
-
-          <form class="callback__form" action="#" method="post">
-
-            <div class="callback__inputs">
-
-              <label class="callback__label" for="name">
-                <div class="callback__label-head">
-                  <p class="callback__label-title">Фамилия Имя Отчество <span>*</span></p>
-                  <p class="callback__label-error">Обязательное поле</p>
-                </div>
-                <div class="callback__label-body">
-                  <input class="callback__input required" id="name" type="text" data-sid="CLIENT_NAME" required=""
-                    name="form_name" value="" aria-required="true" aria-invalid="true">
-                  <p class="callback__label-text">Заполните, чтобы мы знали, как к вам обращаться</p>
-                </div>
-              </label>
-
-              <label class="callback__label" for="tel">
-                <div class="callback__label-head">
-                  <p class="callback__label-title">Телефон <span>*</span></p>
-                  <p class="callback__label-error">Обязательное поле</p>
-                </div>
-                <div class="callback__label-body">
-                  <input class="callback__input required" id="tel" type="tel" data-sid="PHONE" required=""
-                    name="form_tel" value="" aria-required="true" aria-invalid="true">
-                  <p class="callback__label-text">Необходим для уточнения деталей заказа</p>
-                </div>
-              </label>
-
-              <label class="callback__label" for="email">
-                <div class="callback__label-head">
-                  <p class="callback__label-title">E-mail</p>
-                </div>
-                <div class="callback__label-body">
-                  <input class="callback__input" id="email" type="email" placeholder="mail@domen.com" data-sid="EMAIL"
-                    name="form_email" value="">
-                  <p class="callback__label-text">Для отправки уведомлений о статусе заказа. Используйте как логин для
-                    входа
-                    в личный кабинет</p>
-                </div>
-              </label>
-            </div>
-
-            <div class="callback__btns">
-              <p class="callback__text">
-                <span>*</span> — Обязательные поля
-              </p>
-              <button class="callback__btn btn btn-green">
-                Сохранить изменения
-              </button>
-            </div>
-
-          </form>
+        <div class="orders__content">
+          <h2 class="orders__title">Текущие заказы не найдены</h2>
+          <div class="orders__block">
+            <a class="orders__block-link" href="/">
+              Посмотреть историю заказов
+            </a>
+            <a class="orders__block-link" href="/">
+              Посмотреть историю отмененных заказов
+            </a>
+          </div>
+          <div class="orders__block">
+            <a class="orders__block-link" href="/">
+              Перейти в каталог
+            </a>
+          </div>
         </div>
 
+        <h2 class="orders__title">
+          Заказы в статусе «Принят, ожидается оплата»
+        </h2>
+        <div class="orders__inner">
+          <div class="orders__head">
+            <p class="orders__head-text">Заказ №2778 от 15.10.2024, 2 товара на сумму 5 156 руб.</p>
+          </div>
+          <div class="orders__body">
+            <div class="orders__item">
+              <p class="orders__item-title">Оплата</p>
+              <div class="orders__list">
+                <div class="orders__list-item">
+                  <div class="orders__list-name">Счет №2778/1 от 15.10.2024,</div>
+                  <div class="orders__list-payment"> Яндекс.Деньги</div>
+                  <div class="orders__list-status">Не оплачено</div>
+                </div>
+                <div class="orders__list-sum">
+                  Сумма к оплате по счету: <span>5 156 руб</span>.
+                </div>
+                <a class="orders__list-change" href="#!">
+                  сменить способ оплаты
+                </a>
+              </div>
+              <div class="orders__btn">
+                <a class="btn btn-green" href="/">Оплатить</a>
+              </div>
+            </div>
+            <div class="orders__item">
+              <p class="orders__item-title">Доставка</p>
+              <div class="orders__list">
+                <div class="orders__list-item">
+                  <div class="orders__list-name">Отгрузка №2778/2, </div>
+                  <div class="orders__list-payment">стоимость доставки 0 руб.</div>
+                  <div class="orders__list-status">Не отгружено</div>
+                </div>
+                <div class="orders__list-shipments">
+                  Статус отгрузки: <span>Ожидает обработки</span>
+                </div>
+                <div class="orders__list-delivery">
+                  Служба доставки: <span>Самовывоз</span>.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="orders__footer">
+            <a href="/" class="btn btn-green"></a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
