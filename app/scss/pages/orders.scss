@@ -44,6 +44,7 @@
   &__body {
     border: var(--primary-border);
     border-top: 0;
+    border-bottom: 0;
   }
 
   &__item {
@@ -57,6 +58,10 @@
       width: 100%;
       margin-bottom: 8px;
     }
+
+    &:not(:last-child) {
+      border-bottom: var(--primary-border);
+    }
   }
 
   &__list {
@@ -67,26 +72,36 @@
     &-item {
       display: flex;
       flex-direction: row;
-      align-items: center;
+      /*align-items: center;*/
       font-size: 15px;
       font-weight: 700;
       color: var(--secondary-color);
     }
 
     &-name {
-      padding-right: 4px;
+      /*padding-right: 4px;*/
     }
 
     &-status {
       font-size: 12px;
       line-height: 1;
       color: var(--primary-red-color);
-      margin: 3px 0 3px 20px;
+      white-space: nowrap;
+      width: fit-content;
+      height: fit-content;
+      margin: 0 0 3px 20px;
       padding: 4px 11px 5px 10px;
       border: var(--primary-border);
       border-radius: var(--primary-border-radius);
       border-color: #f7bcbc;
       background: #fdeeee;
+
+      &.paid,
+      &.shipments {
+        color: #fff;
+        border-color: rgb(0, 180, 0);
+        background: rgb(0, 180, 0);
+      }
     }
 
     &-sum {
@@ -105,6 +120,9 @@
       span {
         line-height: 1;
         color: #535c69;
+        white-space: nowrap;
+        width: fit-content;
+        height: fit-content;
         margin: 3px 0 3px 20px;
         padding: 4px 11px 5px 10px;
         border: 1px solid rgba(128, 134, 142, 0.20);
@@ -145,6 +163,58 @@
         z-index: 2;
       }
     }
+
+    &.order__payments--active .orders__payments {
+      display: flex;
+    }
+
+    &.order__payments--active .orders__list-change::after {
+      display: none;
+    }
+  }
+
+  &__payments {
+    display: none;
+    flex-wrap: wrap;
+    gap: 30px 10px;
+    padding: 20px 0 30px;
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      width: calc(50% - 5px);
+      cursor: pointer;
+
+      &:hover {
+        .orders__payments-title {
+          color: var(--primary-green-color);
+        }
+
+        .orders__payments-img {
+          border-color: var(--primary-green-color);
+        }
+      }
+    }
+
+    &-img {
+      width: 118px;
+      height: 70px;
+      padding: 10px;
+      border: var(--primary-border);
+      background-color: #fbfbfb;
+      transition: var(--tertiary-transition);
+      flex-shrink: 0;
+    }
+
+    &-title {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 20px;
+      color: var(--secondary-grey-color);
+      transition: var(--tertiary-transition);
+    }
   }
 
   &__btn {
@@ -156,6 +226,86 @@
       width: fit-content;
       height: fit-content;
       padding: 7px 12px 8px;
+      margin-left: 10px;
     }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px 15px 22px 22px;
+    border: var(--primary-border);
+
+    &-btns {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    .btn {
+      padding: 7px 18px 9px;
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .orders__list-item {
+    flex-direction: column;
+  }
+
+  .orders__list-status {
+    margin: 3px 0;
+  }
+
+  .orders__list-shipments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+    align-items: center;
+  }
+
+  .orders__list-shipments span {
+    margin: 3px 0;
+  }
+
+  .orders__footer-btns {
+    flex-wrap: wrap;
+  }
+
+  .orders__payments-item {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .orders__payments-img {
+    width: 98px;
+    height: 60px;
+  }
+
+  .orders__payments-title {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 550px) {
+  .orders__list {
+    width: 100%;
+  }
+
+  .orders__btn {
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .orders__btn .btn {
+    margin: 0;
+  }
+
+  .orders .personal__content {
+    padding: 0;
   }
 }

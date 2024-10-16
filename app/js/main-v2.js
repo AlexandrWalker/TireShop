@@ -17,5 +17,43 @@
       })
     }
 
+    (function () {
+      const orders__payments = document.querySelector('.orders__payments');
+      if (orders__payments) {
+        var ordersPayment = document.querySelectorAll('.orders__payments-item'),
+          ordersPaymentActive = document.getElementsByClassName('orders__payments-item--active'),
+          ordersListPayment = document.querySelector('.orders__list-payment');
+
+        Array.from(ordersPayment).forEach(function (ordersPaymentsItem, i, ordersPayment) {
+          ordersPaymentsItem.addEventListener('click', function (e) {
+            if (ordersPaymentActive.length > 0 && ordersPaymentActive[0] !== this)
+              ordersPaymentActive[0].classList.remove('orders__payments-item--active');
+
+            this.classList.toggle('orders__payments-item--active');
+            ordersListPayment.dataset.value = this.dataset.value;
+            ordersListPayment.innerHTML = ordersListPayment.dataset.value;
+          });
+        });
+      }
+    })();
+
+    (function () {
+      const orders__change = document.querySelector('.orders__list-change');
+      if (orders__change) {
+        var ordersChange = document.querySelectorAll('.orders__list-change'),
+          ordersChangeActive = document.getElementsByClassName('orders__list-change--active');
+
+        Array.from(ordersChange).forEach(function (ordersChangeItem, i, ordersChange) {
+          ordersChangeItem.addEventListener('click', function (e) {
+            if (ordersChangeActive.length > 0 && ordersChangeActive[0] !== this)
+              ordersChangeActive[0].parentNode.classList.remove('orders__list-change--active')
+
+            // this.classList.toggle('orders__list-change--active');
+            this.parentNode.classList.toggle('order__payments--active');
+          });
+        });
+      }
+    })();
+
   });
 })();

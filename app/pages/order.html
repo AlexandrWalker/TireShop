@@ -1,0 +1,246 @@
+<!--=include header.html-->
+<main class="main">
+  <section class="page">
+    <div class="page__container container">
+      <h1 class="page__title">
+        Оформление заказа
+      </h1>
+      <div class="breadcrumb">
+        <a class="breadcrumb__link" href="/">
+          Главная
+        </a>
+        <span>-</span>
+        <p>
+          Оформление заказа
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="order">
+    <div class="order__container container">
+      <form class="form" action="">
+
+        <div class="buyer">
+          <h2 class="buyer__title">
+            Тип покупателя и регион доставки
+          </h2>
+
+          <div class="buyer__items">
+
+            <div class="buyer__radio">
+              <input class="radio-input" id="order_buyer" type="radio" name="PERSON_TYPE" value="Физическое лицо"
+                checked="checked">
+              <label class="radio-label" for="order_buyer">
+                Физическое лицо
+              </label>
+            </div>
+
+            <div class="buyer__profile">
+              <label class="label">
+                <div class="label-head">
+                  <p class="label-title">Выберите профиль</p>
+                </div>
+                <input class="buyer__profile-input" type="hidden" value="1" name="profile_change">
+                <select class="buyer__profile-select" name="PROFILE_ID">
+                  <option value="0">Новый профиль</option>
+                  <option value="1" selected>Александр</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="buyer__item">
+              <label class="label">
+                <div class="label-head">
+                  <p class="label-title">Ф.И.О.<span> *</span></p>
+                  <p class="label-error">Обязательное поле</p>
+                </div>
+                <input class="input" type="text" size="40" name="ORDER_NAME" placeholder="" required>
+              </label>
+            </div>
+
+            <div class="buyer__item">
+              <label class="label">
+                <div class="label-head">
+                  <p class="label-title">E-Mail<span> *</span></p>
+                  <p class="label-error">Обязательное поле</p>
+                </div>
+                <input class="input" type="text" size="40" name="ORDER_EMAIL" placeholder="" required>
+              </label>
+            </div>
+
+            <div class="buyer__item">
+              <label class="label">
+                <div class="label-head">
+                  <p class="label-title">Телефон<span> *</span></p>
+                  <p class="label-error">Обязательное поле</p>
+                </div>
+                <input class="input" type="tel" value="" size="30" name="ORDER_TEL" required>
+              </label>
+            </div>
+
+            <div class="buyer__item">
+              <div class="textareas">
+                <div class="textareas-head">
+                  <p class="label-title">Адрес доставки<span> *</span></p>
+                  <p class="label-error">Обязательное поле</p>
+                </div>
+                <textarea class="textarea" cols="4" name="ORDER_ADDRESS" required></textarea>
+              </div>
+            </div>
+
+            <div class="buyer__item">
+              <div class="textareas">
+                <div class="textareas-head">
+                  <p class="label-title">Комментарии к заказу:</p>
+                </div>
+                <textarea class="textarea" cols="4" name="ORDER_DESCRIPTION"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="method">
+
+          <div class="method__item">
+            <h2 class="method__title">
+              Способ доставки
+            </h2>
+            <div class="method__radio">
+              <input class="radio-input" id="order_delivery" type="radio" name="delivery_method"
+                value="Доставка курьером">
+              <label class="radio-label" for="order_delivery">
+                Доставка курьером
+              </label>
+              <span class="method__radio-item">
+                500 руб.
+              </span>
+              <p class="method__radio-text">
+                Доставка осуществляется в течение дня в удобное для вас время.
+              </p>
+            </div>
+            <div class="method__radio">
+              <input class="radio-input" id="order_pickup" type="radio" name="delivery_method" value="Самовывоз"
+                checked="checked">
+              <label class="radio-label" for="order_pickup">
+                Самовывоз
+              </label>
+              <span class="method__radio-item">
+                бесплатно
+              </span>
+              <p class="method__radio-text">
+                Вы можете самостоятельно забрать заказ из нашего магазина.
+              </p>
+            </div>
+          </div>
+
+          <div class="method__item">
+            <h2 class="method__title">
+              Способ оплаты
+            </h2>
+            <div class="method__radio">
+              <input class="radio-input" id="payment_radio_1" type="radio" name="payment_method" value="Яндекс.Деньги"
+                checked="checked">
+              <label class="radio-label" for="payment_radio_1">
+                Яндекс.Деньги
+              </label>
+            </div>
+            <div class="method__radio">
+              <input class="radio-input" id="payment_radio_2" type="radio" name="payment_method"
+                value="Банковские карты">
+              <label class="radio-label" for="payment_radio_2">
+                Банковские карты
+              </label>
+            </div>
+            <div class="method__radio">
+              <input class="radio-input" id="payment_radio_3" type="radio" name="payment_method" value="Терминалы">
+              <label class="radio-label" for="payment_radio_3">
+                Терминалы
+              </label>
+            </div>
+            <div class="method__radio">
+              <input class="radio-input" id="payment_radio_4" type="radio" name="payment_method"
+                value="Наличные курьеру">
+              <label class="radio-label" for="payment_radio_4">
+                Наличные курьеру
+              </label>
+            </div>
+            <div class="method__radio">
+              <input class="radio-input" id="payment_radio_5" type="radio" name="payment_method" value="Сбербанк">
+              <label class="radio-label" for="payment_radio_5">
+                Сбербанк
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="order__coupon">
+          <p class="order__coupon-text">
+            Применить купон:
+          </p>
+          <div class="order__coupon-item">
+            <input class="order__coupon-input" type="text">
+            <input class="order__coupon-btn" type="button">
+          </div>
+        </div>
+
+        <div class="goods">
+          <div class="goods__head">
+            <h2 class="goods__head-title">
+              Товары в заказе
+            </h2>
+            <a class="goods__head-link" href="/">
+              Подробнее
+            </a>
+          </div>
+
+          <div class="goods__body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <td>Наименование</td>
+                  <td>Скидка</td>
+                  <td>Цена</td>
+                  <td>Вес</td>
+                  <td>Количество</td>
+                  <td>Сумма</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="/">
+                      <img src="./../images/order/akb.jpg" alt="Amtel Planet DC 195/65 R15 91H">
+                    </a>
+                    <a href="/">
+                      <span>Amtel Planet DC 195/65 R15 91H</span>
+                    </a>
+                  </td>
+                  <td>0%</td>
+                  <td class="table__price">3 002 руб.</td>
+                  <td>0 кг</td>
+                  <td>1 шт</td>
+                  <td class="table__sum">3 002 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="goods__footer">
+            <p class="order__coupon-text">
+              Применить купон:
+            </p>
+            <div class="order__coupon-item">
+              <input class="order__coupon-input" type="text">
+              <input class="order__coupon-btn" type="button">
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </section>
+  <!-- scroll top -->
+  <a id="scroll-top" class="scroll-top" href="#wrapper"></a>
+</main>
+<!--=include footer.html-->

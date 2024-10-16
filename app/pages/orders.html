@@ -56,12 +56,49 @@
               <p class="orders__item-title">Оплата</p>
               <div class="orders__list">
                 <div class="orders__list-item">
-                  <div class="orders__list-name">Счет №2778/1 от 15.10.2024,</div>
-                  <div class="orders__list-payment"> Яндекс.Деньги</div>
+                  <div class="orders__list-name">Счет №2778/1 от 15.10.2024, <span class="orders__list-payment" data-value="Яндекс.Деньги">Яндекс.Деньги</span></div>
                   <div class="orders__list-status">Не оплачено</div>
+                  <!-- <div class="orders__list-status paid">Оплачено</div> -->
                 </div>
                 <div class="orders__list-sum">
                   Сумма к оплате по счету: <span>5 156 руб</span>.
+                </div>
+                <div class="orders__payments">
+                  <a class="orders__payments-item" href="#" data-value="Яндекс.Деньги">
+                    <input class="orders__payments-input" type="hidden" name="PAY_SYSTEM_ID">
+                    <img class="orders__payments-img" src="./../images/payments/yandex.gif" alt="Яндекс.Деньги">
+                    <div class="orders__payments-title">
+                      Яндекс.Деньги
+                    </div>
+                  </a>
+                  <a class="orders__payments-item" href="#" data-value="Банковские карты">
+                    <input class="orders__payments-input" type="hidden" name="PAY_SYSTEM_ID">
+                    <img class="orders__payments-img" src="./../images/payments/bank_cards.gif" alt="Банковские карты">
+                    <div class="orders__payments-title">
+                      Банковские карты
+                    </div>
+                  </a>
+                  <a class="orders__payments-item" href="#" data-value="Терминалы">
+                    <input class="orders__payments-input" type="hidden" name="PAY_SYSTEM_ID">
+                    <img class="orders__payments-img" src="./../images/payments/terminals.gif" alt="Терминалы">
+                    <div class="orders__payments-title">
+                      Терминалы
+                    </div>
+                  </a>
+                  <a class="orders__payments-item" href="#" data-value="Наличные курьеру">
+                    <input class="orders__payments-input" type="hidden" name="PAY_SYSTEM_ID">
+                    <img class="orders__payments-img" src="./../images/payments/cash.gif" alt="Наличные курьеру">
+                    <div class="orders__payments-title">
+                      Наличные курьеру
+                    </div>
+                  </a>
+                  <a class="orders__payments-item" href="#" data-value="Сбербанк">
+                    <input class="orders__payments-input" type="hidden" name="PAY_SYSTEM_ID">
+                    <img class="orders__payments-img" src="./../images/payments/sber.gif" alt="Сбербанк">
+                    <div class="orders__payments-title">
+                      Сбербанк
+                    </div>
+                  </a>
                 </div>
                 <a class="orders__list-change" href="#!">
                   сменить способ оплаты
@@ -75,9 +112,9 @@
               <p class="orders__item-title">Доставка</p>
               <div class="orders__list">
                 <div class="orders__list-item">
-                  <div class="orders__list-name">Отгрузка №2778/2, </div>
-                  <div class="orders__list-payment">стоимость доставки 0 руб.</div>
+                  <div class="orders__list-name">Отгрузка №2778/2, <span class="orders__list-payment">стоимость доставки 0 руб.</span></div>
                   <div class="orders__list-status">Не отгружено</div>
+                  <!-- <div class="orders__list-status shipments">Отгружено</div> -->
                 </div>
                 <div class="orders__list-shipments">
                   Статус отгрузки: <span>Ожидает обработки</span>
@@ -89,7 +126,17 @@
             </div>
           </div>
           <div class="orders__footer">
-            <a href="/" class="btn btn-green"></a>
+            <div class="orders__footer-btns">
+              <a href="/" class="btn btn-green">
+                Подробнее о заказе
+              </a>
+              <a href="/" class="btn btn-green">
+                Повторить заказ
+              </a>
+            </div>
+            <a href="/" class="btn btn-border">
+              Отменить заказ
+            </a>
           </div>
         </div>
       </div>
