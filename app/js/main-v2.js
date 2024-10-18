@@ -1,22 +1,67 @@
 (() => {
   document.addEventListener('DOMContentLoaded', () => {
 
-    // new validate
-    const requiredValue = document.querySelector('.required');
-    if (requiredValue) {
-      var button = document.querySelector('button[type="submit"]');
-      var required = document.querySelectorAll('.required');
-      button.addEventListener('click', function () {
-        for (var i = 0; i < required.length; i++) {
-          if (required[i].value !== '') {
-            required[i].parentNode.parentNode.classList.remove('error');
-          } else {
-            required[i].parentNode.parentNode.classList.add('error');
-          }
-        }
-      })
-    }
+    /**
+     * Инициализация таба карточки товара.
+     */
+    (function () {
+      const block__nav = document.querySelector('.block__nav');
+      if (block__nav) {
+        const blockBtn = document.querySelectorAll('.block__nav-item')
+        const blockItem = document.querySelectorAll('.block__item')
 
+        blockBtn.forEach(blockClick);
+
+        function blockClick(item) {
+          item.addEventListener('click', function () {
+            let currentBtn = item;
+            let blockId = currentBtn.getAttribute('data-tab');
+            let currentTab = document.querySelector(blockId);
+
+            if (!currentBtn.classList.contains('block__nav-item--active')) {
+
+              blockBtn.forEach(function (item) {
+                item.classList.remove('block__nav-item--active');
+              });
+
+              blockItem.forEach(function (item) {
+                item.classList.remove('block__item--active');
+              });
+
+              currentBtn.classList.add('block__nav-item--active');
+              currentTab.classList.add('block__item--active');
+            }
+          })
+        }
+      }
+    })();
+
+    /**
+     * Новая валидация
+     */
+    (function () {
+      const requiredValue = document.querySelector('.required');
+      if (requiredValue) {
+        var reqBtn = document.querySelectorAll('button');
+        var required = document.getElementsByClassName('required');
+
+        Array.from(reqBtn).forEach(function (reqItem, i, reqBtn) {
+          reqItem.addEventListener('click', function (e) {
+            for (var i = 0; i < required.length; i++) {
+              if (required[i].value !== '' && required[i].checked !== true) {
+                required[i].parentNode.parentNode.classList.remove('error');
+              } else {
+                required[i].parentNode.parentNode.classList.add('error');
+              }
+            }
+          });
+        });
+      }
+    })();
+
+    /**
+     * Скрипты для страницы оформления заказа
+     */
     (function () {
       const orders__payments = document.querySelector('.orders__payments');
       if (orders__payments) {

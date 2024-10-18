@@ -56,13 +56,11 @@ function scripts() {
   return src([
     'app/js/main.js'
   ])
-    .pipe(concat('main.min.js'))
-    .pipe(uglify())
     .pipe(dest('app/js'))
     .pipe(browserSync.stream())
 }
 
-function scripts() {
+function scripts_v2() {
   return src([
     'app/js/main-v2.js'
   ])
@@ -79,7 +77,7 @@ function styles() {
     .pipe(browserSync.stream())
 }
 
-function styles() {
+function styles_v2() {
   return src('app/scss/style-v2.scss')
     .pipe(autoprefixer({ overrideBrowserslist: ['last 10 version'] }))
     .pipe(concat('style-v2.css'))
@@ -95,9 +93,10 @@ function watching() {
     }
   });
   watch(['app/scss/**/*.scss'], styles);
+  watch(['app/scss/**/*.scss'], styles_v2);
   watch(['app/images/src'], images);
-  watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch(['app/js/**/*.js', '!app/js/main-v2.js'], scripts);
+  watch(['app/js/**/*.js', '!app/js/main.js'], scripts);
+  watch(['app/js/**/*.js', '!app/js/main-v2.js'], scripts_v2);
   watch(['app/components/*', 'app/pages/*'], pages);
   watch(['app/*.html']).on('change', browserSync.reload);
 }
@@ -115,7 +114,6 @@ function building() {
     'app/css/style-v2.css',
 
     'app/js/*.js',
-    '!app/js/main.min.js',
 
     'app/images/**/*.*',
     'app/images/*.*',

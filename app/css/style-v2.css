@@ -453,6 +453,9 @@
   gap: 30px;
   margin-top: -20px;
 }
+.order__footer .order__btn {
+  width: fit-content;
+}
 .order__footer .label-title {
   color: var(--secondary-black-color);
 }
@@ -510,7 +513,7 @@
   justify-content: space-between;
   gap: 10px;
 }
-.order__side-btn {
+.order__btn {
   width: 100%;
 }
 .order__result {
@@ -1320,17 +1323,17 @@
   color: #7d7d7d;
 }
 
-.tabs__inner {
+.block__inner {
   width: calc(100% - 318px);
   float: left;
 }
-.tabs__nav {
+.block__nav {
   display: flex;
   flex-direction: row;
   gap: 2px;
   margin-bottom: 39px;
 }
-.tabs__nav-item {
+.block__nav-item {
   background: var(--tertiary-bg-color);
   border: var(--primary-border);
   padding: 17px 25px 18px;
@@ -1339,56 +1342,60 @@
   text-align: center;
   cursor: pointer;
 }
-.tabs__nav-item:hover {
+.block__nav-item:hover {
   background-color: transparent;
   color: var(--primary-green-color);
 }
-.tabs__nav-item.tabs__nav-item--active {
+.block__nav-item.block__nav-item--active {
   background-color: transparent;
   color: var(--primary-green-color);
   border-top: 2px solid var(--primary-green-color);
   border-bottom: 0;
 }
-.tabs__char {
+.block__item {
+  display: none;
+}
+.block__item.block__item--active {
   display: flex;
+}
+.block__char {
   flex-direction: column;
 }
-.tabs__char-item {
+.block__char-item {
   display: flex;
   flex-direction: row;
   border-radius: var(--primary-border-radius);
 }
-.tabs__char-item span {
+.block__char-item span {
   width: 50%;
   padding: 8px 18px 9px;
+  font-size: 13px;
+  color: var(--tertiary-black-color);
 }
-.tabs__char-item:nth-child(odd) {
+.block__char-item:nth-child(odd) {
   background-color: var(--primary-bg-color);
 }
-.tabs__buy {
-  display: flex;
+.block__buy {
   flex-direction: column;
   gap: 20px;
 }
-.tabs__buy-title {
+.block__buy-title {
   font-weight: 700;
   color: var(--secondary-color);
 }
-.tabs__buy p {
+.block__buy p {
   font-size: 14px;
   color: var(--tertiary-black-color);
 }
-.tabs__quet {
-  display: flex;
+.block__quet {
   flex-direction: column;
   gap: 20px;
 }
-.tabs__quet-text {
+.block__quet-text {
   font-size: 14px;
   color: var(--tertiary-black-color);
 }
-.tabs__side {
-  display: flex;
+.block__side {
   flex-direction: column;
   gap: 11px;
   width: 278px;
@@ -1396,7 +1403,7 @@
   float: right;
   border: var(--primary-border);
 }
-.tabs__side-link {
+.block__side-link {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1404,11 +1411,79 @@
   font-size: 13px;
   color: var(--primary-green-color);
 }
-.tabs__side-link:hover {
+.block__side-link:hover {
   color: inherit;
 }
-.tabs__side-link svg {
+.block__side-link svg {
   transform: rotate(-90deg);
   width: 10px;
   height: 6px;
+}
+.block__stores {
+  flex-direction: column;
+}
+.block__stores-title {
+  font-size: 20px;
+  margin: 0 0 13px;
+}
+.block__stores-items {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+}
+.block__stores-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 17px 11px 17px;
+  border: var(--primary-border);
+  border-radius: var(--primary-border-radius);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  font-size: 14px;
+}
+.block__stores-item:hover {
+  background-color: var(--primary-white-color);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.block__stores-wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px 37px;
+}
+.block__stores-tel {
+  color: var(--primary-black-color);
+}
+.block__stores-price {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.block__stores-link {
+  color: var(--primary-green-color);
+}
+.block__stores-link:hover {
+  color: inherit;
+}
+.block__stores .catalog__stock {
+  font-size: 13px;
+  text-transform: lowercase;
+}
+.block__stores .radio-label::before {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+.block__stores .radio-input:checked + .radio-label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 5px solid var(--primary-green-color);
+  border-radius: 50%;
+  background: var(--primary-white-color);
 }

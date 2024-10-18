@@ -143,113 +143,150 @@
     </div>
   </section>
 
-  <section class="tabs">
-    <div class="tabs__container container">
-      <div class="tabs__inner">
-        <div class="tabs__nav">
-          <div class="tabs__nav-item tabs__nav-item--active">
+  <section class="block">
+    <div class="block__container container">
+      <div class="block__inner">
+        <div class="block__nav">
+          <div class="block__nav-item block__nav-item--active" data-tab="#block-char">
             Характеристики
           </div>
-          <div class="tabs__nav-item">
+          <div class="block__nav-item" data-tab="#block-stores">
             Наличие
           </div>
-          <div class="tabs__nav-item">
+          <div class="block__nav-item" data-tab="#block-buy">
             Как купить
           </div>
-          <div class="tabs__nav-item">
+          <div class="block__nav-item" data-tab="#block-quet">
             Задать вопрос
           </div>
         </div>
-        <div class="tabs__content">
-          <div class="tabs__char">
-            <div class="tabs__char-item">
+        <div class="block__content">
+          <div class="block__item block__item--active block__char" id="block-char">
+            <div class="block__char-item">
               <span>Run on flat</span>
               <span>Да</span>
             </div>
-            <div class="tabs__char-item">
+            <div class="block__char-item">
               <span>Ширина</span>
               <span>235</span>
             </div>
-            <div class="tabs__char-item">
+            <div class="block__char-item">
               <span>Высота</span>
               <span>55</span>
             </div>
-            <div class="tabs__char-item">
+            <div class="block__char-item">
               <span>Диаметр</span>
               <span>19</span>
             </div>
-            <div class="tabs__char-item">
+            <div class="block__char-item">
               <span>Сезонность</span>
               <span>Всесезонная</span>
             </div>
-            <div class="tabs__char-item">
+            <div class="block__char-item">
               <span>Шипы</span>
               <span>Нешипованные</span>
             </div>
-            <div class="tabs__char-item">
+            <div class="block__char-item">
               <span>Индекс нагрузки</span>
               <span>105</span>
             </div>
-            <div class="tabs__char-item">
+            <div class="block__char-item">
               <span>Индекс скорости</span>
               <span>W</span>
             </div>
-            <div class="tabs__char-item">
+            <div class="block__char-item">
               <span>Тип автошины</span>
               <span>Легковой</span>
             </div>
           </div>
-          <div class="tabs__stores">
-            <p class="tabs__stores-title">Челябинск</p>
-            <div class="tabs__stores-items">
-              <div class="tabs__stores-item">
-                <div class="tabs__stores-radio">
-                  <input class="radio-input" id="order_buyer" type="radio" name="PERSON_TYPE"
+          <div class="block__item block__stores" id="block-stores">
+            <p class="block__stores-title">Челябинск</p>
+            <div class="block__stores-items">
+              <div class="block__stores-item">
+                <div class="block__stores-radio">
+                  <input class="radio-input" id="stores_1" type="radio" name="stores_chelyabinsk"
                     value="г. Челябинск, ул. Молодогвардейцев, 35" checked="checked">
-                  <label class="radio-label" for="order_buyer">
-                    <a href="/">г. Челябинск, ул. Молодогвардейцев, 35</a>
+                  <label class="radio-label" for="stores_1">
                   </label>
+                  <a class="block__stores-link" href="/">г. Челябинск, ул. Молодогвардейцев, 35</a>
                 </div>
-                <span>+7 000 000-00-00</span>
-                <div class="catalog__stock">
-                  <span class="catalog__stock-icon"></span>Много
+                <div class="block__stores-wrap">
+                  <span class="block__stores-tel">+7 000 000-00-00</span>
+                  <div class="catalog__stock">
+                    <span class="catalog__stock-icon"></span>Много
+                  </div>
+                  <span class="block__stores-price">
+                    <span>3 000</span> руб.
+                  </span>
                 </div>
-                <span>3 000 руб.</span>
               </div>
-              <div class="tabs__stores-item">
-                <div class="tabs__stores-radio">
-                  <input class="radio-input" id="order_buyer1" type="radio" name="PERSON_TYPE"
+              <div class="block__stores-item">
+                <div class="block__stores-radio">
+                  <input class="radio-input" id="stores_2" type="radio" name="stores_chelyabinsk"
                     value="г. Челябинск, ул. Артиллерийская, 11" checked="checked">
-                  <label class="radio-label" for="order_buyer1">
-                    <a href="/">г. Челябинск, ул. Артиллерийская, 11</a>
+                  <label class="radio-label" for="stores_2">
                   </label>
+                  <a class="block__stores-link" href="/">г. Челябинск, ул. Артиллерийская, 11</a>
                 </div>
-                <span>+7 000 000-00-00</span>
-                <div class="catalog__stock">
-                  <span class="catalog__stock-icon"></span>Много
+                <div class="block__stores-wrap">
+                  <span class="block__stores-tel">+7 000 000-00-00</span>
+                  <div class="catalog__stock">
+                    <span class="catalog__stock-icon"></span>Много
+                  </div>
+                  <span class="block__stores-price">
+                    <span>3 000</span> руб.
+                  </span>
                 </div>
-                <span>3 000 руб.</span>
               </div>
             </div>
 
-            <p class="tabs__stores-title">Москва</p>
-
-            +7 000 000-00-00
-            Много
-            3 600 руб.
-
-            г. Москва, ул. Охотный Ряд, 2
-            +7 000 000-00-00
-            Много
-            3 600 руб.
+            <p class="block__stores-title">Москва</p>
+            <div class="block__stores-items">
+              <div class="block__stores-item">
+                <div class="block__stores-radio">
+                  <input class="radio-input" id="stores_3" type="radio" name="stores_moscow"
+                    value="г. Москва, ул. Охотный Ряд, 2" checked="checked">
+                  <label class="radio-label" for="stores_3">
+                  </label>
+                  <a class="block__stores-link" href="/">г. Москва, ул. Охотный Ряд, 2</a>
+                </div>
+                <div class="block__stores-wrap">
+                  <span class="block__stores-tel">+7 000 000-00-00</span>
+                  <div class="catalog__stock">
+                    <span class="catalog__stock-icon"></span>Много
+                  </div>
+                  <span class="block__stores-price">
+                    <span>3 600</span> руб.
+                  </span>
+                </div>
+              </div>
+              <div class="block__stores-item">
+                <div class="block__stores-radio">
+                  <input class="radio-input" id="stores_4" type="radio" name="stores_moscow"
+                    value="г. Москва, ул. Большая, 7/10" checked="checked">
+                  <label class="radio-label" for="stores_4">
+                  </label>
+                  <a class="block__stores-link" href="/">г. Москва, ул. Большая, 7/10</a>
+                </div>
+                <div class="block__stores-wrap">
+                  <span class="block__stores-tel">+7 000 000-00-00</span>
+                  <div class="catalog__stock">
+                    <span class="catalog__stock-icon"></span>Много
+                  </div>
+                  <span class="block__stores-price">
+                    <span>3 600</span> руб.
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="tabs__buy">
+          <div class="block__item block__buy" id="block-buy">
             <p>Оформить заказ на нашем сайте легко. Просто добавьте выбранные товары в корзину, а затем перейдите на
               страницу
               Корзина, проверьте правильность заказанных позиций и нажмите кнопку «Оформить заказ» или «Быстрый заказ».
             </p>
 
-            <p class="tabs__buy-title">Быстрый заказ</p>
+            <p class="block__buy-title">Быстрый заказ</p>
 
             <p>Функция «Быстрый заказ» позволяет покупателю не проходить всю процедуру оформления заказа самостоятельно.
               Вы
@@ -266,27 +303,27 @@
             <p>Оформление заказа в стандартном режиме
               Если вы уверены в выборе, то можете самостоятельно оформить заказ, заполнив по этапам всю форму.</p>
 
-            <p class="tabs__buy-title">Заполнение адреса</p>
+            <p class="block__buy-title">Заполнение адреса</p>
 
             <p>Выберите из списка название вашего региона и населённого пункта. Если вы не нашли свой населённый пункт в
               списке, выберите значение «Другое местоположение» и впишите название своего населённого пункта в графу
               «Город». Введите правильный индекс.</p>
 
-            <p class="tabs__buy-title">Доставка</p>
+            <p class="block__buy-title">Доставка</p>
 
             <p>В зависимости от места жительства вам предложат варианты доставки. Выберите любой удобный способ.</p>
 
-            <p class="tabs__buy-title">Оплата</p>
+            <p class="block__buy-title">Оплата</p>
 
             <p>Выберите оптимальный способ оплаты.</p>
 
-            <p class="tabs__buy-title">Покупатель</p>
+            <p class="block__buy-title">Покупатель</p>
 
             <p>Введите данные о себе: ФИО, адрес доставки, номер телефона. В поле «Комментарии к заказу» введите
               сведения,
               которые могут пригодиться курьеру, например: подъезды в доме считаются справа налево.</p>
 
-            <p class="tabs__buy-title">Оформление заказа</p>
+            <p class="block__buy-title">Оформление заказа</p>
 
             <p>Проверьте правильность ввода информации: позиции заказа, выбор местоположения, данные о покупателе.
               Нажмите
@@ -297,9 +334,9 @@
               к
               вводу данные предыдущего заказа. Если условия вам не подходят, выбирайте другие варианты.</p>
           </div>
-          <div class="tabs__quet">
-            <p class="tabs__quet-text">Вы можете задать любой интересующий вас вопрос по товару или работе магазина.</p>
-            <p class="tabs__quet-text">Наши квалифицированные специалисты обязательно вам помогут.</p>
+          <div class="block__item block__quet" id="block-quet">
+            <p class="block__quet-text">Вы можете задать любой интересующий вас вопрос по товару или работе магазина.</p>
+            <p class="block__quet-text">Наши квалифицированные специалисты обязательно вам помогут.</p>
 
             <h2 class="callback__title">Задать вопрос</h2>
 
@@ -362,14 +399,14 @@
           </div>
         </div>
       </div>
-      <aside class="tabs__side">
-        <a class="tabs__side-link" href="/">
+      <aside class="block__side">
+        <a class="block__side-link" href="/">
           <svg>
             <use href="./images/sprite.svg?v7#arrow-down"></use>
           </svg>
           Похожие товары
         </a>
-        <a class="tabs__side-link" href="/">
+        <a class="block__side-link" href="/">
           <svg>
             <use href="./images/sprite.svg?v7#arrow-down"></use>
           </svg>

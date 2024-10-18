@@ -25,6 +25,10 @@
     gap: 30px;
     margin-top: -20px;
 
+    .order__btn {
+      width: fit-content;
+    }
+
     .label-title {
       color: var(--secondary-black-color);
     }
@@ -93,10 +97,10 @@
       justify-content: space-between;
       gap: 10px;
     }
+  }
 
-    &-btn {
-      width: 100%;
-    }
+  &__btn {
+    width: 100%;
   }
 
   &__result {
