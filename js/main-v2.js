@@ -100,5 +100,12 @@
       }
     })();
 
+    /**
+     * Иницилизация Fancybox
+     */
+    $('[data-fancybox="gallery"]').fancybox({
+      loop: true,
+    });
+
   });
 })();
