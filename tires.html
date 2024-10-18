@@ -4331,7 +4331,7 @@
   <section class="page">
     <div class="page__container container">
       <h1 class="page__title">
-        Подбор дисков
+        Шины
       </h1>
       <div class="breadcrumb">
         <a class="breadcrumb__link" href="/">
@@ -4342,1559 +4342,943 @@
           Каталог
         </a>
         <span>-</span>
-        <a class="breadcrumb__link" href="/">
-          Диски
-        </a>
-        <span>-</span>
         <p>
-          Подбор дисков
+          Шины
         </p>
       </div>
     </div>
   </section>
-  <section class="catalog">
-    <div class="catalog__container container">
-      <div class="sidebar">
-        <div class="filter">
-          <form action="#" class="filter__form" method="get">
-            <div class="filter__wrap cars">
-              <div class="filter__head accardion__btn">
-                Фильтр по автомобилю
-                <svg>
-                  <use href="./images/sprite.svg?v7#arrow-down" />
-                </svg>
+
+  <section class="forms">
+    <div class="forms__container container">
+      <div class="front_filter_wrap catalog_filter tires load"
+        data-params="{&quot;IBLOCK_TYPE&quot;:&quot;aspro_tires2_catalog&quot;,&quot;IBLOCK_ID&quot;:&quot;161&quot;,&quot;AJAX_FILTER_FLAG&quot;:&quot;&quot;,&quot;SECTION_ID&quot;:&quot;0&quot;,&quot;FILTER_NAME&quot;:&quot;arTires2Filter&quot;,&quot;FILTER_URL&quot;:&quot;/catalog/tires/&quot;,&quot;PRICE_CODE&quot;:[&quot;BASE&quot;],&quot;CACHE_TYPE&quot;:&quot;A&quot;,&quot;CACHE_TIME&quot;:&quot;36000000&quot;,&quot;CACHE_NOTES&quot;:&quot;&quot;,&quot;CACHE_GROUPS&quot;:false,&quot;SAVE_IN_SESSION&quot;:false,&quot;XML_EXPORT&quot;:&quot;Y&quot;,&quot;SECTION_TITLE&quot;:&quot;NAME&quot;,&quot;SECTION_DESCRIPTION&quot;:&quot;DESCRIPTION&quot;,&quot;SHOW_HINTS&quot;:&quot;Y&quot;,&quot;CONVERT_CURRENCY&quot;:false,&quot;CURRENCY_ID&quot;:&quot;&quot;,&quot;DISPLAY_ELEMENT_COUNT&quot;:&quot;Y&quot;,&quot;INSTANT_RELOAD&quot;:false,&quot;VIEW_MODE&quot;:&quot;vertical&quot;,&quot;SEF_MODE&quot;:&quot;N&quot;,&quot;SEF_RULE&quot;:&quot;/catalog/tires/search/#SMART_FILTER_PATH#/&quot;,&quot;SMART_FILTER_PATH&quot;:&quot;&quot;,&quot;HIDE_NOT_AVAILABLE&quot;:&quot;Y&quot;,&quot;BLOCK_TITLE_TIRES&quot;:&quot;шин&quot;,&quot;BLOCK_TITLE_TIRES_MOTO&quot;:&quot;мотошин&quot;,&quot;BLOCK_TITLE_TIRES_TRUCK&quot;:&quot;грузовых шин&quot;,&quot;TYPE&quot;:&quot;tires&quot;,&quot;PREFILTER_NAME&quot;:&quot;smartPreFilter&quot;,&quot;~IBLOCK_TYPE&quot;:&quot;aspro_tires2_catalog&quot;,&quot;~IBLOCK_ID&quot;:&quot;161&quot;,&quot;~AJAX_FILTER_FLAG&quot;:&quot;&quot;,&quot;~SECTION_ID&quot;:&quot;0&quot;,&quot;~FILTER_NAME&quot;:&quot;arTires2Filter&quot;,&quot;~FILTER_URL&quot;:&quot;/catalog/tires/&quot;,&quot;~PRICE_CODE&quot;:[&quot;BASE&quot;],&quot;~CACHE_TYPE&quot;:&quot;A&quot;,&quot;~CACHE_TIME&quot;:&quot;36000000&quot;,&quot;~CACHE_NOTES&quot;:&quot;&quot;,&quot;~CACHE_GROUPS&quot;:false,&quot;~SAVE_IN_SESSION&quot;:false,&quot;~XML_EXPORT&quot;:&quot;Y&quot;,&quot;~SECTION_TITLE&quot;:&quot;NAME&quot;,&quot;~SECTION_DESCRIPTION&quot;:&quot;DESCRIPTION&quot;,&quot;~SHOW_HINTS&quot;:&quot;Y&quot;,&quot;~CONVERT_CURRENCY&quot;:false,&quot;~CURRENCY_ID&quot;:&quot;&quot;,&quot;~DISPLAY_ELEMENT_COUNT&quot;:&quot;Y&quot;,&quot;~INSTANT_RELOAD&quot;:false,&quot;~VIEW_MODE&quot;:&quot;vertical&quot;,&quot;~SEF_MODE&quot;:&quot;N&quot;,&quot;~SEF_RULE&quot;:&quot;/catalog/tires/search/#SMART_FILTER_PATH#/&quot;,&quot;~SMART_FILTER_PATH&quot;:&quot;&quot;,&quot;~HIDE_NOT_AVAILABLE&quot;:&quot;Y&quot;,&quot;~BLOCK_TITLE_TIRES&quot;:&quot;шин&quot;,&quot;~BLOCK_TITLE_TIRES_MOTO&quot;:&quot;мотошин&quot;,&quot;~BLOCK_TITLE_TIRES_TRUCK&quot;:&quot;грузовых шин&quot;,&quot;~TYPE&quot;:&quot;tires&quot;,&quot;~PREFILTER_NAME&quot;:&quot;smartPreFilter&quot;,&quot;POPUP_POSITION&quot;:&quot;left&quot;}"
+        data-template="catalog">
+        <div class="title_block clearfix">
+          <span class="link_item pull-left active" data-filter="params">По параметрам</span>
+          <span class="link_item pull-left" data-filter="avto">По авто</span>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bx_filter bx_filter_vertical front_filter">
+          <div class="bx_filter_section">
+            <form name="arTires2Filter_form" action="/catalog/tires/" method="get" class="smartfilter">
+              <input type="hidden" name="search" id="search" value="Y">
+              <input type="hidden" data-id="filter_name" value="arTires2Filter">
+              <div class="bx_filter_parameters_box tyresind">
+
+
+                <div class="car_list_wrap clearfix">
+                  <input type="hidden" data-name="type_filter" class="type_filter" value="tires">
+                  <div class="filter-b selects">
+                    <div class="rows_wrap">
+                      <div class="rows cars-list-mark">
+                        <label>Марка</label>
+                        <div class="select">
+                          <select name="car" class="cars-list car">
+                            <option value="" selected="selected">—</option>
+                            <option value="4288953864">Acura</option>
+                            <option value="2958187941">Alfa Romeo</option>
+                            <option value="3281740267">Alpine</option>
+                            <option value="3774307634">ARO</option>
+                            <option value="1511561957">Aston Martin</option>
+                            <option value="1697201568">Audi</option>
+                            <option value="2751512350">Bentley</option>
+                            <option value="1015510435">BMW</option>
+                            <option value="3010632873">BMW Alpina</option>
+                            <option value="2112735323">Brilliance</option>
+                            <option value="2438642149">Bugatti</option>
+                            <option value="1799806081">Buick</option>
+                            <option value="2526536488">BYD</option>
+                            <option value="1893078461">Cadillac</option>
+                            <option value="3908511868">Changan</option>
+                            <option value="1563414863">Chery</option>
+                            <option value="3902099845">Chevrolet</option>
+                            <option value="1451721813">Chrysler</option>
+                            <option value="3142527598">Citro?n</option>
+                            <option value="751857067">Dacia</option>
+                            <option value="3816277345">Daewoo</option>
+                            <option value="2542979421">Daihatsu</option>
+                            <option value="3421607690">Datsun</option>
+                            <option value="1353639306">Dodge</option>
+                            <option value="3558799811">Dongfeng</option>
+                            <option value="665753776">DS</option>
+                            <option value="1822678171">Eagle</option>
+                            <option value="2537263731">FAW</option>
+                            <option value="4294765258">FAW Besturn</option>
+                            <option value="3235428851">Ferrari</option>
+                            <option value="4088645521">Fiat</option>
+                            <option value="1734932911">Fisker</option>
+                            <option value="1453960236">Force</option>
+                            <option value="2338777813">Ford</option>
+                            <option value="2391052429">Geely</option>
+                            <option value="3791234326">GEO</option>
+                            <option value="546726709">GMC</option>
+                            <option value="931301749">Great Wall</option>
+                            <option value="1168447364">Haval</option>
+                            <option value="3383214637">Hindustan</option>
+                            <option value="3305451972">Holden</option>
+                            <option value="3028884103">Honda</option>
+                            <option value="1278852674">Hummer</option>
+                            <option value="725137152">Hyundai</option>
+                            <option value="557112829">Infiniti</option>
+                            <option value="1305377827">Isuzu</option>
+                            <option value="5537539">Iveco</option>
+                            <option value="2231091050">JAC</option>
+                            <option value="2373319075">Jaguar</option>
+                            <option value="3548282960">Jeep</option>
+                            <option value="929907957">Jinbei</option>
+                            <option value="218380819">Kia</option>
+                            <option value="336602217">LADA</option>
+                            <option value="3499106226">Lamborghini</option>
+                            <option value="1927823648">Lancia</option>
+                            <option value="1179329816">Land Rover</option>
+                            <option value="2524959161">Lexus</option>
+                            <option value="2277071863">Lifan</option>
+                            <option value="509930441">Lincoln</option>
+                            <option value="962952825">Mahindra</option>
+                            <option value="1248280910">Maruti</option>
+                            <option value="3506529368">Maserati</option>
+                            <option value="2275010920">Mazda</option>
+                            <option value="3257475658">Mercedes-Benz</option>
+                            <option value="753059387">Mercury</option>
+                            <option value="3971413892">MG</option>
+                            <option value="1451979276">MINI</option>
+                            <option value="3160041673">Mitsubishi</option>
+                            <option value="2275469897">Mosler</option>
+                            <option value="3915583553">Nissan</option>
+                            <option value="855416927">Oldsmobile</option>
+                            <option value="3930869174">Opel</option>
+                            <option value="1834459600">Panoz</option>
+                            <option value="569656155">Perodua</option>
+                            <option value="2320679843">Peugeot</option>
+                            <option value="148438461">Plymouth</option>
+                            <option value="1780477706">Pontiac</option>
+                            <option value="1743664794">Porsche</option>
+                            <option value="1183581717">Proton</option>
+                            <option value="3751568591">Ram</option>
+                            <option value="528012293">Ravon</option>
+                            <option value="412998518">Renault</option>
+                            <option value="501751931">Renault Samsung</option>
+                            <option value="4094623694">Roewe</option>
+                            <option value="290002931">Rover</option>
+                            <option value="1857258709">Saab</option>
+                            <option value="2666418012">Saturn</option>
+                            <option value="2674643315">Scion</option>
+                            <option value="2641271128">Seat</option>
+                            <option value="756629876">Skoda</option>
+                            <option value="1940480670">Smart</option>
+                            <option value="1711408047">SsangYong</option>
+                            <option value="4021728285">Subaru</option>
+                            <option value="3996464534">Suzuki</option>
+                            <option value="1574439874">Tata</option>
+                            <option value="2718120523">Tesla</option>
+                            <option value="434472425">Toyota</option>
+                            <option value="1932272166">Vauxhall</option>
+                            <option value="4121710014">VAZ</option>
+                            <option value="1000927425">Venucia</option>
+                            <option value="1617535017">Volkswagen</option>
+                            <option value="4153522910">Volvo</option>
+                            <option value="2767021218">Vortex</option>
+                            <option value="4239832282">ZAZ</option>
+                            <option value="2723311958">ГАЗ</option>
+                            <option value="2251715768">ТагАЗ</option>
+                            <option value="3195327014">УАЗ</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="rows">
+                        <label>Модель</label>
+                        <div class="select disabled">
+                          <select name="model" class="cars-list model">
+                            <option value="" selected="selected">—</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rowa_wrap">
+                      <div class="rows">
+                        <label>Год выпуска</label>
+                        <div class="select disabled">
+                          <select name="year" class="cars-list year">
+                            <option value="" selected="selected">—</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="rows">
+                        <label>Комплектация</label>
+                        <div class="select disabled">
+                          <select name="modification" class="cars-list modification">
+                            <option value="" selected="selected">—</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
-              <div class="filter__body">
-                <input type="hidden">
-                <div class="filter__item cars cars__mark">
-                  <label class="filter__label">Марка</label>
-                  <div class="select">
-                    <button class="select__button" type="button" name="cars_mark" value="none">
-                      —
-                    </button>
-                    <ul class="select__list">
-                      <li class="select__list-item select__list-item--first" data-value="none">—</li>
-                      <li class="select__list-item" data-value="Acura">Acura</li>
-                      <li class="select__list-item" data-value="Alfa Romeo">Alfa Romeo</li>
-                      <li class="select__list-item" data-value="Alpine">Alpine</li>
-                      <li class="select__list-item" data-value="ARO">ARO</li>
-                      <li class="select__list-item" data-value="Aston Martin">Aston Martin</li>
-                      <li class="select__list-item" data-value="Audi">Audi</li>
-                      <li class="select__list-item" data-value="Bentley">Bentley</li>
-                      <li class="select__list-item" data-value="BMW">BMW</li>
-                      <li class="select__list-item" data-value="BMW Alpina">BMW Alpina</li>
-                      <li class="select__list-item" data-value="Brilliance">Brilliance</li>
-                      <li class="select__list-item" data-value="Bugatti">Bugatti</li>
-                      <li class="select__list-item" data-value="Buick">Buick</li>
-                      <li class="select__list-item" data-value="BYD">BYD</li>
-                      <li class="select__list-item" data-value="Cadillac">Cadillac</li>
-                      <li class="select__list-item" data-value="Changan">Changan</li>
-                      <li class="select__list-item" data-value="Chery">Chery</li>
-                      <li class="select__list-item" data-value="Chevrolet">Chevrolet</li>
-                      <li class="select__list-item" data-value="Chrysler">Chrysler</li>
-                      <li class="select__list-item" data-value="Citroen">Citroen</li>
-                      <li class="select__list-item" data-value="Dacia">Dacia</li>
-                      <li class="select__list-item" data-value="Daewoo">Daewoo</li>
-                      <li class="select__list-item" data-value="Daihatsu">Daihatsu</li>
-                      <li class="select__list-item" data-value="Datsun">Datsun</li>
-                      <li class="select__list-item" data-value="Dodge">Dodge</li>
-                      <li class="select__list-item" data-value="Dongfeng">Dongfeng</li>
-                      <li class="select__list-item" data-value="DS">DS</li>
-                      <li class="select__list-item" data-value="Eagle">Eagle</li>
-                      <li class="select__list-item" data-value="FAW">FAW</li>
-                      <li class="select__list-item" data-value="FAW Besturn">FAW Besturn</li>
-                      <li class="select__list-item" data-value="Ferrari">Ferrari</li>
-                      <li class="select__list-item" data-value="Fiat">Fiat</li>
-                      <li class="select__list-item" data-value="Fisker">Fisker</li>
-                      <li class="select__list-item" data-value="Force">Force</li>
-                      <li class="select__list-item" data-value="Ford">Ford</li>
-                      <li class="select__list-item" data-value="Geely">Geely</li>
-                      <li class="select__list-item" data-value="GEO">GEO</li>
-                      <li class="select__list-item" data-value="GMC">GMC</li>
-                      <li class="select__list-item" data-value="Great Wall">Great Wall</li>
-                      <li class="select__list-item" data-value="Haval">Haval</li>
-                      <li class="select__list-item" data-value="Hindustan">Hindustan</li>
-                      <li class="select__list-item" data-value="Holden">Holden</li>
-                      <li class="select__list-item" data-value="Honda">Honda</li>
-                      <li class="select__list-item" data-value="Hummer">Hummer</li>
-                      <li class="select__list-item" data-value="Hyundai">Hyundai</li>
-                      <li class="select__list-item" data-value="Infiniti">Infiniti</li>
-                      <li class="select__list-item" data-value="Isuzu">Isuzu</li>
-                      <li class="select__list-item" data-value="Iveco">Iveco</li>
-                      <li class="select__list-item" data-value="JAC">JAC</li>
-                      <li class="select__list-item" data-value="Jaguar">Jaguar</li>
-                      <li class="select__list-item" data-value="Jeep">Jeep</li>
-                      <li class="select__list-item" data-value="Jinbei">Jinbei</li>
-                      <li class="select__list-item" data-value="Kia">Kia</li>
-                      <li class="select__list-item" data-value="LADA">LADA</li>
-                      <li class="select__list-item" data-value="Lamborghini">Lamborghini</li>
-                      <li class="select__list-item" data-value="Lancia">Lancia</li>
-                      <li class="select__list-item" data-value="Land Rover">Land Rover</li>
-                      <li class="select__list-item" data-value="Lexus">Lexus</li>
-                      <li class="select__list-item" data-value="Lifan">Lifan</li>
-                      <li class="select__list-item" data-value="Lincoln">Lincoln</li>
-                      <li class="select__list-item" data-value="Mahindra">Mahindra</li>
-                      <li class="select__list-item" data-value="Maruti">Maruti</li>
-                      <li class="select__list-item" data-value="Maserati">Maserati</li>
-                      <li class="select__list-item" data-value="Mazda">Mazda</li>
-                      <li class="select__list-item" data-value="Mercedes-Benz">Mercedes-Benz</li>
-                      <li class="select__list-item" data-value="Mercury">Mercury</li>
-                      <li class="select__list-item" data-value="MG">MG</li>
-                      <li class="select__list-item" data-value="MINI">MINI</li>
-                      <li class="select__list-item" data-value="Mitsubishi">Mitsubishi</li>
-                      <li class="select__list-item" data-value="Mosler">Mosler</li>
-                      <li class="select__list-item" data-value="Nissan">Nissan</li>
-                      <li class="select__list-item" data-value="Oldsmobile">Oldsmobile</li>
-                      <li class="select__list-item" data-value="Opel">Opel</li>
-                      <li class="select__list-item" data-value="Panoz">Panoz</li>
-                      <li class="select__list-item" data-value="Perodua">Perodua</li>
-                      <li class="select__list-item" data-value="Peugeot">Peugeot</li>
-                      <li class="select__list-item" data-value="Plymouth">Plymouth</li>
-                      <li class="select__list-item" data-value="Pontiac">Pontiac</li>
-                      <li class="select__list-item" data-value="Porsche">Porsche</li>
-                      <li class="select__list-item" data-value="Proton">Proton</li>
-                      <li class="select__list-item" data-value="Ram">Ram</li>
-                      <li class="select__list-item" data-value="Ravon">Ravon</li>
-                      <li class="select__list-item" data-value="Renault">Renault</li>
-                      <li class="select__list-item" data-value="Renault Samsung">Renault Samsung</li>
-                      <li class="select__list-item" data-value="Roewe">Roewe</li>
-                      <li class="select__list-item" data-value="Rover">Rover</li>
-                      <li class="select__list-item" data-value="Saab">Saab</li>
-                      <li class="select__list-item" data-value="Saturn">Saturn</li>
-                      <li class="select__list-item" data-value="Scion">Scion</li>
-                      <li class="select__list-item" data-value="Seat">Seat</li>
-                      <li class="select__list-item" data-value="Skoda">Skoda</li>
-                      <li class="select__list-item" data-value="Smart">Smart</li>
-                      <li class="select__list-item" data-value="SsangYong">SsangYong</li>
-                      <li class="select__list-item" data-value="Subaru">Subaru</li>
-                      <li class="select__list-item" data-value="Suzuki">Suzuki</li>
-                      <li class="select__list-item" data-value="Tata">Tata</li>
-                      <li class="select__list-item" data-value="Tesla">Tesla</li>
-                      <li class="select__list-item" data-value="Toyota">Toyota</li>
-                      <li class="select__list-item" data-value="Vauxhall">Vauxhall</li>
-                      <li class="select__list-item" data-value="VAZ">VAZ</li>
-                      <li class="select__list-item" data-value="Venucia">Venucia</li>
-                      <li class="select__list-item" data-value="Volkswagen">Volkswagen</li>
-                      <li class="select__list-item" data-value="Volvo">Volvo</li>
-                      <li class="select__list-item" data-value="Vortex">Vortex</li>
-                      <li class="select__list-item" data-value="ZAZ">ZAZ</li>
-                      <li class="select__list-item" data-value="ГАЗ">ГАЗ</li>
-                      <li class="select__list-item" data-value="ТагАЗ">ТагАЗ</li>
-                      <li class="select__list-item" data-value="УАЗ">УАЗ</li>
-                    </ul>
-                    <input class="select__input-hidden" type="hidden" name="cars_mark" value="none">
+              <div class="tyres_params active">
+                <input type="hidden" data-name="del_url" value="">
+
+
+
+                <div class="bx_filter_parameters_box type_P active" data-tyreindex="twidth" data-expanded="Y"
+                  data-prop_code="shirina_profilya" data-property_id="964">
+                  <span class="bx_filter_container_modef"></span>
+                  <div class="bx_filter_parameters_box_title icons_fa">
+                    <div>
+                      Ширина <div class="char_name">
+                        <div class="props_list">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bx_filter_block ">
+                    <div class="bx_filter_parameters_box_container ">
+                      <div class="bx_filter_select_container">
+                        <div class="bx_filter_select_block" onclick="smartFilter.showDropDownPopup(this, '964')">
+                          <div class="bx_filter_select_text" data-role="currentOption">
+                            Все </div>
+                          <div class="bx_filter_select_arrow"></div>
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="all_arTires2Filter_964_2182319423" value="">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_2182319423" value="2182319423">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_2211571464" value="2211571464">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_2225864208" value="2225864208">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_2473281379" value="2473281379">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_3832313845" value="3832313845">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_2103780943" value="2103780943">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_174200537" value="174200537">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_3808539628" value="3808539628">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_219140800" value="219140800">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_2645610321" value="2645610321">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_2016475046" value="2016475046">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_930177377" value="930177377">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_778719264" value="778719264">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_88540131" value="88540131">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_475804322" value="475804322">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_2613325421" value="2613325421">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_2195660588" value="2195660588">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_1364924988" value="1364924988">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_1212164989" value="1212164989">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_1668118718" value="1668118718">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_2054572543" value="2054572543">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_892854072" value="892854072">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_741142137" value="741142137">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_117554618" value="117554618">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_505056507" value="505056507">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_2575470644" value="2575470644">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_2157551989" value="2157551989">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_1352232971" value="1352232971">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_1233273162" value="1233273162">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_1655640713" value="1655640713">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_2075403208" value="2075403208">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_888517903" value="888517903">
+                          <input style="display: none" type="radio" name="arTires2Filter_964"
+                            id="arTires2Filter_964_2170276674" value="2170276674">
+                          <div class="bx_filter_select_popup" data-role="dropdownContent" style="display: none;">
+                            <ul>
+                              <li>
+                                <label for="all_arTires2Filter_964_2182319423" class="bx_filter_param_label"
+                                  data-role="label_all_arTires2Filter_964_2182319423"
+                                  onclick="smartFilter.selectDropDownItem(this, 'all_arTires2Filter_964_2182319423')">
+                                  Все </label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_2182319423" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_2182319423"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_2182319423')">6.5</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_2211571464" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_2211571464"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_2211571464')">7.5</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_2225864208" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_2225864208"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_2225864208')">28</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_2473281379" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_2473281379"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_2473281379')">30</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_3832313845" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_3832313845"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_3832313845')">31</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_2103780943" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_2103780943"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_2103780943')">32</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_174200537" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_174200537"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_174200537')">33</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_3808539628" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_3808539628"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_3808539628')">35</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_219140800" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_219140800"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_219140800')">37</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_2645610321" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_2645610321"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_2645610321')">38</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_2016475046" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_2016475046"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_2016475046')">135</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_930177377" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_930177377"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_930177377')">145</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_778719264" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_778719264"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_778719264')">155</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_88540131" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_88540131"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_88540131')">165</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_475804322" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_475804322"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_475804322')">175</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_2613325421" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_2613325421"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_2613325421')">185</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_2195660588" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_2195660588"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_2195660588')">195</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_1364924988" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_1364924988"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_1364924988')">205</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_1212164989" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_1212164989"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_1212164989')">215</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_1668118718" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_1668118718"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_1668118718')">225</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_2054572543" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_2054572543"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_2054572543')">235</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_892854072" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_892854072"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_892854072')">245</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_741142137" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_741142137"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_741142137')">255</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_117554618" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_117554618"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_117554618')">265</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_505056507" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_505056507"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_505056507')">275</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_2575470644" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_2575470644"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_2575470644')">285</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_2157551989" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_2157551989"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_2157551989')">295</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_1352232971" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_1352232971"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_1352232971')">305</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_1233273162" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_1233273162"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_1233273162')">315</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_1655640713" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_1655640713"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_1655640713')">325</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_2075403208" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_2075403208"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_2075403208')">335</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_888517903" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_888517903"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_888517903')">345</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_964_2170276674" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_964_2170276674"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_964_2170276674')">395</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clb"></div>
                   </div>
                 </div>
-                <div class="filter__item cars cars__model">
-                  <label class="filter__label">Модель</label>
-                  <div class="select">
-                    <button class="select__button" type="button" name="cars_model" value="none">
-                      —
-                    </button>
-                    <ul class="select__list">
-                      <li class="select__list-item select__list-item--first" data-value="none">—</li>
-                      <li class="select__list-item" data-value="CL">CL</li>
-                      <li class="select__list-item" data-value="L Type-S">L Type-S</li>
-                      <li class="select__list-item" data-value="CSX">CSX</li>
-                      <li class="select__list-item" data-value="EL">EL</li>
-                      <li class="select__list-item" data-value="ILX">ILX</li>
-                      <li class="select__list-item" data-value="Integra">Integra</li>
-                      <li class="select__list-item" data-value="Integra Type-R">Integra Type-R</li>
-                      <li class="select__list-item" data-value="Legend">Legend</li>
-                      <li class="select__list-item" data-value="MDX">MDX</li>
-                      <li class="select__list-item" data-value="NSX">NSX</li>
-                      <li class="select__list-item" data-value="RDX">RDX</li>
-                      <li class="select__list-item" data-value="RL">RL</li>
-                      <li class="select__list-item" data-value="RLX">RLX</li>
-                      <li class="select__list-item" data-value="RSX">RSX</li>
-                      <li class="select__list-item" data-value="SLX">SLX</li>
-                      <li class="select__list-item" data-value="TL">TL</li>
-                      <li class="select__list-item" data-value="TL SH-AWD">TL SH-AWD</li>
-                      <li class="select__list-item" data-value="TLX">TLX</li>
-                      <li class="select__list-item" data-value="TSX">TSX</li>
-                      <li class="select__list-item" data-value="Vigor">Vigor</li>
-                      <li class="select__list-item" data-value="ZDX">ZDX</li>
-                    </ul>
-                    <input class="select__input-hidden" type="hidden" name="cars_model" value="none">
+                <div class="bx_filter_parameters_box type_P active" data-tyreindex="theight" data-expanded="Y"
+                  data-prop_code="vysota_profilya" data-property_id="943">
+                  <span class="bx_filter_container_modef"></span>
+                  <div class="bx_filter_parameters_box_title icons_fa">
+                    <div>
+                      Высота <div class="char_name">
+                        <div class="props_list">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bx_filter_block ">
+                    <div class="bx_filter_parameters_box_container ">
+                      <span class="separator vysota_prof">/</span>
+                      <div class="bx_filter_select_container">
+                        <div class="bx_filter_select_block" onclick="smartFilter.showDropDownPopup(this, '943')">
+                          <div class="bx_filter_select_text" data-role="currentOption">
+                            Все </div>
+                          <div class="bx_filter_select_arrow"></div>
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="all_arTires2Filter_943_4108050209" value="">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_4108050209" value="4108050209">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_2290982965" value="2290982965">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_2303707650" value="2303707650">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_269248583" value="269248583">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_298713712" value="298713712">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_327728169" value="327728169">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_306894366" value="306894366">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_382184108" value="382184108">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_2473281379" value="2473281379">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_3808539628" value="3808539628">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_3693793700" value="3693793700">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_2889884971" value="2889884971">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_3308380389" value="3308380389">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_3042645098" value="3042645098">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_3994858278" value="3994858278">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_2658551721" value="2658551721">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_4144464487" value="4144464487">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_2272098024" value="2272098024">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_1889509032" value="1889509032">
+                          <input style="display: none" type="radio" name="arTires2Filter_943"
+                            id="arTires2Filter_943_16083495" value="16083495">
+                          <div class="bx_filter_select_popup" data-role="dropdownContent" style="display: none;">
+                            <ul>
+                              <li>
+                                <label for="all_arTires2Filter_943_4108050209" class="bx_filter_param_label"
+                                  data-role="label_all_arTires2Filter_943_4108050209"
+                                  onclick="smartFilter.selectDropDownItem(this, 'all_arTires2Filter_943_4108050209')">
+                                  Все </label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_4108050209" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_4108050209"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_4108050209')">0</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_2290982965" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_2290982965"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_2290982965')">8.5</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_2303707650" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_2303707650"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_2303707650')">9.5</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_269248583" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_269248583"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_269248583')">10.5</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_298713712" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_298713712"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_298713712')">11.5</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_327728169" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_327728169"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_327728169')">12.5</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_306894366" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_306894366"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_306894366')">13.5</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_382184108" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_382184108"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_382184108')">15.5</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_2473281379" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_2473281379"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_2473281379')">30</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_3808539628" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_3808539628"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_3808539628')">35</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_3693793700" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_3693793700"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_3693793700')">40</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_2889884971" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_2889884971"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_2889884971')">45</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_3308380389" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_3308380389"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_3308380389')">50</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_3042645098" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_3042645098"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_3042645098')">55</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_3994858278" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_3994858278"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_3994858278')">60</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_2658551721" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_2658551721"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_2658551721')">65</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_4144464487" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_4144464487"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_4144464487')">70</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_2272098024" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_2272098024"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_2272098024')">75</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_1889509032" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_1889509032"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_1889509032')">80</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_943_16083495" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_943_16083495"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_943_16083495')">85</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clb"></div>
                   </div>
                 </div>
-                <div class="filter__item cars cars__year">
-                  <label class="filter__label">Год выпуска</label>
-                  <div class="select">
-                    <button class="select__button" type="button" name="cars_year" value="none">
-                      —
-                    </button>
-                    <ul class="select__list">
-                      <li class="select__list-item select__list-item--first" data-value="none">—</li>
-                      <li class="select__list-item" data-value="2000">2000</li>
-                      <li class="select__list-item" data-value="2001">2001</li>
-                      <li class="select__list-item" data-value="2002">2002</li>
-                      <li class="select__list-item" data-value="2003">2003</li>
-                      <li class="select__list-item" data-value="2004">2004</li>
-                      <li class="select__list-item" data-value="2005">2005</li>
-                      <li class="select__list-item" data-value="2006">2006</li>
-                      <li class="select__list-item" data-value="2007">2007</li>
-                      <li class="select__list-item" data-value="2008">2008</li>
-                      <li class="select__list-item" data-value="2009">2009</li>
-                      <li class="select__list-item" data-value="2010">2010</li>
-                      <li class="select__list-item" data-value="2011">2011</li>
-                      <li class="select__list-item" data-value="2012">2012</li>
-                      <li class="select__list-item" data-value="2013">2013</li>
-                      <li class="select__list-item" data-value="2014">2014</li>
-                      <li class="select__list-item" data-value="2015">2015</li>
-                      <li class="select__list-item" data-value="2016">2016</li>
-                      <li class="select__list-item" data-value="2017">2017</li>
-                      <li class="select__list-item" data-value="2018">2018</li>
-                      <li class="select__list-item" data-value="2019">2019</li>
-                      <li class="select__list-item" data-value="2020">2020</li>
-                      <li class="select__list-item" data-value="2021">2021</li>
-                      <li class="select__list-item" data-value="2022">2022</li>
-                      <li class="select__list-item" data-value="2023">2023</li>
-                      <li class="select__list-item" data-value="2024">2024</li>
-                    </ul>
-                    <input class="select__input-hidden" type="hidden" name="cars_year" value="none">
+                <div class="bx_filter_parameters_box type_P active" data-tyreindex="tdia" data-expanded="Y"
+                  data-prop_code="posadochnyy_diametr" data-property_id="962">
+                  <span class="bx_filter_container_modef"></span>
+                  <div class="bx_filter_parameters_box_title icons_fa">
+                    <div>
+                      Диаметр <div class="char_name">
+                        <div class="props_list">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bx_filter_block ">
+                    <div class="bx_filter_parameters_box_container ">
+                      <span class="separator diametr">R</span>
+                      <div class="bx_filter_select_container">
+                        <div class="bx_filter_select_block" onclick="smartFilter.showDropDownPopup(this, '962')">
+                          <div class="bx_filter_select_text" data-role="currentOption">
+                            Все </div>
+                          <div class="bx_filter_select_arrow"></div>
+                          <input style="display: none" type="radio" name="arTires2Filter_962"
+                            id="all_arTires2Filter_962_1330857165" value="">
+                          <input style="display: none" type="radio" name="arTires2Filter_962"
+                            id="arTires2Filter_962_1330857165" value="1330857165">
+                          <input style="display: none" type="radio" name="arTires2Filter_962"
+                            id="arTires2Filter_962_945058907" value="945058907">
+                          <input style="display: none" type="radio" name="arTires2Filter_962"
+                            id="arTires2Filter_962_2788221432" value="2788221432">
+                          <input style="display: none" type="radio" name="arTires2Filter_962"
+                            id="arTires2Filter_962_3510096238" value="3510096238">
+                          <input style="display: none" type="radio" name="arTires2Filter_962"
+                            id="arTires2Filter_962_1212055764" value="1212055764">
+                          <input style="display: none" type="radio" name="arTires2Filter_962"
+                            id="arTires2Filter_962_1060745282" value="1060745282">
+                          <input style="display: none" type="radio" name="arTires2Filter_962"
+                            id="arTires2Filter_962_2944839123" value="2944839123">
+                          <input style="display: none" type="radio" name="arTires2Filter_962"
+                            id="arTires2Filter_962_3632373061" value="3632373061">
+                          <input style="display: none" type="radio" name="arTires2Filter_962"
+                            id="arTires2Filter_962_2322626082" value="2322626082">
+                          <input style="display: none" type="radio" name="arTires2Filter_962"
+                            id="arTires2Filter_962_4252452532" value="4252452532">
+                          <input style="display: none" type="radio" name="arTires2Filter_962"
+                            id="arTires2Filter_962_1685985038" value="1685985038">
+                          <div class="bx_filter_select_popup" data-role="dropdownContent" style="display: none;">
+                            <ul>
+                              <li>
+                                <label for="all_arTires2Filter_962_1330857165" class="bx_filter_param_label"
+                                  data-role="label_all_arTires2Filter_962_1330857165"
+                                  onclick="smartFilter.selectDropDownItem(this, 'all_arTires2Filter_962_1330857165')">
+                                  Все </label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_962_1330857165" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_962_1330857165"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_962_1330857165')">12</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_962_945058907" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_962_945058907"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_962_945058907')">13</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_962_2788221432" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_962_2788221432"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_962_2788221432')">14</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_962_3510096238" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_962_3510096238"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_962_3510096238')">15</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_962_1212055764" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_962_1212055764"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_962_1212055764')">16</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_962_1060745282" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_962_1060745282"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_962_1060745282')">17</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_962_2944839123" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_962_2944839123"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_962_2944839123')">18</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_962_3632373061" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_962_3632373061"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_962_3632373061')">19</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_962_2322626082" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_962_2322626082"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_962_2322626082')">20</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_962_4252452532" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_962_4252452532"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_962_4252452532')">21</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_962_1685985038" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_962_1685985038"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_962_1685985038')">22</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clb"></div>
                   </div>
                 </div>
-                <div class="filter__item cars cars__comp">
-                  <label class="filter__label">Комплектация</label>
-                  <div class="select">
-                    <button class="select__button" type="button" name="cars_comp" value="none">
-                      —
-                    </button>
-                    <ul class="select__list">
-                      <li class="select__list-item select__list-item--first" data-value="none">—</li>
-                      <li class="select__list-item" data-value="M 3.5">M 3.5</li>
-                      <li class="select__list-item" data-value="M 3.5">M 3.5</li>
-                      <li class="select__list-item disabled" data-value="M 3.5">M 3.5</li>
-                      <li class="select__list-item" data-value="M 3.5">M 3.5</li>
-                      <li class="select__list-item" data-value="M 3.5">M 3.5</li>
-                    </ul>
-                    <input class="select__input-hidden" type="hidden" name="cars_comp" value="none">
+                <div class="bx_filter_parameters_box type_P " data-tyreindex="" data-expanded="N"
+                  data-prop_code="proizvoditel" data-property_id="949">
+                  <span class="bx_filter_container_modef"></span>
+                  <div class="bx_filter_parameters_box_title icons_fa">
+                    <div>
+                      Производитель <div class="char_name">
+                        <div class="props_list">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bx_filter_block ">
+                    <div class="bx_filter_parameters_box_container ">
+                      <div class="bx_filter_select_container">
+                        <div class="bx_filter_select_block" onclick="smartFilter.showDropDownPopup(this, '949')">
+                          <div class="bx_filter_select_text" data-role="currentOption">
+                            Все </div>
+                          <div class="bx_filter_select_arrow"></div>
+                          <input style="display: none" type="radio" name="arTires2Filter_949"
+                            id="all_arTires2Filter_949_2876577522" value="">
+                          <input style="display: none" type="radio" name="arTires2Filter_949"
+                            id="arTires2Filter_949_2876577522" value="2876577522">
+                          <input style="display: none" type="radio" name="arTires2Filter_949"
+                            id="arTires2Filter_949_1703664423" value="1703664423">
+                          <input style="display: none" type="radio" name="arTires2Filter_949"
+                            id="arTires2Filter_949_1370832954" value="1370832954">
+                          <input style="display: none" type="radio" name="arTires2Filter_949"
+                            id="arTires2Filter_949_918270398" value="918270398">
+                          <input style="display: none" type="radio" name="arTires2Filter_949"
+                            id="arTires2Filter_949_3881878997" value="3881878997">
+                          <div class="bx_filter_select_popup" data-role="dropdownContent" style="display: none;">
+                            <ul>
+                              <li>
+                                <label for="all_arTires2Filter_949_2876577522" class="bx_filter_param_label"
+                                  data-role="label_all_arTires2Filter_949_2876577522"
+                                  onclick="smartFilter.selectDropDownItem(this, 'all_arTires2Filter_949_2876577522')">
+                                  Все </label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_949_2876577522" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_949_2876577522"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_949_2876577522')">Achilles</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_949_1703664423" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_949_1703664423"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_949_1703664423')">Amtel</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_949_1370832954" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_949_1370832954"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_949_1370832954')">Barum</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_949_918270398" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_949_918270398"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_949_918270398')">Cordiant</label>
+                              </li>
+                              <li>
+                                <label for="arTires2Filter_949_3881878997" class="bx_filter_param_label "
+                                  data-role="label_arTires2Filter_949_3881878997"
+                                  onclick="smartFilter.selectDropDownItem(this, 'arTires2Filter_949_3881878997')">Matador</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clb"></div>
+                  </div>
+                </div>
+                <div class="bx_filter_parameters_box type_F " data-tyreindex="" data-expanded="N"
+                  data-prop_code="sezonnost" data-property_id="963">
+                  <span class="bx_filter_container_modef"></span>
+                  <div class="bx_filter_block limited_block">
+                    <div class="bx_filter_parameters_box_container ">
+                      <input type="checkbox" value="Y" name="arTires2Filter_963_3297583483"
+                        id="arTires2Filter_963_3297583483" data-ti_id="arTires2Filter_963_365039305"
+                        onclick="smartFilter.click(this)">
+                      <label data-role="label_arTires2Filter_963_3297583483"
+                        class="bx_filter_param_label  icon-allseason  " for="arTires2Filter_963_3297583483">
+                        <span class="bx_filter_input_checkbox">
+
+                          <span class="bx_filter_param_text" title="Всесезонная">Всесезонная</span>
+                        </span>
+                      </label>
+                      <input type="checkbox" value="Y" name="arTires2Filter_963_1525265624"
+                        id="arTires2Filter_963_1525265624" data-ti_id="arTires2Filter_963_641641533"
+                        onclick="smartFilter.click(this)">
+                      <label data-role="label_arTires2Filter_963_1525265624"
+                        class="bx_filter_param_label  icon-winter  " for="arTires2Filter_963_1525265624">
+                        <span class="bx_filter_input_checkbox">
+
+                          <span class="bx_filter_param_text" title="Зимняя">Зимняя</span>
+                        </span>
+                      </label>
+                      <input type="checkbox" value="Y" name="arTires2Filter_963_3012170221"
+                        id="arTires2Filter_963_3012170221" data-ti_id="arTires2Filter_963_430606427"
+                        onclick="smartFilter.click(this)">
+                      <label data-role="label_arTires2Filter_963_3012170221"
+                        class="bx_filter_param_label  icon-summer last " for="arTires2Filter_963_3012170221">
+                        <span class="bx_filter_input_checkbox">
+
+                          <span class="bx_filter_param_text" title="Летняя">Летняя</span>
+                        </span>
+                      </label>
+
+                    </div>
+                    <div class="clb"></div>
+                  </div>
+                </div>
+                <div class="bx_filter_parameters_box type_F " data-tyreindex="" data-expanded="N" data-prop_code="shipy"
+                  data-property_id="967">
+                  <span class="bx_filter_container_modef"></span>
+                  <div class="bx_filter_block limited_block">
+                    <div class="bx_filter_parameters_box_container ">
+                      <input type="checkbox" value="Y" name="arTires2Filter_967_584144408"
+                        id="arTires2Filter_967_584144408" data-ti_id="arTires2Filter_967_3120143532"
+                        onclick="smartFilter.click(this)">
+                      <label data-role="label_arTires2Filter_967_584144408"
+                        class="bx_filter_param_label  icon-spikes-no  " for="arTires2Filter_967_584144408">
+                        <span class="bx_filter_input_checkbox">
+
+                          <span class="bx_filter_param_text" title="Нешипованные">Нешипованные</span>
+                        </span>
+                      </label>
+                      <input type="checkbox" value="Y" name="arTires2Filter_967_1440114318"
+                        id="arTires2Filter_967_1440114318" data-ti_id="arTires2Filter_967_4136822654"
+                        onclick="smartFilter.click(this)">
+                      <label data-role="label_arTires2Filter_967_1440114318"
+                        class="bx_filter_param_label  icon-spikes last " for="arTires2Filter_967_1440114318">
+                        <span class="bx_filter_input_checkbox">
+
+                          <span class="bx_filter_param_text" title="Шипованные">Шипованные</span>
+                        </span>
+                      </label>
+
+                      <div class="bx_filter_parameters_box type_F " data-tyreindex="" data-expanded="N"
+                        data-prop_code="konstruktsiya_avtoshiny" data-property_id="966">
+                        <span class="bx_filter_container_modef"></span>
+                        <div class="bx_filter_block limited_block">
+                          <div class="bx_filter_parameters_box_container ">
+                            <input type="checkbox" value="Y" name="arTires2Filter_966_2448864808"
+                              id="arTires2Filter_966_2448864808" data-ti_id="arTires2Filter_966_3425545167"
+                              onclick="smartFilter.click(this)">
+                            <label data-role="label_arTires2Filter_966_2448864808"
+                              class="bx_filter_param_label  icon-rnf last " for="arTires2Filter_966_2448864808">
+                              <span class="bx_filter_input_checkbox">
+
+                                <span class="bx_filter_param_text" title="Run on flat">Run on flat</span>
+                              </span>
+                            </label>
+
+                          </div>
+                          <div class="clb"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clb"></div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="filter__wrap parameters">
-              <div class="filter__head accardion__btn">
-                Фильтр по параметрам
-                <svg>
-                  <use href="./images/sprite.svg?v7#arrow-down" />
-                </svg>
-              </div>
-              <div class="filter__body">
-                <input id="tires_offers" type="hidden">
-                <div class="filter__item">
-                  <label class="filter__label filter__item-head" for="tires_offers">
-                    Розничная цена
-                    <svg>
-                      <use href="./images/sprite.svg?v7#arrow-down" />
-                    </svg>
-                  </label>
-                  <div class="filter__item-body">
-                    <div class="filters-price__inputs">
-                      <label class="filters-price__label">
-                        <input type="number" min="3000" max="5999" placeholder="3000" class="filters-price__input"
-                          id="input-0">
-                      </label>
-                      <label class="filters-price__label">
-                        <input type="number" min="3000" max="5999" placeholder="5999" class="filters-price__input"
-                          id="input-1">
-                      </label>
+              <div class="clb"></div>
+              <div class="bx_filter_button_box active">
+                <div class="bx_filter_block">
+                  <div class="bx_filter_parameters_box_container">
+                    <div class="bx_filter_popup_result right" data-id="modef" style="display:none">
+                      Выбрано <span id="modef_num">0</span> <a rel="nofollow" href="/catalog/tires/?set_filter=y"
+                        class="btn btn-default white white-bg">Показать</a>
                     </div>
-                    <div class="filters-price__spans">
-                      <span class="filters-price__span">3000</span>
-                      <span class="filters-price__span">5999</span>
-                    </div>
-                    <div class="filters-price__slider" id="range-slider"></div>
-                  </div>
-                </div>
-                <div class="filter__item">
-                  <label class="filter__label filter__item-head" for="tires_offers">
-                    Наши предложения
-                    <svg>
-                      <use href="./images/sprite.svg?v7#arrow-down" />
-                    </svg>
-                  </label>
-                  <div class="filter__item-body">
-                    <div class="filter__checkbox">
-                      <input class="filter__checkbox-input" id="tires_aktsiya" type="checkbox">
-                      <label class="filter__checkbox-label" for="tires_aktsiya">
-                        Акция
-                      </label>
-                      <input class="filter__checkbox-input" id="tires_novinka" type="checkbox">
-                      <label class="filter__checkbox-label" for="tires_novinka">
-                        Новинка
-                      </label>
-                      <input class="filter__checkbox-input" id="tires_sovetuem" type="checkbox">
-                      <label class="filter__checkbox-label" for="tires_sovetuem">
-                        Советуем
-                      </label>
-                      <input class="filter__checkbox-input" id="tires_khit" type="checkbox">
-                      <label class="filter__checkbox-label" for="tires_khit">
-                        Хит
-                      </label>
+                    <input class="bx_filter_search_button btn btn-default " onclick="return sendQueryTires(this)"
+                      type="submit" name="set_filter" data-href="" value="Подобрать">
+                    <span class="bx_filter_search_reset_main btn btn-default white" data-href="">
+                      Сбросить </span>
+                    <div class="all_hint">
+                      <span class="icon"><i>?</i></span><span class="text" data-event="jqm" data-name="all_hint"
+                        data-param-form_id="filter_all_hint" data-param-type="TIRES">Что означают эти цифры?</span>
                     </div>
                   </div>
-                </div>
-                <div class="filter__item">
-                  <label class="filter__label filter__item-head" for="tires_width">
-                    Ширина диска
-                    <svg>
-                      <use href="./images/sprite.svg?v7#arrow-down" />
-                    </svg>
-                  </label>
-                  <div class="select">
-                    <button class="select__button" type="button" name="tires_width" value="all">
-                      Все
-                    </button>
-                    <ul class="select__list">
-                      <li class="select__list-item select__list-item--first" data-value="all">Все</li>
-                      <li class="select__list-item" data-value="5">5</li>
-                      <li class="select__list-item" data-value="5.5">5.5</li>
-                      <li class="select__list-item" data-value="6">6</li>
-                      <li class="select__list-item" data-value="6.5">6.5</li>
-                      <li class="select__list-item" data-value="7">7</li>
-                      <li class="select__list-item" data-value="7.5">7.5</li>
-                      <li class="select__list-item" data-value="8">8</li>
-                      <li class="select__list-item" data-value="8.5">8.5</li>
-                      <li class="select__list-item" data-value="9">9</li>
-                      <li class="select__list-item" data-value="9.5">9.5</li>
-                      <li class="select__list-item" data-value="10">10</li>
-                      <li class="select__list-item" data-value="10.5">10.5</li>
-                      <li class="select__list-item" data-value="11">11</li>
-                    </ul>
-                    <input class="select__input-hidden" type="hidden" name="tires_width" value="all">
-                  </div>
-                </div>
-                <div class="filter__item">
-                  <label class="filter__label filter__item-head" for="tires_disc_landing_diameter">
-                    Посадочный диаметр диска
-                    <svg>
-                      <use href="./images/sprite.svg?v7#arrow-down" />
-                    </svg>
-                  </label>
-                  <div class="select">
-                    <button class="select__button" type="button" name="tires_disc_landing_diameter" value="all">
-                      Все
-                    </button>
-                    <ul class="select__list">
-                      <li class="select__list-item select__list-item--first" data-value="all">Все</li>
-                      <li class="select__list-item" data-value="13">13</li>
-                      <li class="select__list-item" data-value="14">14</li>
-                      <li class="select__list-item" data-value="15">15</li>
-                      <li class="select__list-item" data-value="16">16</li>
-                      <li class="select__list-item" data-value="17">17</li>
-                      <li class="select__list-item" data-value="18">18</li>
-                      <li class="select__list-item" data-value="19">19</li>
-                      <li class="select__list-item" data-value="20">20</li>
-                      <li class="select__list-item" data-value="21">21</li>
-                      <li class="select__list-item" data-value="22">22</li>
-                      <li class="select__list-item" data-value="23">23</li>
-                      <li class="select__list-item" data-value="24">24</li>
-                    </ul>
-                    <input class="select__input-hidden" type="hidden" name="tires_disc_landing_diameter" value="all">
-                  </div>
-                </div>
-                <div class="filter__item">
-                  <label class="filter__label filter__item-head" for="tires_number_of_holes">
-                    Количество отверстий
-                    <svg>
-                      <use href="./images/sprite.svg?v7#arrow-down" />
-                    </svg>
-                  </label>
-                  <div class="select">
-                    <button class="select__button" type="button" name="tires_number_of_holes" value="all">
-                      Все
-                    </button>
-                    <ul class="select__list">
-                      <li class="select__list-item select__list-item--first" data-value="all">Все</li>
-                      <li class="select__list-item" data-value="4">4</li>
-                      <li class="select__list-item" data-value="5">5</li>
-                      <li class="select__list-item disabled" data-value="6">6</li>
-                      <li class="select__list-item disabled" data-value="8">8</li>
-                      <li class="select__list-item disabled" data-value="10">10</li>
-                      <li class="select__list-item disabled" data-value="13">13</li>
-                    </ul>
-                    <input class="select__input-hidden" type="hidden" name="tires_number_of_holes" value="all">
-                  </div>
-                </div>
-                <div class="filter__item">
-                  <label class="filter__label filter__item-head" for="tires_bolt_spacing">
-                    Межболтовое расстояние
-                    <svg>
-                      <use href="./images/sprite.svg?v7#arrow-down" />
-                    </svg>
-                  </label>
-                  <div class="select">
-                    <button class="select__button" type="button" name="tires_bolt_spacing" value="all">
-                      Все
-                    </button>
-                    <ul class="select__list">
-                      <li class="select__list-item select__list-item--first" data-value="all">Все</li>
-                      <li class="select__list-item" data-value="5">5</li>
-                      <li class="select__list-item" data-value="98">98</li>
-                      <li class="select__list-item" data-value="100">100</li>
-                      <li class="select__list-item" data-value="105">105</li>
-                      <li class="select__list-item" data-value="108">108</li>
-                      <li class="select__list-item" data-value="110">110</li>
-                      <li class="select__list-item" data-value="112">112</li>
-                      <li class="select__list-item" data-value="114.3">114.3</li>
-                      <li class="select__list-item" data-value="115">115</li>
-                      <li class="select__list-item" data-value="120">120</li>
-                      <li class="select__list-item" data-value="127">127</li>
-                      <li class="select__list-item" data-value="130">130</li>
-                      <li class="select__list-item" data-value="139.7">139.7</li>
-                      <li class="select__list-item" data-value="150">150</li>
-                      <li class="select__list-item" data-value="160">160</li>
-                      <li class="select__list-item" data-value="165">165</li>
-                      <li class="select__list-item" data-value="165.1">165.1</li>
-                      <li class="select__list-item" data-value="170">170</li>
-                      <li class="select__list-item" data-value="205">205</li>
-                    </ul>
-                    <input class="select__input-hidden" type="hidden" name="tires_bolt_spacing" value="all">
-                  </div>
-                </div>
-                <div class="filter__item">
-                  <label class="filter__label filter__item-head" for="tires_proizvoditel">
-                    Производитель
-                    <svg>
-                      <use href="./images/sprite.svg?v7#arrow-down" />
-                    </svg>
-                  </label>
-                  <div class="select">
-                    <button class="select__button" type="button" name="tires_proizvoditel" value="all">
-                      Все
-                    </button>
-                    <ul class="select__list">
-                      <li class="select__list-item select__list-item--first" data-value="all">Все</li>
-                      <li class="select__list-item disabled" data-value="Carwel">Carwel</li>
-                      <li class="select__list-item disabled" data-value="Forsage">Forsage</li>
-                      <li class="select__list-item disabled" data-value="Konig">Konig</li>
-                      <li class="select__list-item disabled" data-value="Replica">Replica</li>
-                    </ul>
-                    <input class="select__input-hidden" type="hidden" name="tires_proizvoditel" value="all">
-                  </div>
-                </div>
-                <div class="filter__item">
-                  <label class="filter__label filter__item-head">
-                    Вылет диска
-                    <svg>
-                      <use href="./images/sprite.svg?v7#arrow-down" />
-                    </svg>
-                  </label>
-                  <div class="filter__item-body">
-                    <div class="filters-price__inputs">
-                      <label class="filters-price__label">
-                        <input type="number" min="-35" max="115" placeholder="-35" class="filters-price__input"
-                          id="input-2">
-                      </label>
-                      <label class="filters-price__label">
-                        <input type="number" min="-35" max="115" placeholder="115" class="filters-price__input"
-                          id="input-3">
-                      </label>
-                    </div>
-                    <div class="filters-price__spans">
-                      <span class="filters-price__span">-35</span>
-                      <span class="filters-price__span">115</span>
-                    </div>
-                    <div class="filters-price__slider" id="range-slider-2"></div>
-                  </div>
-                </div>
-                <div class="filter__item">
-                  <label class="filter__label filter__item-head">
-                    Диаметр ступицы
-                    <svg>
-                      <use href="./images/sprite.svg?v7#arrow-down" />
-                    </svg>
-                  </label>
-                  <div class="filter__item-body">
-                    <div class="filters-price__inputs">
-                      <label class="filters-price__label">
-                        <input type="number" min="0" max="161" placeholder="0" class="filters-price__input"
-                          id="input-4">
-                      </label>
-                      <label class="filters-price__label">
-                        <input type="number" min="0" max="161" placeholder="161" class="filters-price__input"
-                          id="input-5">
-                      </label>
-                    </div>
-                    <div class="filters-price__spans">
-                      <span class="filters-price__span">0</span>
-                      <span class="filters-price__span">161</span>
-                    </div>
-                    <div class="filters-price__slider" id="range-slider-3"></div>
-                  </div>
-                </div>
-                <div class="filter__item">
-                  <label class="filter__label filter__item-head" for="tires_type">
-                    Тип диска
-                    <svg>
-                      <use href="./images/sprite.svg?v7#arrow-down" />
-                    </svg>
-                  </label>
-                  <div class="filter__item-body">
-                    <div class="filter__checkbox">
-                      <input class="filter__checkbox-input" id="tires_steel" type="checkbox">
-                      <label class="filter__checkbox-label" for="tires_steel">
-                        Стальной
-                      </label>
-                      <input class="filter__checkbox-input" id="tires_unknown" type="checkbox">
-                      <label class="filter__checkbox-label" for="tires_unknown">
-                        Неизвестный тип диска
-                      </label>
-                      <input class="filter__checkbox-input" id="tires_cast" type="checkbox">
-                      <label class="filter__checkbox-label" for="tires_cast">
-                        Литой
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="filter__btn">
-                  <button class="filter__reset btn btn-black" type="reset">
-                    Сбросить
-                  </button>
                 </div>
               </div>
-            </div>
-          </form>
+            </form>
+            <div style="clear: both;"></div>
+          </div>
         </div>
       </div>
-      <div class="catalog__content">
-        <div class="catalog__head">
-          <div class="sort__filter">
-            <a class="sort__filter-btn mob-filter" href="#!" rel="nofollow">
-              <i class="sort__filter-icon"></i>
-              <span class="sort__filter-text">Фильтр</span>
-            </a>
-            <a class="sort__filter-btn sort__popular sort__filter-btn--active" href="#!" rel="nofollow">
-              <i class="sort__filter-icon"></i>
-              <span class="sort__filter-text">По популярности</span>
-              <svg>
-                <use href="./images/sprite.svg?v7#arrow-down" />
-              </svg>
-            </a>
-            <a class="sort__filter-btn sort__name" href="#!" rel="nofollow">
-              <i class="sort__filter-icon"></i>
-              <span class="sort__filter-text">По алфавиту</span>
-              <svg>
-                <use href="./images/sprite.svg?v7#arrow-down" />
-              </svg>
-            </a>
-            <a class="sort__filter-btn sort__price" href="#!" rel="nofollow">
-              <i class="sort__filter-icon"></i>
-              <span class="sort__filter-text">По цене</span>
-              <svg>
-                <use href="./images/sprite.svg?v7#arrow-down" />
-              </svg>
-            </a>
-          </div>
-          <div class="sort__display">
-            <a class="sort__display-btn block active" href="#!" rel="nofollow" data-value="block">
-              <i class="sort__display-icon" title="плиткой"></i>
-            </a>
-            <a class="sort__display-btn list" href="#!" rel="nofollow" data-value="list">
-              <i class="sort__display-icon" title="списком"></i>
-            </a>
-            <a class="sort__display-btn table" href="#!" rel="nofollow" data-value="table">
-              <i class="sort__display-icon" title="таблицей"></i>
-            </a>
-          </div>
-        </div>
-        <div class="catalog__body">
-          <div class="catalog__items block">
-            <div class="catalog__item">
-              <div class="catalog__stickers">
-                <div class="catalog__stickers-item aktsiya">Акция</div>
-                <div class="catalog__stickers-item novinka">Новинка</div>
-                <div class="catalog__stickers-item sovetuem">Советуем</div>
-                <div class="catalog__stickers-item khit">Хит</div>
-              </div>
-              <div class="catalog__icons">
-                <span class="catalog__icons-item wish">
-                  <i></i>
-                  Отложить
-                </span>
-                <span class="catalog__icons-item compare">
-                  <i></i>
-                  Сравнить
-                </span>
-              </div>
-              <a class="catalog__item-img shine" href="/">
-                <img src="./images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-              <div class="catalog__item-desc">
-                <table class="catalog__table">
-                  <tbody>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Ширина диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>7.5</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Посадочный диаметр диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>17</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Межболтовое расстояние</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>114.3</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="catalog__stickers">
-                <div class="catalog__stickers-item aktsiya">Акция</div>
-                <div class="catalog__stickers-item novinka">Новинка</div>
-                <div class="catalog__stickers-item sovetuem">Советуем</div>
-                <div class="catalog__stickers-item khit">Хит</div>
-              </div>
-              <div class="catalog__icons">
-                <span class="catalog__icons-item wish">
-                  <i></i>
-                </span>
-                <span class="catalog__icons-item compare">
-                  <i></i>
-                </span>
-              </div>
-              <a class="catalog__item-img shine" href="/">
-                <img src="./images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-              <div class="catalog__item-desc">
-                <table class="catalog__table">
-                  <tbody>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Ширина диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>7.5</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Посадочный диаметр диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>17</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Межболтовое расстояние</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>114.3</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="catalog__stickers">
-                <div class="catalog__stickers-item aktsiya">Акция</div>
-                <div class="catalog__stickers-item novinka">Новинка</div>
-                <div class="catalog__stickers-item sovetuem">Советуем</div>
-                <div class="catalog__stickers-item khit">Хит</div>
-              </div>
-              <div class="catalog__icons">
-                <span class="catalog__icons-item wish">
-                  <i></i>
-                </span>
-                <span class="catalog__icons-item compare">
-                  <i></i>
-                </span>
-              </div>
-              <a class="catalog__item-img shine" href="/">
-                <img src="./images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-              <div class="catalog__item-desc">
-                <table class="catalog__table">
-                  <tbody>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Ширина диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>7.5</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Посадочный диаметр диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>17</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Межболтовое расстояние</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>114.3</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="catalog__stickers">
-                <div class="catalog__stickers-item aktsiya">Акция</div>
-                <div class="catalog__stickers-item novinka">Новинка</div>
-                <div class="catalog__stickers-item sovetuem">Советуем</div>
-                <div class="catalog__stickers-item khit">Хит</div>
-              </div>
-              <div class="catalog__icons">
-                <span class="catalog__icons-item wish">
-                  <i></i>
-                </span>
-                <span class="catalog__icons-item compare">
-                  <i></i>
-                </span>
-              </div>
-              <a class="catalog__item-img shine" href="/">
-                <img src="./images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-              <div class="catalog__item-desc">
-                <table class="catalog__table">
-                  <tbody>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Ширина диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>7.5</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Посадочный диаметр диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>17</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Межболтовое расстояние</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>114.3</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="catalog__stickers">
-                <div class="catalog__stickers-item aktsiya">Акция</div>
-                <div class="catalog__stickers-item novinka">Новинка</div>
-                <div class="catalog__stickers-item sovetuem">Советуем</div>
-                <div class="catalog__stickers-item khit">Хит</div>
-              </div>
-              <div class="catalog__icons">
-                <span class="catalog__icons-item wish">
-                  <i></i>
-                </span>
-                <span class="catalog__icons-item compare">
-                  <i></i>
-                </span>
-              </div>
-              <a class="catalog__item-img shine" href="/">
-                <img src="./images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-              <div class="catalog__item-desc">
-                <table class="catalog__table">
-                  <tbody>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Ширина диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>7.5</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Посадочный диаметр диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>17</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Межболтовое расстояние</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>114.3</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="catalog__stickers">
-                <div class="catalog__stickers-item aktsiya">Акция</div>
-                <div class="catalog__stickers-item novinka">Новинка</div>
-                <div class="catalog__stickers-item sovetuem">Советуем</div>
-                <div class="catalog__stickers-item khit">Хит</div>
-              </div>
-              <div class="catalog__icons">
-                <span class="catalog__icons-item wish">
-                  <i></i>
-                </span>
-                <span class="catalog__icons-item compare">
-                  <i></i>
-                </span>
-              </div>
-              <a class="catalog__item-img shine" href="/">
-                <img src="./images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-              <div class="catalog__item-desc">
-                <table class="catalog__table">
-                  <tbody>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Ширина диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>7.5</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Посадочный диаметр диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>17</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Межболтовое расстояние</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>114.3</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="catalog__stickers">
-                <div class="catalog__stickers-item aktsiya">Акция</div>
-                <div class="catalog__stickers-item novinka">Новинка</div>
-                <div class="catalog__stickers-item sovetuem">Советуем</div>
-                <div class="catalog__stickers-item khit">Хит</div>
-              </div>
-              <div class="catalog__icons">
-                <span class="catalog__icons-item wish">
-                  <i></i>
-                </span>
-                <span class="catalog__icons-item compare">
-                  <i></i>
-                </span>
-              </div>
-              <a class="catalog__item-img shine" href="/">
-                <img src="./images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-              <div class="catalog__item-desc">
-                <table class="catalog__table">
-                  <tbody>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Ширина диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>7.5</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Посадочный диаметр диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>17</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Межболтовое расстояние</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>114.3</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="catalog__stickers">
-                <div class="catalog__stickers-item aktsiya">Акция</div>
-                <div class="catalog__stickers-item novinka">Новинка</div>
-                <div class="catalog__stickers-item sovetuem">Советуем</div>
-                <div class="catalog__stickers-item khit">Хит</div>
-              </div>
-              <div class="catalog__icons">
-                <span class="catalog__icons-item wish">
-                  <i></i>
-                </span>
-                <span class="catalog__icons-item compare">
-                  <i></i>
-                </span>
-              </div>
-              <a class="catalog__item-img shine" href="/">
-                <img src="./images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-              <div class="catalog__item-desc">
-                <table class="catalog__table">
-                  <tbody>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Ширина диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>7.5</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Посадочный диаметр диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>17</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Межболтовое расстояние</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>114.3</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="catalog__stickers">
-                <div class="catalog__stickers-item aktsiya">Акция</div>
-                <div class="catalog__stickers-item novinka">Новинка</div>
-                <div class="catalog__stickers-item sovetuem">Советуем</div>
-                <div class="catalog__stickers-item khit">Хит</div>
-              </div>
-              <div class="catalog__icons">
-                <span class="catalog__icons-item wish">
-                  <i></i>
-                </span>
-                <span class="catalog__icons-item compare">
-                  <i></i>
-                </span>
-              </div>
-              <a class="catalog__item-img shine" href="/">
-                <img src="./images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-              <div class="catalog__item-desc">
-                <table class="catalog__table">
-                  <tbody>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Ширина диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>7.5</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Посадочный диаметр диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>17</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Межболтовое расстояние</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>114.3</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="catalog__stickers">
-                <div class="catalog__stickers-item aktsiya">Акция</div>
-                <div class="catalog__stickers-item novinka">Новинка</div>
-                <div class="catalog__stickers-item sovetuem">Советуем</div>
-                <div class="catalog__stickers-item khit">Хит</div>
-              </div>
-              <div class="catalog__icons">
-                <span class="catalog__icons-item wish">
-                  <i></i>
-                </span>
-                <span class="catalog__icons-item compare">
-                  <i></i>
-                </span>
-              </div>
-              <a class="catalog__item-img shine" href="/">
-                <img src="./images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-              <div class="catalog__item-desc">
-                <table class="catalog__table">
-                  <tbody>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Ширина диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>7.5</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Посадочный диаметр диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>17</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Межболтовое расстояние</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>114.3</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="catalog__stickers">
-                <div class="catalog__stickers-item aktsiya">Акция</div>
-                <div class="catalog__stickers-item novinka">Новинка</div>
-                <div class="catalog__stickers-item sovetuem">Советуем</div>
-                <div class="catalog__stickers-item khit">Хит</div>
-              </div>
-              <div class="catalog__icons">
-                <span class="catalog__icons-item wish">
-                  <i></i>
-                </span>
-                <span class="catalog__icons-item compare">
-                  <i></i>
-                </span>
-              </div>
-              <a class="catalog__item-img shine" href="/">
-                <img src="./images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-              <div class="catalog__item-desc">
-                <table class="catalog__table">
-                  <tbody>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Ширина диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>7.5</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Посадочный диаметр диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>17</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Межболтовое расстояние</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>114.3</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="catalog__stickers">
-                <div class="catalog__stickers-item aktsiya">Акция</div>
-                <div class="catalog__stickers-item novinka">Новинка</div>
-                <div class="catalog__stickers-item sovetuem">Советуем</div>
-                <div class="catalog__stickers-item khit">Хит</div>
-              </div>
-              <div class="catalog__icons">
-                <span class="catalog__icons-item wish">
-                  <i></i>
-                </span>
-                <span class="catalog__icons-item compare">
-                  <i></i>
-                </span>
-              </div>
-              <a class="catalog__item-img shine" href="/">
-                <img src="./images/catalog/wheel.jpg" alt="4GO 228 7x16 5x105 ET 39 (Carbon)">
-              </a>
-              <a class="catalog__item-name" href="/">
-                4GO 228 7x16 5x105 ET 39 (Carbon)
-              </a>
-              <div class="catalog__rating">
-                <div class="catalog__rating-items">
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item filled"></span>
-                  <span class="catalog__rating-item"></span>
-                  <span class="catalog__rating-item"></span>
-                </div>
-                <span class="catalog__rating-count">1</span>
-              </div>
-              <div class="catalog__stock">
-                <span class="catalog__stock-icon"></span>Много
-              </div>
-              <div class="catalog__article">
-                Арт: <span class="catalog__article-count">123</span>
-              </div>
-              <div class="catalog__item-price">
-                <span>4 864</span> руб.
-              </div>
-              <div class="catalog__btns">
-                <div class="catalog__counter">
-                  <span class="catalog__counter-item minus">-</span>
-                  <input class="catalog__counter-quantity" type="text" name="quantity" data-max-count="20" value="1">
-                  <span class="catalog__counter-item plus">+</span>
-                </div>
-                <button class="catalog__btn btn btn-green">
-                  В корзину
-                </button>
-              </div>
-              <div class="catalog__item-desc">
-                <table class="catalog__table">
-                  <tbody>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Ширина диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>7.5</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Посадочный диаметр диска</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>17</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="catalog__table-text">
-                        <span>Межболтовое расстояние</span>
-                      </td>
-                      <td class="catalog__table-count">
-                        <span>114.3</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagination">
-          <a class="pagination__arrow prev disabled" href="/">
-          </a>
-          <div class="pagination__items">
-            <a class="pagination__item pagination__item--active" href="/">1</a>
-            <a class="pagination__item" href="/">2</a>
-            <a class="pagination__item" href="/">3</a>
-            <a class="pagination__item" href="/">...</a>
-            <a class="pagination__item" href="/">93</a>
-            <a class="pagination__item pagination__item--all" href="/">Все</a>
-          </div>
-          <a class="pagination__arrow next" href="/">
-          </a>
+
+      <div id="filter_result" class="catalog_result filters_wrap clearfix">
+        <div class="title pull-left">Результаты</div>
+        <div class="block_all_results">
+          <div class="tyres_result"></div>
+          <div class="wheels_result"></div>
+          <div class="akb_result"></div>
         </div>
       </div>
+
     </div>
   </section>
+
   <!-- scroll top -->
   <a id="scroll-top" class="scroll-top" href="#wrapper"></a>
 </main>
