@@ -8,7 +8,7 @@
     width: 26px;
     height: 22px;
     line-height: 22px;
-    background: url(./../../images/icons/types_large_icons.svg) 0 -2px no-repeat;
+    background: url(./../images/icons/types_large_icons.svg) 0 -2px no-repeat;
 
     &.wthspikes {
       background-position: 0 -106px;
@@ -45,7 +45,7 @@
     display: block;
     width: 17px;
     height: 18px;
-    background: url(./../../images/icons/tires_icons.svg) -162px -141px no-repeat;
+    background: url(./../images/icons/tires_icons.svg) -162px -141px no-repeat;
     cursor: pointer;
   }
 
@@ -59,7 +59,7 @@
   }
 
   &__item {
-    background: url(./../../images/icons/social_icons.svg) -3px -3px no-repeat;
+    background: url(./../images/icons/social_icons.svg) -3px -3px no-repeat;
     transition: opacity .5s ease;
     width: 28px;
     height: 28px;
@@ -277,7 +277,7 @@
         height: 18px;
         padding-left: 26px;
         line-height: 20px;
-        background: url(./../../images/card/types_icon.svg) 0 -61px no-repeat;
+        background: url(./../images/card/types_icon.svg) 0 -61px no-repeat;
       }
 
       .rnf {
@@ -285,7 +285,7 @@
         height: 22px;
         padding-left: 26px;
         line-height: 20px;
-        background: url(./../../images/card/types_icon.svg) 0 -159px no-repeat;
+        background: url(./../images/card/types_icon.svg) 0 -159px no-repeat;
       }
     }
   }
@@ -333,7 +333,7 @@
         top: 13px;
         right: 12px;
         display: block;
-        background: url(./../../images/icons/tires_icons.svg) -163px -141px no-repeat;
+        background: url(./../images/icons/tires_icons.svg) -163px -141px no-repeat;
         width: 17px;
         height: 18px;
       }

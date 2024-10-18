@@ -308,7 +308,7 @@
   top: 6px;
   width: 10px;
   height: 6px;
-  background: url(./../../images/icons/down_arrow_icons.png) 0 -161px no-repeat;
+  background: url(./../images/icons/down_arrow_icons.png) 0 -161px no-repeat;
   z-index: 2;
 }
 .orders__list.order__payments--active .orders__payments {
@@ -554,7 +554,7 @@
 .order__coupon-btn {
   width: 45px;
   height: auto;
-  background-image: url(./../../images/order/order_ext_icons.svg);
+  background-image: url(./../images/order/order_ext_icons.svg);
   background-position: -30px -30px;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -584,7 +584,7 @@
   margin: 0;
   width: 30px;
   height: 30px;
-  background: url(./../../images/order/order_icons.svg) -30px -30px no-repeat;
+  background: url(./../images/order/order_icons.svg) -30px -30px no-repeat;
   background-color: #52c200;
 }
 .buyer__profile-select {
@@ -631,7 +631,7 @@
   margin: 0;
   width: 30px;
   height: 30px;
-  background: url(./../../images/order/order_icons.svg) -30px -30px no-repeat;
+  background: url(./../images/order/order_icons.svg) -30px -30px no-repeat;
   background-color: #52c200;
 }
 .method__radio {
@@ -682,7 +682,7 @@
   margin: 0;
   width: 30px;
   height: 30px;
-  background: url(./../../images/order/order_icons.svg) -30px -30px no-repeat;
+  background: url(./../images/order/order_icons.svg) -30px -30px no-repeat;
   background-color: #52c200;
 }
 .goods__head-link {
@@ -854,7 +854,7 @@
   top: 5px;
   width: 10px;
   height: 8px;
-  background: url(./../../images/order/order_ext_icons.svg) -64px -9px no-repeat;
+  background: url(./../images/order/order_ext_icons.svg) -64px -9px no-repeat;
 }
 
 .error .label-error {
@@ -1037,7 +1037,7 @@
   width: 26px;
   height: 22px;
   line-height: 22px;
-  background: url(./../../images/icons/types_large_icons.svg) 0 -2px no-repeat;
+  background: url(./../images/icons/types_large_icons.svg) 0 -2px no-repeat;
 }
 .seasons__item.wthspikes {
   background-position: 0 -106px;
@@ -1068,7 +1068,7 @@
   display: block;
   width: 17px;
   height: 18px;
-  background: url(./../../images/icons/tires_icons.svg) -162px -141px no-repeat;
+  background: url(./../images/icons/tires_icons.svg) -162px -141px no-repeat;
   cursor: pointer;
 }
 .share__items {
@@ -1080,7 +1080,7 @@
   background-color: #f2f2f2;
 }
 .share__item {
-  background: url(./../../images/icons/social_icons.svg) -3px -3px no-repeat;
+  background: url(./../images/icons/social_icons.svg) -3px -3px no-repeat;
   transition: opacity 0.5s ease;
   width: 28px;
   height: 28px;
@@ -1262,14 +1262,14 @@
   height: 18px;
   padding-left: 26px;
   line-height: 20px;
-  background: url(./../../images/card/types_icon.svg) 0 -61px no-repeat;
+  background: url(./../images/card/types_icon.svg) 0 -61px no-repeat;
 }
 .card__char-item .rnf {
   width: 26px;
   height: 22px;
   padding-left: 26px;
   line-height: 20px;
-  background: url(./../../images/card/types_icon.svg) 0 -159px no-repeat;
+  background: url(./../images/card/types_icon.svg) 0 -159px no-repeat;
 }
 .card__share {
   display: flex;
@@ -1311,7 +1311,7 @@
   top: 13px;
   right: 12px;
   display: block;
-  background: url(./../../images/icons/tires_icons.svg) -163px -141px no-repeat;
+  background: url(./../images/icons/tires_icons.svg) -163px -141px no-repeat;
   width: 17px;
   height: 18px;
 }
