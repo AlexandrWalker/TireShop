@@ -112,7 +112,7 @@ function building() {
     '!app/pages/*.html',
 
     'app/css/style.css',
-    'app/css/sidebar.css',
+    'app/css/style-v2.css',
 
     'app/js/*.js',
     '!app/js/main.min.js',

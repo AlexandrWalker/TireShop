@@ -70,11 +70,14 @@ body {
 
 .container {
   max-width: 1350px;
+  width: 100%;
   padding: 0 30px;
   margin: 0 auto;
 }
 
 section {
+  display: flex;
+  height: 100%;
   margin: 0 0 30px;
 }
 

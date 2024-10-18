@@ -1,0 +1,462 @@
+.seasons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+
+  &__item {
+    width: 26px;
+    height: 22px;
+    line-height: 22px;
+    background: url(./../../images/icons/types_large_icons.svg) 0 -2px no-repeat;
+
+    &.wthspikes {
+      background-position: 0 -106px;
+    }
+
+    &.allseason {
+      background-position: 0 -80px;
+    }
+
+    &.rnf {
+      background-position: 0 -132px;
+    }
+  }
+}
+
+.share {
+  position: relative;
+  padding: 20px;
+  margin: 0 0 0 auto;
+
+  &:hover {
+    padding: 0;
+  }
+
+  &:hover .share__items {
+    display: flex;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 13px;
+    display: block;
+    width: 17px;
+    height: 18px;
+    background: url(./../../images/icons/tires_icons.svg) -162px -141px no-repeat;
+    cursor: pointer;
+  }
+
+  &__items {
+    display: none;
+    flex-direction: row;
+    gap: 2px;
+    padding: 6px 54px 6px 10px;
+    border-radius: var(--primary-border-radius);
+    background-color: #f2f2f2;
+  }
+
+  &__item {
+    background: url(./../../images/icons/social_icons.svg) -3px -3px no-repeat;
+    transition: opacity .5s ease;
+    width: 28px;
+    height: 28px;
+    border-radius: 3px;
+
+    &:hover {
+      opacity: .85;
+    }
+
+    &.vk {}
+
+    &.odn {
+      background-position: -43px -3px;
+    }
+
+    &.myworld {
+      background-position: -123px -3px;
+    }
+
+    &.twitter {
+      background-position: -3px -43px;
+    }
+
+    &.viber {
+      background-position: -283px -4px;
+    }
+
+    &.whatsApp {
+      background-position: -283px -44px;
+    }
+
+    &.skype {
+      background-position: -284px -84px;
+    }
+
+    &.telegram {
+      background-position: -284px -123px;
+    }
+  }
+}
+
+.page__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.card {
+  &__inner {
+    display: flex;
+    border: var(--primary-border);
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 39px;
+
+    img {
+      width: auto;
+      max-height: 370px;
+      height: auto;
+      object-fit: cover;
+      margin: 15px 65px 45px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 30px 30px 30px 0;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 50%;
+    padding: 0 40px 0 0;
+  }
+
+  &__price {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--primary-grey-color);
+    width: fit-content;
+    white-space: nowrap;
+    border-bottom: 1px dotted;
+    margin: 0 0 0 22px;
+    position: relative;
+
+    &:hover {
+      color: var(--primary-green-color);
+      border-color: var(--primary-green-color);
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -22px;
+      background: url(./../images/icons/ai_icons.png) -92px -48px no-repeat;
+      background-position: -111px -50px;
+      margin: 0 6px 1px 0;
+    }
+
+    &:last-child::before {
+      background-position: -74px -84px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: 12px;
+
+    &-btn {
+      white-space: nowrap;
+      padding: 10px 20px;
+    }
+  }
+
+  &__btn {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .catalog__counter-quantity {
+    width: 100%;
+    height: 40px;
+  }
+
+  .catalog__counter-item::before {
+    height: 27px;
+  }
+
+  &__char {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 50%;
+
+    &-title {
+      font-size: 14px;
+      color: #444;
+    }
+
+    &-items {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+
+      span {
+        &:first-child {
+          color: var(--tertiary-grey-color);
+          position: relative;
+          width: 50%;
+
+          &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1;
+            border-bottom: 1px dotted #ccc;
+          }
+        }
+
+        &:last-child {
+          color: var(--secondary-black-color);
+          width: 50%;
+        }
+      }
+
+      p {
+        font-size: 13px;
+        font-weight: 400;
+        width: fit-content;
+        padding-right: 8px;
+        background-color: var(--primary-white-color);
+      }
+
+      .allseason {
+        width: 20px;
+        height: 18px;
+        padding-left: 26px;
+        line-height: 20px;
+        background: url(./../../images/card/types_icon.svg) 0 -61px no-repeat;
+      }
+
+      .rnf {
+        width: 26px;
+        height: 22px;
+        padding-left: 26px;
+        line-height: 20px;
+        background: url(./../../images/card/types_icon.svg) 0 -159px no-repeat;
+      }
+    }
+  }
+
+  &__share {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    height: fit-content;
+    padding: 26px 0 22px;
+    border-top: var(--primary-border);
+
+    &-link {
+      height: fit-content;
+      border: var(--primary-border);
+      border-radius: var(--primary-border-radius);
+      padding: 8px 64px 10px 20px;
+      position: relative;
+      color: var(--primary-black-color);
+
+      &:hover {
+        background-color: #f2f2f2;
+        border-color: var(--primary-white-color);
+      }
+
+      &:hover::before {
+        background: var(--primary-white-color);
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 44px;
+        display: block;
+        background: #f2f2f2;
+        width: 1px;
+        height: 100%;
+        z-index: 1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 13px;
+        right: 12px;
+        display: block;
+        background: url(./../../images/icons/tires_icons.svg) -163px -141px no-repeat;
+        width: 17px;
+        height: 18px;
+      }
+    }
+
+    &-text {
+      font-size: 12px;
+      color: #7d7d7d;
+    }
+  }
+}
+
+.tabs {
+
+  &__inner {
+    width: calc(100% - 318px);
+    float: left;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-bottom: 39px;
+
+    &-item {
+      background: var(--tertiary-bg-color);
+      border: var(--primary-border);
+      padding: 17px 25px 18px;
+      font-size: 14px;
+      color: var(--primary-black-color);
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        background-color: transparent;
+        color: var(--primary-green-color);
+      }
+
+      &.tabs__nav-item--active {
+        background-color: transparent;
+        color: var(--primary-green-color);
+        border-top: 2px solid var(--primary-green-color);
+        border-bottom: 0;
+      }
+    }
+  }
+
+  &__char {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+      border-radius: var(--primary-border-radius);
+
+      span {
+        width: 50%;
+        padding: 8px 18px 9px;
+      }
+
+      &:nth-child(odd) {
+        background-color: var(--primary-bg-color);
+      }
+    }
+  }
+
+  &__buy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-title {
+      font-weight: 700;
+      color: var(--secondary-color);
+    }
+
+    p {
+      font-size: 14px;
+      color: var(--tertiary-black-color);
+    }
+  }
+
+  &__quet {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-text {
+      font-size: 14px;
+      color: var(--tertiary-black-color);
+    }
+  }
+
+  &__tabs {}
+
+  &__side {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 278px;
+    padding: 28px;
+    float: right;
+    border: var(--primary-border);
+
+    &-link {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      font-size: 13px;
+      color: var(--primary-green-color);
+
+      &:hover {
+        color: inherit;
+      }
+
+      svg {
+        transform: rotate(-90deg);
+        width: 10px;
+        height: 6px;
+      }
+    }
+  }
+}
