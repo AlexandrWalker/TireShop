@@ -17,8 +17,6 @@
     margin-bottom: 20px;
   }
 
-  &__body {}
-
   &__items {
     display: flex;
     flex-wrap: wrap;
@@ -646,6 +644,7 @@
       vertical-align: top;
       text-align: center;
       line-height: 32px;
+      flex-shrink: 0;
 
       &:not(.active):hover i {
         background-color: var(--primary-green-color);

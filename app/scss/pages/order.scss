@@ -325,10 +325,13 @@
   }
 }
 
-.table {
+table.table {
   width: 100%;
   border-spacing: unset;
   color: var(--secondary-black-color);
+}
+
+.table {
 
   tr {
     width: 100%;
