@@ -546,10 +546,11 @@ body {
   font-family: var(--primary-font), Arial, sans-serif;
   font-size: 15px;
   line-height: var(--primary-line-height);
+  overflow-x: hidden;
 }
 
 .no-scroll {
-  height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
 }
 
@@ -1921,6 +1922,228 @@ input[type=hidden] {
   line-height: 1.25;
   max-height: 80px;
   overflow: hidden;
+}
+
+.forms__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.forms__block {
+  border: var(--secondary-border);
+  width: calc(50% - 15px);
+  min-height: 385px;
+  padding: 30px;
+  transition: background-position 0.3s ease;
+}
+.forms__block.passenger {
+  background: url(./../images/forms/tire_car_small.webp) right bottom no-repeat;
+  background-size: auto;
+}
+.forms__block.freight {
+  background: url(./../images/forms/tire_track.webp) right bottom no-repeat;
+}
+.forms__block.freight .forms__btns {
+  margin-top: 43px;
+}
+.forms__block.freight input[type=checkbox] + label {
+  padding-left: 24px;
+}
+.forms__block.tires {
+  background: url(./../images/forms/tire_car.webp) right bottom no-repeat;
+  width: 100%;
+}
+.forms__block.tires .forms__form {
+  max-width: 800px;
+}
+.forms__block.tires .forms__checkbox-label {
+  width: fit-content;
+}
+.forms__block.truck_tires {
+  background: url(./../images/forms/tire_track.webp) right bottom no-repeat;
+  width: 100%;
+}
+.forms__block.truck_tires .forms__form {
+  max-width: 800px;
+}
+.forms__block.truck_tires .forms__checkbox-label {
+  width: fit-content;
+}
+.forms__block.truck_tires input[type=checkbox] + label {
+  padding-left: 24px;
+}
+.forms__block.wheel {
+  background: url(./../images/forms/wheel.webp) right bottom no-repeat;
+  width: 100%;
+}
+.forms__block.wheel .forms__form {
+  max-width: 800px;
+}
+.forms__block.wheel .forms__checkbox-label {
+  width: fit-content;
+}
+.forms__block.wheel .forms__select {
+  width: calc(50% - 8px);
+}
+.forms__block.akb {
+  background: url(./../images/forms/battery.webp) right bottom no-repeat;
+  width: 100%;
+}
+.forms__block.akb .forms__form {
+  max-width: 600px;
+}
+.forms__block.akb input[type=checkbox] + label {
+  padding-left: 24px;
+}
+.forms__block.akb .forms__checkbox-label {
+  width: fit-content;
+}
+.forms__title {
+  margin-bottom: 24px;
+  position: relative;
+}
+.forms__title::before {
+  content: "";
+  display: block;
+  height: 28px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  left: -31px;
+  transform: translateY(-50%);
+  background-color: var(--primary-green-color);
+}
+.forms__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 420px;
+}
+.forms__selects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.forms__select {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: calc(33.33333% - 10.66666px);
+}
+.forms__select .select {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0;
+}
+.forms__select-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-shadow: -1px 1px white;
+}
+.forms__select-icon {
+  color: #ccc;
+}
+.forms__checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+}
+.forms__checkbox-label {
+  width: calc(50% - 8px);
+  text-shadow: -1px 1px white;
+}
+.forms__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.forms__hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.forms__hint:hover .forms__hint-icon {
+  background-color: var(--primary-green-color);
+  border-color: var(--primary-green-color);
+  color: var(--primary-white-color);
+}
+.forms__hint-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  color: var(--secondary-color);
+}
+.forms__hint-icon i {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
+  font-style: normal;
+}
+.forms__hint-text {
+  font-size: 13px;
+  color: var(--secondary-grey-color);
+}
+.forms .select__button {
+  background: #f7f7f7;
+  padding: 0 0 0 10px;
+}
+.forms .select__button:hover::before {
+  background-color: #e3e3e3;
+  transition: var(--tertiary-transition);
+}
+.forms .select__button::before {
+  content: "";
+  background-color: #fff;
+  display: block;
+  width: 26px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.forms .select__list {
+  left: 0;
+}
+.forms input[type=checkbox] + label {
+  padding-left: 52px;
+}
+.forms input[type=checkbox] + label span {
+  display: block;
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 2px;
+  left: 25px;
+  z-index: 1;
+  background: url(./../images/icons/types_large_icons.svg) 0px -21px no-repeat;
+  background-size: 100%;
+}
+.forms input[type=checkbox] + label.summer span {
+  background-position: 0px -21px;
+}
+.forms input[type=checkbox] + label.non-studded span {
+  background-position: 0px -81px;
+}
+.forms input[type=checkbox] + label.studded span {
+  background-position: 0px -41px;
+}
+.forms input[type=checkbox] + label.allseason span {
+  background-position: 0px -61px;
+}
+.forms__range {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .features__items {
@@ -3622,6 +3845,14 @@ input[type=hidden] {
   .sort__filter-btn.mob-filter {
     display: flex;
   }
+  .forms__block.passenger,
+  .forms__block.freight,
+  .forms__block.tires,
+  .forms__block.truck_tires,
+  .forms__block.wheel,
+  .forms__block.akb {
+    background: unset;
+  }
 }
 @media (max-width: 900px) {
   .footer__container {
@@ -3739,6 +3970,13 @@ input[type=hidden] {
     right: 15px;
     left: 15px;
     width: calc(100% - 30px);
+  }
+  .forms__inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .forms__block {
+    width: 100%;
   }
 }
 @media (max-width: 650px) {
@@ -3858,6 +4096,13 @@ input[type=hidden] {
   }
   .basket__block-price {
     margin: 0 0 0 auto;
+  }
+  .forms__select,
+  .forms__checkbox-label {
+    width: 100%;
+  }
+  .forms__select-icon {
+    display: none;
   }
 }
 @media (max-width: 500px) {
