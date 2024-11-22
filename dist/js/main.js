@@ -290,33 +290,6 @@
     })();
 
     /**
-     * Отображение каталога
-     */
-    (function () {
-      const sort__display = document.querySelector('.sort__display');
-      if (sort__display) {
-        var displayBtn = document.querySelectorAll('.sort__display-btn'),
-          displayBtnActive = document.getElementsByClassName('active'),
-          catalogItems = document.querySelector('.catalog__items');
-
-        Array.from(displayBtn).forEach(function (displayItem, i, displayBtn) {
-          displayItem.addEventListener('click', function (e) {
-            if (displayBtnActive.length > 0 && displayBtnActive[0] !== this)
-              displayBtnActive[0].classList.remove('active');
-
-            this.classList.add('active');
-
-            catalogItems.classList.remove('block');
-            catalogItems.classList.remove('list');
-            catalogItems.classList.remove('table');
-
-            catalogItems.classList.add(this.dataset.value);
-          });
-        });
-      }
-    })();
-
-    /**
      * Выпадающий элемент. Замена select
      */
     if (document.querySelector('.select__list-item')) {
@@ -325,15 +298,19 @@
         const dropDownList = dropDownWrapper.querySelector('.select__list');
         const dropDownListItems = dropDownWrapper.querySelectorAll('.select__list-item');
         const dropDownInput = dropDownWrapper.querySelector('.select__input-hidden');
-        const dropDownReset = document.querySelector('.filter__reset');
+        const dropDownReset = document.querySelectorAll('.filter__reset');
         const defaultItem = document.querySelectorAll('.select__list-item--first');
 
-        defaultItem.forEach(function (defaultItem) {
-          dropDownReset.addEventListener('click', function (e) {
-            e.stopPropagation();
-            defaultItem.click();
+        if (dropDownReset) {
+          defaultItem.forEach(function (defaultItem) {
+            dropDownReset.forEach(function (dropDownReset) {
+              dropDownReset.addEventListener('click', function (e) {
+                e.stopPropagation();
+                defaultItem.click();
+              });
+            });
           });
-        });
+        }
 
         dropDownBtn.addEventListener('click', function (e) {
           dropDownList.classList.toggle('select__list--visible');
@@ -373,6 +350,7 @@
     const rangeSlider = document.getElementById('range-slider');
     const rangeSlider2 = document.getElementById('range-slider-2');
     const rangeSlider3 = document.getElementById('range-slider-3');
+    const rangeSlider4 = document.getElementById('range-slider-4');
 
     if (rangeSlider) {
       noUiSlider.create(rangeSlider, {
@@ -391,6 +369,13 @@
 
       rangeSlider.noUiSlider.on('update', function (values, handle) {
         inputs[handle].value = Math.round(values[handle]);
+
+        const lower = document.querySelector('.noUi-handle-lower');
+        let lowerValue = lower.getAttribute('aria-valuenow');
+        input0.setAttribute('value', Math.round(lowerValue));
+        const upper = document.querySelector('.noUi-handle-upper');
+        let upperValue = upper.getAttribute('aria-valuenow');
+        input1.setAttribute('value', Math.round(upperValue));
       });
 
       const setRangeSlider = (i, value) => {
@@ -427,6 +412,13 @@
 
       rangeSlider2.noUiSlider.on('update', function (values, handle) {
         inputs2[handle].value = Math.round(values[handle]);
+
+        const lower = document.querySelector('.noUi-handle-lower');
+        let lowerValue = lower.getAttribute('aria-valuenow');
+        input2.setAttribute('value', Math.round(lowerValue));
+        const upper = document.querySelector('.noUi-handle-upper');
+        let upperValue = upper.getAttribute('aria-valuenow');
+        input3.setAttribute('value', Math.round(upperValue));
       });
 
       const setRangeSlider = (i, value) => {
@@ -463,6 +455,13 @@
 
       rangeSlider3.noUiSlider.on('update', function (values, handle) {
         inputs3[handle].value = Math.round(values[handle]);
+
+        const lower = document.querySelector('.noUi-handle-lower');
+        let lowerValue = lower.getAttribute('aria-valuenow');
+        input4.setAttribute('value', Math.round(lowerValue));
+        const upper = document.querySelector('.noUi-handle-upper');
+        let upperValue = upper.getAttribute('aria-valuenow');
+        input5.setAttribute('value', Math.round(upperValue));
       });
 
       const setRangeSlider = (i, value) => {
@@ -475,6 +474,49 @@
       };
 
       inputs3.forEach((el, index) => {
+        el.addEventListener('change', (e) => {
+          console.log(index);
+          setRangeSlider(index, e.currentTarget.value);
+        });
+      });
+    }
+
+    if (rangeSlider4) {
+      noUiSlider.create(rangeSlider4, {
+        start: [40, 190],
+        connect: true,
+        step: 1,
+        range: {
+          'min': [40],
+          'max': [190]
+        }
+      });
+
+      const input6 = document.getElementById('input-6');
+      const input7 = document.getElementById('input-7');
+      const inputs4 = [input6, input7];
+
+      rangeSlider4.noUiSlider.on('update', function (values, handle) {
+        inputs4[handle].value = Math.round(values[handle]);
+
+        const lower = document.querySelector('.noUi-handle-lower');
+        let lowerValue = lower.getAttribute('aria-valuenow');
+        input6.setAttribute('value', Math.round(lowerValue));
+        const upper = document.querySelector('.noUi-handle-upper');
+        let upperValue = upper.getAttribute('aria-valuenow');
+        input7.setAttribute('value', Math.round(upperValue));
+      });
+
+      const setRangeSlider = (i, value) => {
+        let arr = [null, null];
+        arr[i] = value;
+
+        console.log(arr);
+
+        rangeSlider4.noUiSlider.set(arr);
+      };
+
+      inputs4.forEach((el, index) => {
         el.addEventListener('change', (e) => {
           console.log(index);
           setRangeSlider(index, e.currentTarget.value);

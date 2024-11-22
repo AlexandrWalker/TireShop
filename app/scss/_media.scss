@@ -260,6 +260,15 @@
   .sort__filter-btn.mob-filter {
     display: flex;
   }
+
+  .forms__block.passenger,
+  .forms__block.freight,
+  .forms__block.tires,
+  .forms__block.truck_tires,
+  .forms__block.wheel,
+  .forms__block.akb {
+    background: unset;
+  }
 }
 
 @media (max-width: 900px) {
@@ -412,6 +421,15 @@
     left: 15px;
     width: calc(100% - 30px);
   }
+
+  .forms__inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .forms__block {
+    width: 100%;
+  }
 }
 
 @media (max-width: 650px) {
@@ -558,6 +576,15 @@
 
   .basket__block-price {
     margin: 0 0 0 auto;
+  }
+
+  .forms__select,
+  .forms__checkbox-label {
+    width: 100%;
+  }
+
+  .forms__select-icon {
+    display: none;
   }
 }
 

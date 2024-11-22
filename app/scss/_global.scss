@@ -12,10 +12,11 @@ body {
   font-family: var(--primary-font), Arial, sans-serif;
   font-size: 15px;
   line-height: var(--primary-line-height);
+  overflow-x: hidden;
 }
 
 .no-scroll {
-  height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
 }
 
